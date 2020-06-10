@@ -1,0 +1,7 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://xmlns.com/foaf/0.1/Agent" "http://www.w3.org/ns/org#Organization" ; /*classes style*/
+	"http://www.w3.org/ns/org#Organization" -> "http://xmlns.com/foaf/0.1/Agent" [ label = "rdfs:subClassOf" ];
+
+}
