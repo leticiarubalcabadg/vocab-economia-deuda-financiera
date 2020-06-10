@@ -808,7 +808,6 @@
                 <owl:someValuesFrom rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="en">Contract that generates, at the same time, a financial asset for one of the parties and a financial liability for the other. In a city council it refers to  loans, credits, bonds, financial leasing operations, etc.</rdfs:comment>
         <rdfs:comment xml:lang="es">Contrato que genera, al mismo tiempo, un activo financiero para una de las partes y un pasivo financiero para la otra. En un ayuntamiento se refiere a un préstamos, créditos, emisiones, operaciones de arrendamiento financiero, etc.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
@@ -865,29 +864,11 @@
     
 
 
-    <!-- http://www.w3.org/ns/org#ChangeEvent -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/org#ChangeEvent">
-        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Organization"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/org#Membership -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/org#Membership">
-        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Organization"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.w3.org/ns/org#Organization -->
 
     <owl:Class rdf:about="http://www.w3.org/ns/org#Organization">
         <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Role"/>
-        <owl:disjointWith rdf:resource="http://www.w3.org/ns/org#Site"/>
         <rdfs:comment xml:lang="es">Grupo de personas que se organiza en una comunidad u otro tipo de estructura social, comercial o política. Dicho grupo tiene un objetivo o motivo común para su existencia que va más allá del conjunto de personas que lo forman y que puede actuar como “agente”. A menudo las organizaciones se pueden agrupar en estructuras jerárquicas. Se recomienda el uso de etiquetas de SKOS para denominar a cada “organización”. En concreto, `skos:prefLabel` para la denominación principal o recomendada (aquella reconocida legalmente, siempre que sea posible), `skos:altLabel` para denominaciones alternativas (nombre comercial, sigla, denominación por la que se conoce a la organización coloquialmente) y `skos:notation` para referirse al código que identifique a la organización en una lista de códigos. Denominaciones alternativas: _colectivo_ _corporación_ _grupo_</rdfs:comment>
         <rdfs:comment xml:lang="it">Rappresenta una collezione di persone organizzate all&apos;interno di una communità o di una qualche struttura sociale, commerciale o politica. Il gruppo condivide un obiettivo o una ragione d&apos;essere che va oltre gli stessi membri appartenenti al gruppo e  può agire come un Agent. Le organizzazioni si possono spesso suddividere in strutture gerarchiche. Si raccomanda di usare le label per l&apos;Organization mediante le proprietà di SKOS. In particolare, `skos:prefLabel` per il nome principale (possibilmente un nome legalmente riconosciuto)”, `skos:altLabel` come nome alternativo (denominazione commerciale, denominazione colloquiale) e `skos:notation` per indicare un codice di una lista di codici.</rdfs:comment>
         <rdfs:comment xml:lang="en">Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.  It is recommended that SKOS lexical labels should be used to label the Organization. In particular `skos:prefLabel` for the primary (possibly legally recognized name), `skos:altLabel` for alternative names (trading names, colloquial names) and `skos:notation` to denote a code from a code list. Alternative names: _Collective_ _Body_ _Org_ _Group_</rdfs:comment>
@@ -899,18 +880,6 @@
         <rdfs:label xml:lang="it">Organizzazione</rdfs:label>
         <rdfs:label xml:lang="es">organización</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/ns/org#Role -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/org#Role"/>
-    
-
-
-    <!-- http://www.w3.org/ns/org#Site -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/org#Site"/>
     
 
 
