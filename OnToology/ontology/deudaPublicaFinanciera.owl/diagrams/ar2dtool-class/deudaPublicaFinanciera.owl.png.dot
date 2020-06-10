@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "esdeufin:InstrumentoFinanciero" "esdeufin:DeudaAnual" "esdeufin:Emision" "esdeufin:Amortizacion" "http://www.w3.org/ns/org#Site" "skos:ConceptScheme" "esdeufin:Prestamo" "http://xmlns.com/foaf/0.1/Organization" "skos:Concept" "http://www.w3.org/ns/org#Organization" "http://www.w3.org/ns/org#Role" "12b4d3f5:1729dab378b:-7ffc" "http://www.w3.org/ns/org#ChangeEvent" "http://www.w3.org/ns/org#Membership" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "esdeufin:InstrumentoFinanciero" "esdeufin:DeudaAnual" "-664f74a9:1729dbac6ef:-7ffc" "esdeufin:Emision" "esdeufin:Amortizacion" "http://www.w3.org/ns/org#Site" "skos:ConceptScheme" "esdeufin:Prestamo" "http://xmlns.com/foaf/0.1/Organization" "skos:Concept" "http://www.w3.org/ns/org#Organization" "http://www.w3.org/ns/org#Role" "http://www.w3.org/ns/org#ChangeEvent" "http://www.w3.org/ns/org#Membership" ; /*classes style*/
 	"esdeufin:presupuestoIngreso" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
 	"esdeufin:importeAnual" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"skos:Concept" -> "skos:ConceptScheme" [ label = "owl:disjointWith" ];
@@ -13,15 +13,15 @@ node [shape = rectangle, color="orange"]; "esdeufin:InstrumentoFinanciero" "esde
 	"http://www.w3.org/ns/org#ChangeEvent" -> "http://www.w3.org/ns/org#Organization" [ label = "owl:disjointWith" ];
 	"NULL" -> "esdeufin:tipoPrestamo" [ label = "owl:onProperty" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/deuda-financiera/tipo-prestamo" [ label = "owl:hasValue" ];
+	"NULL" -> "-664f74a9:1729dbac6ef:-7ffb" [ label = "owl:intersectionOf" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
 	"NULL" -> "esdeufin:entidadPrestamista" [ label = "owl:onProperty" ];
-	"NULL" -> "12b4d3f5:1729dab378b:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "skos:Concept" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "http://www.w3.org/ns/org#Organization" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "-664f74a9:1729dbac6ef:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "esdeufin:amortizacion" [ label = "owl:onProperty" ];
 	"NULL" -> "esdeufin:Amortizacion" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "12b4d3f5:1729dab378b:-7ffb" [ label = "owl:intersectionOf" ];
 	"NULL" -> "skos:inScheme" [ label = "owl:onProperty" ];
 	"skos:notation" -> "esdeufin:moneda" [ label = "rdfs:subPropertyOf" ];
 	"esdeufin:fechaAmortizacion" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
@@ -52,7 +52,7 @@ node [shape = rectangle, color="orange"]; "esdeufin:InstrumentoFinanciero" "esde
 	"esdeufin:Amortizacion" -> "xsd:date" [ label = "esdeufin:fechaAmortizacion" ];
 	"esdeufin:Amortizacion" -> "xsd:float" [ label = "esdeufin:importeAmortizacion" ];
 	"esdeufin:Prestamo" -> "xsd:duration" [ label = "esdeufin:plazo" ];
-	"esdeufin:Prestamo" -> "12b4d3f5:1729dab378b:-7ffc" [ label = "esdeufin:tipoPrestamo" ];
+	"esdeufin:Prestamo" -> "-664f74a9:1729dbac6ef:-7ffc" [ label = "esdeufin:tipoPrestamo" ];
 	"esdeufin:Prestamo" -> "xsd:date" [ label = "esdeufin:fechaInicio" ];
 	"esdeufin:DeudaAnual" -> "xsd:gYear" [ label = "esdeufin:anioFiscal" ];
 	"esdeufin:InstrumentoFinanciero" -> "xsd:float" [ label = "esdeufin:importe" ];

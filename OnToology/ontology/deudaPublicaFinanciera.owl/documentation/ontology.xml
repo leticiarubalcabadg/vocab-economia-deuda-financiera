@@ -24,8 +24,8 @@
         <dc:creator>Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
         <dc:creator>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)</dc:creator>
         <dc:identifier xml:lang="es">http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</dc:identifier>
-        <dc:title xml:lang="es">Vocabulario para la representación de la información de la Deuda pública financiera tomando en cuenta que la Deuda pública es uno de los indicadores esenciales de las cuentas públicas para entender el estado de la situación económica de un ayuntamiento.</dc:title>
-        <dc:title xml:lang="en">Vocabulary for the representation of financial  public debt taking into account that public debt is one of the essential indicators of public accountability and to understand the state of the economic situation of a city council</dc:title>
+        <dc:title xml:lang="es">Vocabulario para la representación de la información de la Deuda Pública Financiera tomando en cuenta que la deuda pública es uno de los indicadores esenciales de las cuentas públicas para entender el estado de la situación económica de un ayuntamiento.</dc:title>
+        <dc:title xml:lang="en">Vocabulary for the representation of Financial  Public Debt taking into account that public debt is one of the essential indicators of public accountability and to understand the state of the economic situation of a city council</dc:title>
         <terms:creator>Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
         <terms:hasFormat xml:lang="es">http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera.owl</terms:hasFormat>
         <terms:issued xml:lang="es">2020-05-20</terms:issued>
