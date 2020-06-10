@@ -23,9 +23,6 @@
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
     },
-    "Membership" : {
-      "@id" : "http://www.w3.org/ns/org#Membership"
-    },
     "instrumentoFinanciero" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciero",
       "@type" : "@id"
@@ -87,9 +84,6 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaInteresFijo",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
-    "ChangeEvent" : {
-      "@id" : "http://www.w3.org/ns/org#ChangeEvent"
-    },
     "notation" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#notation"
     },
@@ -98,9 +92,6 @@
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
-    },
-    "Role" : {
-      "@id" : "http://www.w3.org/ns/org#Role"
     },
     "topObjectProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
@@ -162,9 +153,6 @@
     "numeroTitulos" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#numeroTitulos",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
-    },
-    "Site" : {
-      "@id" : "http://www.w3.org/ns/org#Site"
     },
     "Prestamo" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"
