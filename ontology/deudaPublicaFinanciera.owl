@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#"
-     xml:base="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
+<rdf:RDF xmlns="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#"
+     xml:base="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,9 +10,9 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:esdeufin="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#">
-    <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera">
-        <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera/1.0.0"/>
+     xmlns:esdeufin="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#">
+    <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera">
+        <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera/1.0.0"/>
         <dc:contributor xml:lang="es">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">María Carmen Ruiz Moreno - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza</dc:contributor>
@@ -174,76 +174,76 @@
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#amortizacion -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#amortizacion">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#InstrumentoFinanciero"/>
-        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Amortizacion"/>
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion"/>
         <rdfs:comment xml:lang="es">Relaciona el instrumento financiero con su calendario de amortizaciones.</rdfs:comment>
         <rdfs:comment xml:lang="en">Relates the financial instrument to its repayment schedule.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">amortización</rdfs:label>
         <rdfs:label xml:lang="en">repayment</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#entidadPrestamista -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#entidadPrestamista">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Prestamo"/>
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
         <rdfs:comment xml:lang="es">Entidad que otorga el préstamo.</rdfs:comment>
         <rdfs:comment xml:lang="en">Entity that grants the loan.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">entidad prestamista</rdfs:label>
         <rdfs:label xml:lang="es">lender entity</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#instrumentoFinanciero -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciero -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#instrumentoFinanciero">
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciero">
         <rdfs:comment xml:lang="es">Relaciona la deuda anual con los instrumentos financieros activos durante el año fiscal correspondiente.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">financial instrument</rdfs:label>
         <rdfs:label xml:lang="es">instrumento financiero</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#presupuestoGasto -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#presupuestoGasto -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#presupuestoGasto">
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#presupuestoGasto">
         <rdfs:comment xml:lang="es">La carga fnanciera de un instrumento financiero se corresponde con ciertos gastos del presupuesto anual.</rdfs:comment>
         <rdfs:comment xml:lang="en">The financial burden of a financial instrument corresponds to certain expenses of the annual budget.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">expense budget</rdfs:label>
         <rdfs:label xml:lang="es">presupuesto gasto</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#presupuestoIngreso -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#presupuestoIngreso -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#presupuestoIngreso">
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#presupuestoIngreso">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:comment xml:lang="es">El instrumento financiero puede relacionarse con determinados ingresos del presupuesto anual de ingresos
 .</rdfs:comment>
         <rdfs:comment xml:lang="en">The financial instrument can be related to a certain income of the annual income budget.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">income budget</rdfs:label>
         <rdfs:label xml:lang="es">presupuesto ingreso</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#tipoPrestamo -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#tipoPrestamo">
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Prestamo"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
         <rdfs:range>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -257,9 +257,9 @@
         </rdfs:range>
         <rdfs:comment xml:lang="es">Es el tipo de préstamo según la aplicación CLIR para operaciones financieras informadas de la Secretaría general de Financiación Autonómica y Local del Ministerio de Hacienda.</rdfs:comment>
         <rdfs:comment xml:lang="en">Type of loan according to the CLIR application for financial operations reported by the General Secretariat for Autonomous and Local Financing of the Ministry of Finance.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">loan type</rdfs:label>
         <rdfs:label xml:lang="es">tipo préstamo</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:ObjectProperty>
     
 
@@ -307,420 +307,420 @@
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#anioFiscal -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#anioFiscal">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#DeudaAnual"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
         <rdfs:comment xml:lang="es">Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre.</rdfs:comment>
         <rdfs:comment xml:lang="en">Fiscal year. Period of 12 months between the 1st of January and the 31st of December.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">año fiscal</rdfs:label>
         <rdfs:label xml:lang="en">fiscal year</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#codISIN -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#codISIN">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#InstrumentoFinanciero"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="es">El código ISIN (International Securities Identification Number) está desarrollado en el estándar internacional ISO 6166 Es un código que identifica unívocamente un instrumento financiero a nivel internacional.</rdfs:comment>
         <rdfs:comment xml:lang="en">The ISIN code (International Securities Identification Number) is developed in the international standard ISO 6166. It is a code that uniquely identifies a financial instrument at an international level.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">ISIN code</rdfs:label>
         <rdfs:label xml:lang="es">código ISIN</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#cuantiaPorTitulo -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cuantiaPorTitulo -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#cuantiaPorTitulo">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cuantiaPorTitulo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Emision"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="es">Cuantía nominal por título.</rdfs:comment>
         <rdfs:comment xml:lang="en">Nominal amount per security.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">amount per security</rdfs:label>
         <rdfs:label xml:lang="de">cuantía por título</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#deudaEmisiones -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaEmisiones -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#deudaEmisiones">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaEmisiones">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#DeudaAnual"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Amount of debt due to emissions at the end of the fiscal year.</rdfs:comment>
         <rdfs:comment xml:lang="es">Importe de la deuda por emisiones al finalizar el año fiscal.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">deuda emisiones</rdfs:label>
         <rdfs:label xml:lang="en">issuance debt</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#deudaInteresFijo -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaInteresFijo -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#deudaInteresFijo">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaInteresFijo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#DeudaAnual"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Amount of debt for financial instruments at fixed interest at the end of the fiscal year.</rdfs:comment>
         <rdfs:comment xml:lang="es">Importe de la deuda por instrumentos financieros a interés fijo al finalizar el año fiscal.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">deuda interés fijo</rdfs:label>
         <rdfs:label xml:lang="en">fixed interest debt</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#deudaInteresVariable -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaInteresVariable -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#deudaInteresVariable">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaInteresVariable">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment xml:lang="en">Amount of debt for financial instruments at variable interest at the end of the fiscal year.</rdfs:comment>
         <rdfs:comment xml:lang="en">Importe de la deuda por instrumentos financieros a interés variable al finalizar el año fiscal.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">deuda interés variable</rdfs:label>
         <rdfs:label xml:lang="en">variable interest debt</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#deudaPrestamos -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaPrestamos -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#deudaPrestamos">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaPrestamos">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#DeudaAnual"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment>Amount of loan debt at the end of the fiscal year.</rdfs:comment>
         <rdfs:comment xml:lang="es">Importe de la deuda por préstamos al finalizar el año fiscal.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">deuda préstamos</rdfs:label>
         <rdfs:label xml:lang="en">loan debt</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#duración -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#duración">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Emision"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
         <rdfs:comment xml:lang="en">Issuance duration.</rdfs:comment>
         <rdfs:comment xml:lang="es">Tiempo de duración de la emisión.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">duración</rdfs:label>
         <rdfs:label xml:lang="en">duration</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#endeudamientoPDE -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#endeudamientoPDE">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#DeudaAnual"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="es">La deuda elaborada según la metodología del Protocolo de Deficit Excesivo (PDE), conforme a las definiciones del Sistema Europeo de Cuentas SEC 2010, es la deuda homogénea y comparable con el resto de las administraciones públicas.</rdfs:comment>
         <rdfs:comment>The debt information prepared according to the methodology of the Excessive Deficit Protocol (PDE), according to the definitions of the European System of Accounts SEC 2010, is the homogeneous debt and comparable with the rest of the public administrations.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">endeudamiento protocolomdéficit excesivo</rdfs:label>
         <rdfs:label xml:lang="en">excesive deficit protocol debt</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#fechaAmortizacion -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaAmortizacion -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#fechaAmortizacion">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaAmortizacion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Amortizacion"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">Date in which the total or part of the debt that has been contracted through the financial instrument is amortized.</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha en la que se amortiza el total o parte de la deuda que se ha contraido a través del instrumento financiero.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">fecha amortización</rdfs:label>
         <rdfs:label xml:lang="en">repayment date</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#fechaEmision -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#fechaEmision">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Emision"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">Date on which the securities are issued.</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha en la que se realiza la emisión de los títulos.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">fecha emisión</rdfs:label>
         <rdfs:label>issuance date</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#fechaFormalizacion -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#fechaFormalizacion">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Prestamo"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">Date on which a loan is signed.</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha en la cual se suscribe un préstamo.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">fecha de formalización</rdfs:label>
         <rdfs:label xml:lang="en">formalization date</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#fechaInicio -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaInicio -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#fechaInicio">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaInicio">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Prestamo"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">Date on which the obligations contracted in the loan begin to accrue.</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha en que comienzan a devengarse las obligaciones contraídas en el préstamo.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">fecha inicio</rdfs:label>
         <rdfs:label xml:lang="en">start date</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#fechaVencimiento -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaVencimiento -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#fechaVencimiento">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaVencimiento">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Prestamo"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
         <rdfs:comment xml:lang="en">Agreed date to return the borrowed capital.</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha pactada para devolver el capital prestado.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">fecha vencimiento préstamo</rdfs:label>
         <rdfs:label xml:lang="en">loan maturity date</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#importe -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#importe">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#InstrumentoFinanciero"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="es">Importe total de un instrumento financiero</rdfs:comment>
         <rdfs:comment xml:lang="en">Total amount of a financial instrument</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">amount</rdfs:label>
         <rdfs:label xml:lang="es">importe</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#importeAmortizacion -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAmortizacion -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#importeAmortizacion">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAmortizacion">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Amortizacion"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Amount of the debt that is paid on a certain date.</rdfs:comment>
         <rdfs:comment xml:lang="es">Importe de la deuda que se paga en determinada fecha.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">importe amortización</rdfs:label>
         <rdfs:label xml:lang="en">repaymnent amount</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#importeAnual -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAnual -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#importeAnual">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAnual">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Emision"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment>Annual gross coupon amount.</rdfs:comment>
         <rdfs:comment xml:lang="es">Importe de cupón bruto anual.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">annual amount</rdfs:label>
         <rdfs:label xml:lang="es">importe anual</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#margenMaximo -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#margenMaximo">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#InstrumentoFinanciero"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="es">Diferencial máximo aplicable a un interés de tipo variable.</rdfs:comment>
         <rdfs:comment>Maximum differential applicable to a variable interest rate.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">margen máximo</rdfs:label>
         <rdfs:label xml:lang="en">maximum margin</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#mesDiaPago -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#mesDiaPago -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#mesDiaPago">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#mesDiaPago">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Emision"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
         <rdfs:comment xml:lang="es">Mes y día de pago del importe anual, cada año.</rdfs:comment>
         <rdfs:comment xml:lang="en">Month and day of payment of the annual amount, each year.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">mes día pago</rdfs:label>
         <rdfs:label xml:lang="en">month day payment</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#moneda -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#moneda -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#moneda">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#moneda">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Prestamo"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Currency in which a loan is made.</rdfs:comment>
         <rdfs:comment xml:lang="es">Moneda en la cual se realiza un préstamo.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">currency</rdfs:label>
         <rdfs:label xml:lang="es">moneda</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#numeroTitulos -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#numeroTitulos -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#numeroTitulos">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#numeroTitulos">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Emision"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
         <rdfs:comment xml:lang="en">Number of titles issued to the bearer.</rdfs:comment>
         <rdfs:comment xml:lang="es">Número de títulos emitidos al portador.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">number securities</rdfs:label>
         <rdfs:label xml:lang="es">número títulos</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#plazo -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#plazo -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#plazo">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#plazo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Prestamo"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#duration"/>
         <rdfs:comment xml:lang="es">Lapso de pago de un préstamo.</rdfs:comment>
         <rdfs:comment xml:lang="en">Payment period of a loan.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">plazo</rdfs:label>
         <rdfs:label xml:lang="en">term</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#precioEmision -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioEmision -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#precioEmision">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioEmision">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Emision"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="es">Precio de emisión del título.</rdfs:comment>
         <rdfs:comment xml:lang="en">Security issuance price.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">issuance price</rdfs:label>
         <rdfs:label xml:lang="es">precio emisión</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#precioReembolso -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioReembolso -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#precioReembolso">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioReembolso">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Emision"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Issuance redemption price.</rdfs:comment>
         <rdfs:comment xml:lang="es">Precio de reembolso de la emisión</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">precio reembolso</rdfs:label>
         <rdfs:label xml:lang="en">redemption price</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#referencia -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#referencia -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#referencia">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#referencia">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#InstrumentoFinanciero"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Reference interest rate that may vary over time.</rdfs:comment>
         <rdfs:comment xml:lang="es">Tipo de interés de referencia que puede variar en el tiempo.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">referencia variable</rdfs:label>
         <rdfs:label xml:lang="en">variable reference</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#tasaFija -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tasaFija -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#tasaFija">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tasaFija">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#InstrumentoFinanciero"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Fixed interest rate of a financial instrument</rdfs:comment>
         <rdfs:comment xml:lang="es">Porcentaje de interés fijo de un instrumento de financiación</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">fixed interest rate</rdfs:label>
         <rdfs:label xml:lang="es">tasa fija</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#tipoInteres -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#tipoInteres">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment xml:lang="en">Interest rate (fixed or variable) of a financial instrument</rdfs:comment>
         <rdfs:comment xml:lang="es">Tipo de tasa interés (fijo o variable) de un instrumento financiero</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">interest type</rdfs:label>
         <rdfs:label xml:lang="es">tipo de interés</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#totalAmortizaciones -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#totalAmortizaciones -->
 
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#totalAmortizaciones">
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#totalAmortizaciones">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment xml:lang="es">Importe total de amortizaciones realizadas en el año fiscal.</rdfs:comment>
         <rdfs:comment xml:lang="en">Total amount of repayment made in the fiscal year.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">total amortizaciones</rdfs:label>
         <rdfs:label xml:lang="en">total repayment</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:DatatypeProperty>
     
 
@@ -728,7 +728,7 @@
     <!-- http://www.w3.org/2004/02/skos/core#notation -->
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation">
-        <rdfs:subPropertyOf rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#moneda"/>
+        <rdfs:subPropertyOf rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#moneda"/>
     </owl:DatatypeProperty>
     
 
@@ -763,9 +763,9 @@
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Amortizacion -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion -->
 
-    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Amortizacion">
+    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">
         <rdfs:comment xml:lang="es">Amortización</rdfs:comment>
         <rdfs:comment xml:lang="en">Date and amount of repayment of the debt included in the contract signed between the parties</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes</rdfs:comment>
@@ -775,69 +775,69 @@
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#DeudaAnual -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual -->
 
-    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#DeudaAnual">
+    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual">
         <rdfs:comment xml:lang="es">La deuda elaborada según la metodología del Protocolo de Deficit Excesivo (PDE), conforme a las definiciones del Sistema Europeo de Cuentas SEC 2010, es la deuda homogénea y comparable con el resto de la Administración Pública</rdfs:comment>
         <rdfs:comment xml:lang="en">The debt prepared according to the methodology of the Excessive Deficit Protocol (PDE), according to the definitions of the European System of Accounts SEC 2010, is the homogeneous debt and comparable with the rest of the Public Administration</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Annual debt</rdfs:label>
         <rdfs:label xml:lang="es">Deuda anual</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:Class>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Emision -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision -->
 
-    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Emision">
+    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision">
         <rdfs:comment xml:lang="es">Operación por la que se crea y pone en circulación un título-valor.</rdfs:comment>
         <rdfs:comment xml:lang="en">Operation by which a security is created and put into circulation.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">Emisión</rdfs:label>
         <rdfs:label xml:lang="en">Issuance</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:Class>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#InstrumentoFinanciero -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero -->
 
-    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#InstrumentoFinanciero">
+    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#amortizacion"/>
-                <owl:someValuesFrom rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Amortizacion"/>
+                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion"/>
+                <owl:someValuesFrom rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en"></rdfs:comment>
         <rdfs:comment xml:lang="en">Contract that generates, at the same time, a financial asset for one of the parties and a financial liability for the other. In a city council it refers to  loans, credits, bonds, financial leasing operations, etc.</rdfs:comment>
         <rdfs:comment xml:lang="es">Contrato que genera, al mismo tiempo, un activo financiero para una de las partes y un pasivo financiero para la otra. En un ayuntamiento se refiere a un préstamos, créditos, emisiones, operaciones de arrendamiento financiero, etc.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Financial instrument</rdfs:label>
         <rdfs:label xml:lang="es">Instrumento financiero</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:Class>
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Prestamo -->
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo -->
 
-    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#Prestamo">
+    <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#entidadPrestamista"/>
+                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/ns/org#Organization"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#tipoPrestamo"/>
+                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="es">Obligación que contrae una Entidad (Ayuntamiento) con una Entidad (Financiera) para financiarse y con unos plazos de devolución</rdfs:comment>
         <rdfs:comment xml:lang="en">Obligation that an Entity (City Council) contracts with an (Financial) Entity to finance itself and with repayment terms</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">Loan</rdfs:label>
         <rdfs:label xml:lang="es">Préstamo</rdfs:label>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
     </owl:Class>
     
 
