@@ -1,33 +1,29 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "esdeufin:InstrumentoFinanciero" "esdeufin:DeudaAnual" "-664f74a9:1729dbac6ef:-7ffc" "esdeufin:Emision" "esdeufin:Amortizacion" "http://www.w3.org/ns/org#Site" "skos:ConceptScheme" "esdeufin:Prestamo" "http://xmlns.com/foaf/0.1/Organization" "skos:Concept" "http://www.w3.org/ns/org#Organization" "http://www.w3.org/ns/org#Role" "http://www.w3.org/ns/org#ChangeEvent" "http://www.w3.org/ns/org#Membership" ; /*classes style*/
-	"esdeufin:presupuestoIngreso" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
-	"esdeufin:importeAnual" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
-	"skos:Concept" -> "skos:ConceptScheme" [ label = "owl:disjointWith" ];
-	"http://www.w3.org/ns/org#Membership" -> "http://www.w3.org/ns/org#Organization" [ label = "owl:disjointWith" ];
-	"http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" -> "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera/1.0.0" [ label = "owl:versionIRI" ];
-	"http://www.w3.org/ns/org#Organization" -> "http://www.w3.org/ns/org#Role" [ label = "owl:disjointWith" ];
-	"http://www.w3.org/ns/org#Organization" -> "http://xmlns.com/foaf/0.1/Organization" [ label = "owl:equivalentClass" ];
-	"http://www.w3.org/ns/org#Organization" -> "http://www.w3.org/ns/org#Site" [ label = "owl:disjointWith" ];
-	"http://www.w3.org/ns/org#ChangeEvent" -> "http://www.w3.org/ns/org#Organization" [ label = "owl:disjointWith" ];
+node [shape = rectangle, color="orange"]; "esdeufin:InstrumentoFinanciero" "esdeufin:DeudaAnual" "esdeufin:Emision" "esdeufin:Amortizacion" "skos:ConceptScheme" "esdeufin:Prestamo" "http://xmlns.com/foaf/0.1/Organization" "skos:Concept" "54a19087:1729dc3c8ad:-7ffc" "http://www.w3.org/ns/org#Organization" ; /*classes style*/
+	"NULL" -> "54a19087:1729dc3c8ad:-7ffb" [ label = "owl:intersectionOf" ];
 	"NULL" -> "esdeufin:tipoPrestamo" [ label = "owl:onProperty" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/deuda-financiera/tipo-prestamo" [ label = "owl:hasValue" ];
-	"NULL" -> "-664f74a9:1729dbac6ef:-7ffb" [ label = "owl:intersectionOf" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
 	"NULL" -> "esdeufin:entidadPrestamista" [ label = "owl:onProperty" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "skos:Concept" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "http://www.w3.org/ns/org#Organization" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "-664f74a9:1729dbac6ef:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "esdeufin:amortizacion" [ label = "owl:onProperty" ];
 	"NULL" -> "esdeufin:Amortizacion" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "54a19087:1729dc3c8ad:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "skos:inScheme" [ label = "owl:onProperty" ];
-	"skos:notation" -> "esdeufin:moneda" [ label = "rdfs:subPropertyOf" ];
-	"esdeufin:fechaAmortizacion" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
-	"http://www.w3.org/ns/org#identifier" -> "skos:notation" [ label = "rdfs:subPropertyOf" ];
+	"http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" -> "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera/1.0.0" [ label = "owl:versionIRI" ];
+	"skos:Concept" -> "skos:ConceptScheme" [ label = "owl:disjointWith" ];
 	"esdeufin:fechaFormalizacion" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"esdeufin:deudaEmisiones" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://www.w3.org/ns/org#Organization" -> "http://xmlns.com/foaf/0.1/Organization" [ label = "owl:equivalentClass" ];
+	"skos:notation" -> "esdeufin:moneda" [ label = "rdfs:subPropertyOf" ];
+	"esdeufin:importeAnual" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"esdeufin:presupuestoIngreso" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://www.w3.org/ns/org#identifier" -> "skos:notation" [ label = "rdfs:subPropertyOf" ];
+	"esdeufin:fechaAmortizacion" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
 	"esdeufin:Emision" -> "xsd:integer" [ label = "esdeufin:numeroTitulos" ];
 	"esdeufin:DeudaAnual" -> "xsd:float" [ label = "esdeufin:endeudamientoPDE" ];
 	"esdeufin:Emision" -> "xsd:gMonthDay" [ label = "esdeufin:mesDiaPago" ];
@@ -35,9 +31,9 @@ node [shape = rectangle, color="orange"]; "esdeufin:InstrumentoFinanciero" "esde
 	"esdeufin:InstrumentoFinanciero" -> "xsd:string" [ label = "esdeufin:codISIN" ];
 	"esdeufin:Prestamo" -> "xsd:date" [ label = "esdeufin:fechaVencimiento" ];
 	"esdeufin:InstrumentoFinanciero" -> "xsd:float" [ label = "esdeufin:tasaFija" ];
+	"owl:Thing" -> "skos:ConceptScheme" [ label = "skos:inScheme" ];
 	"esdeufin:InstrumentoFinanciero" -> "xsd:string" [ label = "esdeufin:referencia" ];
 	"esdeufin:InstrumentoFinanciero" -> "esdeufin:Amortizacion" [ label = "esdeufin:amortizacion" ];
-	"owl:Thing" -> "skos:ConceptScheme" [ label = "skos:inScheme" ];
 	"esdeufin:Emision" -> "xsd:float" [ label = "esdeufin:importeAnual" ];
 	"http://www.w3.org/ns/org#Organization" -> "owl:Thing" [ label = "http://www.w3.org/ns/org#identifier" ];
 	"esdeufin:Prestamo" -> "xsd:string" [ label = "esdeufin:moneda" ];
@@ -52,7 +48,7 @@ node [shape = rectangle, color="orange"]; "esdeufin:InstrumentoFinanciero" "esde
 	"esdeufin:Amortizacion" -> "xsd:date" [ label = "esdeufin:fechaAmortizacion" ];
 	"esdeufin:Amortizacion" -> "xsd:float" [ label = "esdeufin:importeAmortizacion" ];
 	"esdeufin:Prestamo" -> "xsd:duration" [ label = "esdeufin:plazo" ];
-	"esdeufin:Prestamo" -> "-664f74a9:1729dbac6ef:-7ffc" [ label = "esdeufin:tipoPrestamo" ];
+	"esdeufin:Prestamo" -> "54a19087:1729dc3c8ad:-7ffc" [ label = "esdeufin:tipoPrestamo" ];
 	"esdeufin:Prestamo" -> "xsd:date" [ label = "esdeufin:fechaInicio" ];
 	"esdeufin:DeudaAnual" -> "xsd:gYear" [ label = "esdeufin:anioFiscal" ];
 	"esdeufin:InstrumentoFinanciero" -> "xsd:float" [ label = "esdeufin:importe" ];
