@@ -4,12 +4,6 @@ This section provides details for each class and property defined by Vocabulario
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
-         <a href="#Amortizacion"
-            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">
-            <span>amortizacion</span>
-         </a>
-      </li>
-      <li>
          <a href="#DeudaAnual"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual">Annual debt</a>
       </li>
@@ -35,38 +29,11 @@ This section provides details for each class and property defined by Vocabulario
       <li>
          <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
       </li>
+      <li>
+         <a href="#Amortizacion"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">Repayment</a>
+      </li>
    </ul>
-   <div class="entity" id="Amortizacion">
-      <h3>amortizacion<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion</p>
-      <div class="comment">
-         <span class="markdown">Date and amount of repayment of the debt included in the contract signed between the parties</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
-      </dl>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#fechaAmortizacion"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaAmortizacion">repayment date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#importeAmortizacion"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAmortizacion">repaymnent amount</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#amortizacion"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion">repayment</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="DeudaAnual">
       <h3>Annual debt<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -85,7 +52,7 @@ This section provides details for each class and property defined by Vocabulario
          <dt>is in domain of</dt>
          <dd>
             <a href="#endeudamientoPDE"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE">excesive deficit protocol debt</a>
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE">excessive deficit protocol debt</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#anioFiscal"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal">fiscal year</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#deudaInteresFijo"
@@ -188,6 +155,14 @@ This section provides details for each class and property defined by Vocabulario
       <dl class="description">
          <dt>has super-classes</dt>
          <dd/>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Emision"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision">Issuance</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Prestamo"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo">Loan</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#codISIN"
@@ -221,6 +196,12 @@ This section provides details for each class and property defined by Vocabulario
          <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
       </dl>
       <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#InstrumentoFinanciero"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero">Financial instrument</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#cuantiaPorTitulo"
@@ -230,7 +211,7 @@ This section provides details for each class and property defined by Vocabulario
             <sup class="type-dp" title="data property">dp</sup>, <a href="#duración"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración">duration</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaEmision"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision">fecha emisión</a>
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision">issuance date</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#precioEmision"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioEmision">issuance price</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#mesDiaPago"
@@ -259,16 +240,20 @@ This section provides details for each class and property defined by Vocabulario
       </dl>
       <dl class="description">
          <dt>has super-classes</dt>
-         <dd/>
+         <dd>
+            <a href="#InstrumentoFinanciero"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero">Financial instrument</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
          <dt>is in domain of</dt>
          <dd>
             <a href="#moneda"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#moneda">currency</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#entidadPrestamista"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">entidad prestamista</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#fechaFormalizacion"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaFormalizacion"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion">formalization date</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaVencimiento"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#entidadPrestamista"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">lender entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#fechaVencimiento"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaVencimiento">loan maturity date</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoPrestamo"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo">loan type</a>
@@ -316,7 +301,38 @@ This section provides details for each class and property defined by Vocabulario
          <dt>is in range of</dt>
          <dd>
             <a href="#entidadPrestamista"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">entidad prestamista</a>
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">lender entity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Amortizacion">
+      <h3>Repayment<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion</p>
+      <div class="comment">
+         <span class="markdown">Date and amount of repayment of the debt included in the contract signed between the parties</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#importeAmortizacion"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAmortizacion">repayment amount</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaAmortizacion"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaAmortizacion">repayment date</a>
+            <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#amortizacion"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion">repayment</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -326,10 +342,6 @@ This section provides details for each class and property defined by Vocabulario
    <ul class="hlist">
       <li>
          <a href="#http://www.w3.org/ns/org#classification" title="http://www.w3.org/ns/org#classification">classification</a>
-      </li>
-      <li>
-         <a href="#entidadPrestamista"
-            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">entidad prestamista</a>
       </li>
       <li>
          <a href="#presupuestoGasto"
@@ -345,6 +357,10 @@ This section provides details for each class and property defined by Vocabulario
       </li>
       <li>
          <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
+      </li>
+      <li>
+         <a href="#entidadPrestamista"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">lender entity</a>
       </li>
       <li>
          <a href="#tipoPrestamo"
@@ -381,36 +397,6 @@ This section provides details for each class and property defined by Vocabulario
             <dt>has range</dt>
             <dd>
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="entidadPrestamista">
-      <h3>entidad prestamista<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista</p>
-      <div class="comment">
-         <span class="markdown">Entity that grants the loan.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
-      </dl>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Prestamo"
-                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo">Loan</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -496,6 +482,36 @@ This section provides details for each class and property defined by Vocabulario
          </dl>
       </div>
    </div>
+   <div class="entity" id="entidadPrestamista">
+      <h3>lender entity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista</p>
+      <div class="comment">
+         <span class="markdown">Entity that grants the loan.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Prestamo"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo">Loan</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="tipoPrestamo">
       <h3>loan type<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -557,7 +573,7 @@ This section provides details for each class and property defined by Vocabulario
             <dt>has range</dt>
             <dd>
                <a href="#Amortizacion"
-                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">amortizacion</a>
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">Repayment</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -588,11 +604,7 @@ This section provides details for each class and property defined by Vocabulario
       </li>
       <li>
          <a href="#endeudamientoPDE"
-            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE">excesive deficit protocol debt</a>
-      </li>
-      <li>
-         <a href="#fechaEmision"
-            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision">fecha emisión</a>
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE">excessive deficit protocol debt</a>
       </li>
       <li>
          <a href="#anioFiscal"
@@ -620,6 +632,10 @@ This section provides details for each class and property defined by Vocabulario
       <li>
          <a href="#codISIN"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN">ISIN code</a>
+      </li>
+      <li>
+         <a href="#fechaEmision"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision">issuance date</a>
       </li>
       <li>
          <a href="#deudaEmisiones"
@@ -659,12 +675,12 @@ This section provides details for each class and property defined by Vocabulario
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioReembolso">redemption price</a>
       </li>
       <li>
-         <a href="#fechaAmortizacion"
-            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaAmortizacion">repayment date</a>
+         <a href="#importeAmortizacion"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAmortizacion">repayment amount</a>
       </li>
       <li>
-         <a href="#importeAmortizacion"
-            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAmortizacion">repaymnent amount</a>
+         <a href="#fechaAmortizacion"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaAmortizacion">repayment date</a>
       </li>
       <li>
          <a href="#fechaInicio"
@@ -802,11 +818,6 @@ This section provides details for each class and property defined by Vocabulario
          <p>
             <strong>has characteristics:</strong> functional</p>
          <dl>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#http://www.w3.org/2004/02/skos/core#notation" title="http://www.w3.org/2004/02/skos/core#notation">notation</a>
-               <sup class="type-dp" title="data property">dp</sup>
-            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Prestamo"
@@ -852,7 +863,7 @@ This section provides details for each class and property defined by Vocabulario
       </div>
    </div>
    <div class="entity" id="endeudamientoPDE">
-      <h3>excesive deficit protocol debt<sup class="type-dp" title="data property">dp</sup>
+      <h3>excessive deficit protocol debt<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
@@ -878,37 +889,6 @@ This section provides details for each class and property defined by Vocabulario
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="fechaEmision">
-      <h3>fecha emisión<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision</p>
-      <div class="comment">
-         <span class="markdown">Date on which the securities are issued.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
-      </dl>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Emision"
-                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision">Issuance</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
             </dd>
          </dl>
       </div>
@@ -1118,6 +1098,37 @@ This section provides details for each class and property defined by Vocabulario
          </dl>
       </div>
    </div>
+   <div class="entity" id="fechaEmision">
+      <h3>issuance date<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision</p>
+      <div class="comment">
+         <span class="markdown">Date on which the securities are issued.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Emision"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision">Issuance</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="deudaEmisiones">
       <h3>issuance debt<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1319,9 +1330,7 @@ This section provides details for each class and property defined by Vocabulario
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#moneda"
-                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#moneda">currency</a>
-               <sup class="type-dp" title="data property">dp</sup>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</span>
             </dd>
             <dt>has sub-properties</dt>
             <dd>
@@ -1393,6 +1402,37 @@ This section provides details for each class and property defined by Vocabulario
          </dl>
       </div>
    </div>
+   <div class="entity" id="importeAmortizacion">
+      <h3>repayment amount<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAmortizacion</p>
+      <div class="comment">
+         <span class="markdown">Amount of the debt that is paid on a certain date.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Amortizacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">Repayment</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="fechaAmortizacion">
       <h3>repayment date<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1418,43 +1458,12 @@ This section provides details for each class and property defined by Vocabulario
             <dt>has domain</dt>
             <dd>
                <a href="#Amortizacion"
-                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">amortizacion</a>
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">Repayment</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#date">date</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="importeAmortizacion">
-      <h3>repaymnent amount<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAmortizacion</p>
-      <div class="comment">
-         <span class="markdown">Amount of the debt that is paid on a certain date.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
-      </dl>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Amortizacion"
-                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">amortizacion</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#float">float</span>
             </dd>
          </dl>
       </div>

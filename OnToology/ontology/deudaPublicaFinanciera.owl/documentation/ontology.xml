@@ -218,7 +218,7 @@
         <rdfs:comment xml:lang="en">Entity that grants the loan.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">entidad prestamista</rdfs:label>
-        <rdfs:label xml:lang="es">lender entity</rdfs:label>
+        <rdfs:label xml:lang="en">lender entity</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -378,7 +378,7 @@
         <rdfs:comment xml:lang="en">Nominal amount per security.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">amount per security</rdfs:label>
-        <rdfs:label xml:lang="de">cuantía por título</rdfs:label>
+        <rdfs:label xml:lang="es">cuantía por título</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -472,8 +472,8 @@
         <rdfs:comment xml:lang="es">La deuda elaborada según la metodología del Protocolo de Deficit Excesivo (PDE), conforme a las definiciones del Sistema Europeo de Cuentas SEC 2010, es la deuda homogénea y comparable con el resto de las administraciones públicas.</rdfs:comment>
         <rdfs:comment>The debt information prepared according to the methodology of the Excessive Deficit Protocol (PDE), according to the definitions of the European System of Accounts SEC 2010, is the homogeneous debt and comparable with the rest of the public administrations.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="es">endeudamiento protocolomdéficit excesivo</rdfs:label>
-        <rdfs:label xml:lang="en">excesive deficit protocol debt</rdfs:label>
+        <rdfs:label xml:lang="es">endeudamiento protocolo déficit excesivo</rdfs:label>
+        <rdfs:label xml:lang="en">excessive deficit protocol debt</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -506,7 +506,7 @@
         <rdfs:comment xml:lang="es">Fecha en la que se realiza la emisión de los títulos.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">fecha emisión</rdfs:label>
-        <rdfs:label>issuance date</rdfs:label>
+        <rdfs:label xml:lang="en">issuance date</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -570,7 +570,7 @@
         <rdfs:comment xml:lang="es">Importe total de un instrumento financiero</rdfs:comment>
         <rdfs:comment xml:lang="en">Total amount of a financial instrument</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="es">amount</rdfs:label>
+        <rdfs:label xml:lang="en">amount</rdfs:label>
         <rdfs:label xml:lang="es">importe</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -587,7 +587,7 @@
         <rdfs:comment xml:lang="es">Importe de la deuda que se paga en determinada fecha.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">importe amortización</rdfs:label>
-        <rdfs:label xml:lang="en">repaymnent amount</rdfs:label>
+        <rdfs:label xml:lang="en">repayment amount</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -785,7 +785,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation">
-        <rdfs:subPropertyOf rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#moneda"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
 
@@ -829,8 +829,8 @@
         <rdfs:comment xml:lang="es">Amortización</rdfs:comment>
         <rdfs:comment xml:lang="en">Date and amount of repayment of the debt included in the contract signed between the parties</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes</rdfs:comment>
-        <rdfs:comment xml:lang="en">Repayment</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">Repayment</rdfs:label>
     </owl:Class>
     
 
@@ -852,6 +852,7 @@
 
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision">
+        <rdfs:subClassOf rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero"/>
         <rdfs:comment xml:lang="es">Operación por la que se crea y pone en circulación un título-valor.</rdfs:comment>
         <rdfs:comment xml:lang="en">Operation by which a security is created and put into circulation.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
@@ -884,6 +885,7 @@
 
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo">
+        <rdfs:subClassOf rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista"/>
