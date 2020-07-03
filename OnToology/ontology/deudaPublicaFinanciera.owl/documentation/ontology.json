@@ -163,12 +163,13 @@
   }, {
     "@language" : "es",
     "@value" : "Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes"
-  }, {
-    "@language" : "en",
-    "@value" : "Repayment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Repayment"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual",
@@ -209,6 +210,9 @@
   }, {
     "@language" : "en",
     "@value" : "Issuance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero",
@@ -254,6 +258,8 @@
     "@value" : "Préstamo"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero"
+  }, {
     "@id" : "_:genid6"
   }, {
     "@id" : "_:genid7"
@@ -356,7 +362,7 @@
     "@language" : "en",
     "@value" : "amount per security"
   }, {
-    "@language" : "de",
+    "@language" : "es",
     "@value" : "cuantía por título"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -505,10 +511,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "endeudamiento protocolomdéficit excesivo"
+    "@value" : "endeudamiento protocolo déficit excesivo"
   }, {
     "@language" : "en",
-    "@value" : "excesive deficit protocol debt"
+    "@value" : "excessive deficit protocol debt"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -533,7 +539,7 @@
     "@language" : "es",
     "@value" : "entidad prestamista"
   }, {
-    "@language" : "es",
+    "@language" : "en",
     "@value" : "lender entity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -588,6 +594,7 @@
     "@language" : "es",
     "@value" : "fecha emisión"
   }, {
+    "@language" : "en",
     "@value" : "issuance date"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
@@ -691,7 +698,7 @@
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
+    "@language" : "en",
     "@value" : "amount"
   }, {
     "@language" : "es",
@@ -721,7 +728,7 @@
     "@value" : "importe amortización"
   }, {
     "@language" : "en",
-    "@value" : "repaymnent amount"
+    "@value" : "repayment amount"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -1201,7 +1208,7 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#notation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#moneda"
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
   } ]
 }, {
   "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote",
