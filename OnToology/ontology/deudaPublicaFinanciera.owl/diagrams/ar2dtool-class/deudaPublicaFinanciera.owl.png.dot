@@ -1,22 +1,22 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "esdeufin:CapitalVivo" "esdeufin:DeudaAnual" "esdeufin:Emision" "-5e8647ed:1738089bb31:-7ff8" "esdeufin:Amortizacion" "esdeufin:InstrumentoFinanciacion" "skos:ConceptScheme" "esdeufin:CargaFinanciera" "esdeufin:Prestamo" "http://xmlns.com/foaf/0.1/Organization" "skos:Concept" "http://www.w3.org/ns/org#Organization" "-5e8647ed:1738089bb31:-7ffc" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "esdeufin:CapitalVivo" "esdeufin:DeudaAnual" "esdeufin:Emision" "esdeufin:Amortizacion" "esdeufin:InstrumentoFinanciacion" "skos:ConceptScheme" "esdeufin:CargaFinanciera" "esdeufin:Prestamo" "http://xmlns.com/foaf/0.1/Organization" "skos:Concept" "http://www.w3.org/ns/org#Organization" "-33b2dd82:17380df0bb8:-7ffc" "-33b2dd82:17380df0bb8:-7ff8" ; /*classes style*/
 	"terms:date" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
-	"NULL" -> "-5e8647ed:1738089bb31:-7ff7" [ label = "owl:intersectionOf" ];
-	"NULL" -> "-5e8647ed:1738089bb31:-7ff5" [ label = "rdf:rest" ];
 	"NULL" -> "esdeufin:tipoPrestamo" [ label = "owl:onProperty" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo" [ label = "owl:hasValue" ];
+	"NULL" -> "-33b2dd82:17380df0bb8:-7ff5" [ label = "rdf:rest" ];
+	"NULL" -> "-33b2dd82:17380df0bb8:-7ff7" [ label = "owl:intersectionOf" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto" [ label = "owl:hasValue" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
 	"NULL" -> "esdeufin:entidadPrestamista" [ label = "owl:onProperty" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
 	"NULL" -> "skos:Concept" [ label = "owl:someValuesFrom" ];
 	"NULL" -> "http://www.w3.org/ns/org#Organization" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "-5e8647ed:1738089bb31:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "-33b2dd82:17380df0bb8:-7ffb" [ label = "owl:intersectionOf" ];
 	"NULL" -> "esdeufin:amortizacion" [ label = "owl:onProperty" ];
 	"NULL" -> "esdeufin:Amortizacion" [ label = "owl:someValuesFrom" ];
-	"NULL" -> "-5e8647ed:1738089bb31:-7ffb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-33b2dd82:17380df0bb8:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "skos:inScheme" [ label = "owl:onProperty" ];
 	"http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" -> "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera/1.0.0" [ label = "owl:versionIRI" ];
 	"skos:Concept" -> "skos:ConceptScheme" [ label = "owl:disjointWith" ];
@@ -30,7 +30,7 @@ node [shape = rectangle, color="orange"]; "esdeufin:CapitalVivo" "esdeufin:Deuda
 	"esdeufin:Emision" -> "xsd:gMonthDay" [ label = "esdeufin:mesDiaPago" ];
 	"owl:Thing" -> "xsd:date" [ label = "terms:date" ];
 	"esdeufin:InstrumentoFinanciacion" -> "xsd:float" [ label = "esdeufin:margenMaximo" ];
-	"esdeufin:CargaFinanciera" -> "-5e8647ed:1738089bb31:-7ff8" [ label = "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto" ];
+	"esdeufin:CargaFinanciera" -> "-33b2dd82:17380df0bb8:-7ff8" [ label = "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto" ];
 	"esdeufin:InstrumentoFinanciacion" -> "xsd:string" [ label = "esdeufin:codISIN" ];
 	"esdeufin:Prestamo" -> "xsd:date" [ label = "esdeufin:fechaVencimiento" ];
 	"esdeufin:InstrumentoFinanciacion" -> "xsd:float" [ label = "esdeufin:tasaFija" ];
@@ -48,7 +48,7 @@ node [shape = rectangle, color="orange"]; "esdeufin:CapitalVivo" "esdeufin:Deuda
 	"esdeufin:Emision" -> "xsd:duration" [ label = "esdeufin:duraci?n" ];
 	"esdeufin:Emision" -> "xsd:float" [ label = "esdeufin:cuantiaPorTitulo" ];
 	"esdeufin:Prestamo" -> "xsd:duration" [ label = "esdeufin:plazo" ];
-	"esdeufin:Prestamo" -> "-5e8647ed:1738089bb31:-7ffc" [ label = "esdeufin:tipoPrestamo" ];
+	"esdeufin:Prestamo" -> "-33b2dd82:17380df0bb8:-7ffc" [ label = "esdeufin:tipoPrestamo" ];
 	"esdeufin:Prestamo" -> "xsd:date" [ label = "esdeufin:fechaInicio" ];
 	"owl:Thing" -> "xsd:gYear" [ label = "esdeufin:anioFiscal" ];
 	"owl:Thing" -> "xsd:float" [ label = "esdeufin:importe" ];

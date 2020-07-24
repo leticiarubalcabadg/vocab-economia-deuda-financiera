@@ -217,9 +217,6 @@
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Amortización"
-  }, {
     "@language" : "en",
     "@value" : "Date and amount of repayment of the debt included in the contract signed between the parties"
   }, {
@@ -230,6 +227,9 @@
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Amortización"
+  }, {
     "@language" : "en",
     "@value" : "Repayment"
   } ]
@@ -1023,8 +1023,26 @@
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It relates the financial burden to the concepts of financial liabilities or financial expenses of the economic expense classification of the budget."
+  }, {
+    "@language" : "es",
+    "@value" : "Relaciona la carga financiera con los conceptos de pasivos financieros o gastos financieros de la clasificación económica de gasto del presupuesto."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@language" : "en",
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "clasificación económica gasto"
+  }, {
+    "@language" : "en",
+    "@value" : "economic expense classification"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid5"

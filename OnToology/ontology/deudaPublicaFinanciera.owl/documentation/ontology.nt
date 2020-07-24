@@ -186,6 +186,11 @@ _:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/s
 _:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates the financial burden to the concepts of financial liabilities or financial expenses of the economic expense classification of the budget."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona la carga financiera con los conceptos de pasivos financieros o gastos financieros de la clasificación económica de gasto del presupuesto."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#label> "clasificación económica gasto"@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#label> "economic expense classification"@en .
 # 
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -491,10 +496,10 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Amortización"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Date and amount of repayment of the debt included in the contract signed between the parties"@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/2000/01/rdf-schema#label> "Amortización"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/2000/01/rdf-schema#label> "Repayment"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo
