@@ -1,28 +1,25 @@
-<h2 id="desc" class="list">Vocabulario para la representación de la información de la Deuda Pública Financiera como indicador esencial de las cuentas públicas de un ayuntamiento: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<h2 id="desc" class="list">Vocabulario para la representación de la información de la Deuda Pública Financiera de un ayuntamiento: Descripci&oacute;n <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
 <span class="markdown">La Figura 1 muestra las clases y propiedades del vocabulario que representa la Deuda Pública Financiera como indicador esencial de las cuentas públicas de un ayuntamiento:</span>
 <center><img src="resources/images/modeloConceptual.png"><figcaption>Figura 1. - Modelo conceptual para la representación de la información de la deuda pública financiera</figcaption>
 </center>
     <br>
   <span class="markdown">
-En este vocabulario se tiene una clase que representa la deuda publica financiera anual [esdeufin:DeudaAnual](#DeudaAnual). Las propiedades se refieren al año fiscal y a los totales de deuda por instrumento de financiación (préstamos o emisiones) y por tipo de interés (fijo o variable). De esta manera se puede representar la deuda de varios años fiscales y así conocer la evolución de la deuda de un ayuntamiento.
+En este vocabulario se tiene una clase que representa la deuda publica financiera anual [esdeufin:DeudaAnual](#DeudaAnual). Las propiedades se refieren al año fiscal y al total de la deuda por protocolo de dédicit excesivo (PDE). De esta manera se puede representar la deuda de varios años fiscales y así conocer la evolución de la deuda de un ayuntamiento.
       
-La deuda de un año fiscal se relaciona con uno o más [esdeufin:Instrumento Financiacion](#InstrumentoFinanciacion] a través de la propiedad [esdeufin:instrumentoFinanciacion](#instrumentoFinanciacion). Un instrumento de financiación tiene propiedades tales como el código, el tipo de interés, la tasa si el interés es fijo y la referencia y el margen máximo si el interés es variable. Un instrumento de financiación puede ser un [esdeufin:Prestamo](#Prestamo) o una [esdeufin:Emision](#Emision). Un préstamo es otorgado [esdeufin:entidadPrestamista](#entidadPrestamista) por una entidad prestamista que se representa utilizando la clase [org:Organization](http://www.w3.org/ns/org#Organization) de la ontología [Organization](https://www.w3.org/TR/vocab-org/). El préstamo puede ser de un cierto [esdeufin:tipoPrestamo](#tipoPrestamo) tal como bilateral, sindicado, etc y se representa mediante una taxonomía SKOS de "tipo-prestamo". La entidad prestamista puede ser de un cierto tipo tales como entidad financiera, diputación, etc. Para ello se ha reusado la propiedad [org:classification](http://www.w3.org/ns/org#Organization) de la ontología de organizaciones, la cual tiene como rango una taxonomia SKOS "tipo-entidad-prestamista". Un instrumento de financiación se relaciona a través de la propiedad [espresup:amortizacion](#amortizacion) con su calendario de amortizaciones que indica la fecha e importe de cada amortización. Por último, para cada instrumento de financiación se realizan pagos [esdeufin:Pago](#Pago) que corresponde mediante la propiedad [esdeufin:conceptoGasto](#conceptoGasto)  a conceptos de pasivos financieros o gastos financieros de la clasificación económica de gasto del presupuesto; esta clasificación ha sido representado mediante un SKOS que se encuentra [publicado](http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto). 
+La deuda de un año fiscal se relaciona con uno o más [esdeufin:Instrumento Financiacion](#InstrumentoFinanciacion] a través de la propiedad [esdeufin:instrumentoFinanciacion](#instrumentoFinanciacion). Un instrumento de financiación tiene propiedades tales como el código, el tipo de interés, la tasa si el interés es fijo y la referencia y el margen máximo si el interés es variable. Un instrumento de financiación puede ser un [esdeufin:Prestamo](#Prestamo) o una [esdeufin:Emision](#Emision). Un préstamo es otorgado [esdeufin:entidadPrestamista](#entidadPrestamista) por una entidad prestamista que se representa utilizando la clase [org:Organization](http://www.w3.org/ns/org#Organization) de la ontología [Organization](https://www.w3.org/TR/vocab-org/). El préstamo puede ser de un cierto [esdeufin:tipoPrestamo](#tipoPrestamo) tal como bilateral, sindicado, etc y se representa mediante una taxonomía SKOS de "tipo-prestamo". La entidad prestamista puede ser de un cierto tipo tal como entidad financiera, diputación, etc. Para ello se ha reusado la propiedad [org:classification](http://www.w3.org/ns/org#Organization) de la ontología de organizaciones, la cual tiene como rango una taxonomia SKOS "tipo-entidad-prestamista". Un instrumento de financiación se relaciona a través de la propiedad [espresup:amortizacion](#amortizacion) con su calendario de amortizaciones que indica la fecha e importe de cada amortización. Un instrumento de financiación tiene un [esdeufin:CapitalVivo](#capitalVivo) que indica a una fecha determinada la cantidad por amortizar. Por último, cada instrumento de financiación tiene una carga financiera [esdeufin:CargaFinanciera](#CargaFinanciera) que a su vez corresponde mediante la propiedad [esdeufin:clasificacionEconomicaGasto](#conceptoGasto)  a ciertos conceptos de pasivos financieros o gastos financieros de la clasificación económica de gasto del presupuesto; esta clasificación ha sido representado mediante un SKOS que se encuentra publicado como una clasificación [economica-gasto](http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto). 
 </span>
 
 <h3>3.1 Ejemplos de uso<span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h3>
   <span class="markdown">
   Con la finalidad de facilitar la comprensión del uso de algunas clases y propiedades de este vocabulario se proporcionarán a continuación algunos ejemplos.
       
-  El primer ejemplo se refiere a la deuda anual de un ayuntamiento. Se representa el año fiscal, 2019, luego el endeudamiento por protocolo de déficit excesivo (PDE) de 2.232.568.750 euros con un total de préstamos de 1.479.046.462 euros, un total de emisiones de 700.000.000 euros. La deuda de ese año se corresponde con aquellos instrumentos de financiación con capital vivo, en este caso se muestra la relación con un préstamo y una emisión, las cuales se detallan más abajo.
+  El primer ejemplo se refiere a la deuda anual de un ayuntamiento. Se representa el año fiscal, 2019, luego el endeudamiento por protocolo de déficit excesivo (PDE) de 2.232.568.750 euros La deuda de ese año se corresponde con aquellos instrumentos de financiación con capital vivo, en este caso se muestra la relación con un préstamo y una emisión, las cuales se detallan más abajo.
 </span>
 <pre>
 &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/deuda/2019&gt; 
         a esdeufin:DeudaAnual;
         esdeufin:anioFiscal "2019"^^xsd:gYear ;
         esdeufin:endeudamientoPDE "2232568750.00"^^xsd:float ;
-        esdeufin:totalPrestamos "1479046462.00"^^xsd:float ;
-        esdeufin:totalEmisiones "700000000.00"^^xsd:float ;
-        esdeufin:totalAmortizaciones "513836706.00"^^xsd:float ;
         esdeufin:instrumentoFinanciacion &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/prestamo/es1234567893&gt;;
         esdeufin:instrumentoFinanciacion &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/emision/es0201001148&gt;.
 </pre>
@@ -49,39 +46,44 @@ La deuda de un año fiscal se relaciona con uno o más [esdeufin:Instrumento Fin
         
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/amortizacion/ES1234567893-c1&gt;
         a esdeufin:Amortizacion;
-        esdeufin:fechaAmortizacion "2016-12-14"^^xsd:date ;
-        esdeufin:importeAmortizacion "39000000.00^^xsd:float.
+        dct:date "2016-12-14"^^xsd:date ;
+        esdeufin:importe "39000000.00^^xsd:float.
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/amortizacion/ES1234567893-c2&gt;
         a esdeufin:Amortizacion;
-        esdeufin:fechaAmortizacion "2019-12-14"^^xsd:date ;
-        esdeufin:importeAmortizacion "39000000.00^^xsd:float.
+        dct:date "2019-12-14"^^xsd:date ;
+        esdeufin:importe "39000000.00^^xsd:float.
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/amortizacion/ES1234567893-c3&gt;
         a esdeufin:Amortizacion;
-        esdeufin:fechaAmortizacion "2022-12-14"^^xsd:date ;
-        esdeufin:importeAmortizacion "24000000.00^^xsd:float.
+        dct:date "2022-12-14"^^xsd:date ;
+        esdeufin:importe "24000000.00^^xsd:float.
   </pre>
 <span class="markdown">
-Para este préstamo se realizaron dos pagos durante el 2017, dos de ellos que se detallan a continuación, corresponden al pago de intereses (concepto 310 de la clasificación económica de gasto). Además se tiene que el capital vivo de este préstamo al 30/6/2020 es de 24.000.000 de euros.
+Para este préstamo se ejemplifica la carga financiera del año 2017 con dos pagos realizados ese año, corresponden al pago de intereses (concepto 310 de la clasificación económica de gasto). 
 </span>
 <pre>
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/prestamo/es1234567893&gt; 
-        esdeufin:pago &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/pago/2018-es1234567893-001&gt; ;
-        esdeufin:pago &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/pago/2018-es1234567893-002&gt; ;
+        esdeufin:cargaFinanciera &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/carga-financiera/2018-es1234567893-001&gt; ;
+        esdeufin:cargaFinanciera &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/carga-financiera/2018-es1234567893-002&gt; ;
         esdeufin:capitalVivo &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/capital-vivo/2020-06-30-es1234567893&gt; .
-    &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/pago/2018-es1234567893-001&gt;
+    &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/carga-financiera/2018-es1234567893-001&gt;
         esdeufin:anioFiscal "2017"^xsd:gYear ;
         dct:description "AMORT.VTO.21/06/17 PTM L/P MDEC-I.C.O.(20,77MM)'06 (2017)"^^xsd:string ;
-        esdeufin::fechaPago "2017-06-21"^^xsd:date ;
-        esdeufin:importePago "692332.00"^^xsd:float;
-        esdeufin:conceptoGasto &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/310&gt; .
-    &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/pago/2018-es1234567893-002&gt;
+        dct:date "2017-06-21"^^xsd:date ;
+        esdeufin:importe "692332.00"^^xsd:float;
+        esdeufin:clasificacionEconomicaGasto &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/310&gt; .
+    &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/carga-financiera/2018-es1234567893-002&gt;
         esdeufin:anioFiscal "2017"^xsd:gYear ;
         dct:description "AMORT.VTO.21/12/17 PTM L/P MDEC-I.C.O.(20,77MM)'06 (2017)"^^xsd:string ;
-        esdeufin::fechaPago "2017-12-21"^^xsd:date ;
-        esdeufin:importePago "692332.00"^^xsd:float.
-        esdeufin:conceptoGasto &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/310&gt; .
+        dct:date "2017-12-21"^^xsd:date ;
+        esdeufin:importe "692332.00"^^xsd:float.
+        esdeufin:clasificacionEconomicaGasto &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/310&gt; .
+</pre>
+<span class="markdown">
+Además se tiene que el capital vivo de este préstamo al 30/6/2020 es de 24.000.000 de euros.
+</span>
+<pre>
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/capital-vivo/2020-06-30-es1234567893&gt; 
-        esdeufin::fechaCapitalVivo "2020-06-30"^^xsd:date ;
+        dct:date "2020-06-30"^^xsd:date ;
         esdeufin:capitalVivo "24000000.00"^^xsd:float.       
 </pre>
 <span class="markdown">
@@ -106,19 +108,16 @@ A continuación se presenta un ejemplo de una emisión en donde el código ISIN 
         esdeufin:tasaFija "4.55"^^xsd:float ;
         esdeufin:numeroTitulos "3000"^^xsd:integer ;
         esdeufin:cuantiaPorTitulo "100000"^^xsd:float ;
-        esdeufin:importeAnual "4550"^^xsd:float ;
-        esdeufin:diaMesPago "06-16"^^xsd:gMonthDay;
+        esdeufin:importeAnual "4550.00"^^xsd:float ;
+        esdeufin:mesDiaPago "06-16"^^xsd:gMonthDay;
         esdeufin:precioEmision "99.81"^^xsd:float ;
         esdeufin:precioReembolso "100.00"^^xsd:float ;
         esdeufin:duracion "P30Y"^^xsd:duration ;
-        esdeufin:amortizacion &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/amortizacion/ES0201001148-c1&gt;;
-        espresup:clasificacionOrganica &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/organica/madrid/002&gt; ;;
-        espresup:clasificacionPrograma &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/programa-gasto/madrid/23270&gt; ;
-        espresup:clasificacionEconomicaGasto &lt;http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/economica-gasto/madrid/60900&gt; .
+        esdeufin:amortizacion &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/amortizacion/ES0201001148-c1&gt; .
         
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/amortizacion/ES0201001148-c1&gt;
         a esdeufin:Amortizacion;
-        esdeufin:fechaAmortizacion "2036-06-16"^^xsd:date ;
-        esdeufin:importeAmortizacion "300000000.00^^xsd:float.
+        dct:date "2036-06-16"^^xsd:date ;
+        esdeufin:importe "300000000.00^^xsd:float.
     </pre>
     
