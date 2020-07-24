@@ -20,8 +20,8 @@
                                                                           <http://purl.org/dc/elements/1.1/creator> "Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)" ,
                                                                                                                     "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)" ;
                                                                           <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"@es ;
-                                                                          <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de la información de la Deuda Pública Financiera tomando en cuenta que la deuda pública es uno de los indicadores esenciales de las cuentas públicas para entender el estado de la situación económica de un ayuntamiento."@es ,
-                                                                                                                  "Vocabulary for the representation of Financial  Public Debt taking into account that public debt is one of the essential indicators of public accountability and to understand the state of the economic situation of a city council"@en ;
+                                                                          <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de la información de la Deuda Pública Financiera de los ayuntamientos"@es ,
+                                                                                                                  "Vocabulary for the representation of the Financial  Public Debt of a municipality"@en ;
                                                                           <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
                                                                           <http://purl.org/dc/terms/hasFormat> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera.owl"@es ;
                                                                           <http://purl.org/dc/terms/issued> "2020-05-20"@es ;
@@ -113,13 +113,34 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion
 :amortizacion rdf:type owl:ObjectProperty ;
-              rdfs:domain :InstrumentoFinanciero ;
+              rdfs:domain :InstrumentoFinanciacion ;
               rdfs:range :Amortizacion ;
               rdfs:comment "Relaciona el instrumento financiero con su calendario de amortizaciones."@es ,
                            "Relates the financial instrument to its repayment schedule."@en ;
               rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
               rdfs:label "amortización"@es ,
                          "repayment"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo
+:capitalVivo rdf:type owl:ObjectProperty ;
+             rdfs:domain :InstrumentoFinanciacion ;
+             rdfs:range :CapitalVivo ;
+             rdfs:comment "Relaciona el instrumento de financiación con el importe pendiente de amortizar en una fecha determinada."@es ,
+                          "Relates the financial instrument with the pending amortization on a given date."@en ;
+             rdfs:label "capital vivo"@es ,
+                        "live capital"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera
+:cargaFinanciera rdf:type owl:ObjectProperty ;
+                 rdfs:domain :InstrumentoFinanciacion ;
+                 rdfs:range :CargaFinanciera ;
+                 rdfs:comment "Fiinancial expenses and. financial liabilities held during the fiscal year for a certain financing instrument."@en ,
+                              "Son los gastos financieros y. los pasivos financieros que se tienen durante el año fiscal para un determinado instrumento de financiación."@es ;
+                 rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
+                 rdfs:label "carga financiera"@es ,
+                            "financial burden"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista
@@ -133,32 +154,14 @@ xsd:gYear rdf:type rdfs:Datatype .
                                "lender entity"@en .
 
 
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciero
-:instrumentoFinanciero rdf:type owl:ObjectProperty ;
-                       rdfs:comment "Relaciona la deuda anual con los instrumentos financieros activos durante el año fiscal correspondiente."@es ;
-                       rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-                       rdfs:label "financial instrument"@en ,
-                                  "instrumento financiero"@es .
-
-
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#presupuestoGasto
-:presupuestoGasto rdf:type owl:ObjectProperty ;
-                  rdfs:comment "La carga fnanciera de un instrumento financiero se corresponde con ciertos gastos del presupuesto anual."@es ,
-                               "The financial burden of a financial instrument corresponds to certain expenses of the annual budget."@en ;
-                  rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-                  rdfs:label "expense budget"@en ,
-                             "presupuesto gasto"@es .
-
-
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#presupuestoIngreso
-:presupuestoIngreso rdf:type owl:ObjectProperty ;
-                    rdfs:subPropertyOf owl:topObjectProperty ;
-                    rdfs:comment """El instrumento financiero puede relacionarse con determinados ingresos del presupuesto anual de ingresos
-."""@es ,
-                                 "The financial instrument can be related to a certain income of the annual income budget."@en ;
-                    rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-                    rdfs:label "income budget"@en ,
-                               "presupuesto ingreso"@es .
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion
+:instrumentoFinanciacion rdf:type owl:ObjectProperty ;
+                         rdfs:domain :DeudaAnual ;
+                         rdfs:range :InstrumentoFinanciacion ;
+                         rdfs:comment "Relaciona la deuda anual con los instrumentos financieros activos durante el año fiscal correspondiente."@es ;
+                         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
+                         rdfs:label "financing instrument"@en ,
+                                    "instrumento financiación"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo
@@ -168,7 +171,7 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                                 [ rdf:type owl:Restriction ;
                                                   owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                                  owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/deuda-financiera/tipo-prestamo>
+                                                  owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo>
                                                 ]
                                               ) ;
                            rdf:type owl:Class
@@ -178,6 +181,20 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
               rdfs:label "loan type"@en ,
                          "tipo préstamo"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> rdf:type owl:ObjectProperty ,
+                                                                                                 owl:FunctionalProperty ;
+                                                                                        rdfs:domain :CargaFinanciera ;
+                                                                                        rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
+                                                                                                                          [ rdf:type owl:Restriction ;
+                                                                                                                            owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
+                                                                                                                            owl:hasValue <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto>
+                                                                                                                          ]
+                                                                                                                        ) ;
+                                                                                                     rdf:type owl:Class
+                                                                                                   ] .
 
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
@@ -210,10 +227,29 @@ xsd:gYear rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
+###  http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> rdf:type owl:DatatypeProperty ;
+                                rdfs:subPropertyOf owl:topDataProperty ;
+                                rdf:type owl:FunctionalProperty ;
+                                rdfs:range xsd:date ;
+                                rdfs:comment "A point or period of time associated with an event in the lifecycle of the resource."@en ;
+                                rdfs:isDefinedBy "http://purl.org/dc/terms/" ;
+                                rdfs:label "date"@en ,
+                                           "fecha"@es .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:DatatypeProperty ;
+                                       rdfs:comment "An account of the resource."@en ,
+                                                    "Una descripción del recurso."@es ;
+                                       rdfs:isDefinedBy "http://purl.org/dc/terms/" ;
+                                       rdfs:label "descripción"@es ,
+                                                  "description"@en .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal
 :anioFiscal rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
-            rdfs:domain :DeudaAnual ;
             rdfs:range xsd:gYear ;
             rdfs:comment "Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre."@es ,
                          "Fiscal year. Period of 12 months between the 1st of January and the 31st of December."@en ;
@@ -225,7 +261,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN
 :codISIN rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
-         rdfs:domain :InstrumentoFinanciero ;
+         rdfs:domain :InstrumentoFinanciacion ;
          rdfs:range xsd:string ;
          rdfs:comment "El código ISIN (International Securities Identification Number) está desarrollado en el estándar internacional ISO 6166 Es un código que identifica unívocamente un instrumento financiero a nivel internacional."@es ,
                       "The ISIN code (International Securities Identification Number) is developed in the international standard ISO 6166. It is a code that uniquely identifies a financial instrument at an international level."@en ;
@@ -244,53 +280,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                   rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
                   rdfs:label "amount per security"@en ,
                              "cuantía por título"@es .
-
-
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaEmisiones
-:deudaEmisiones rdf:type owl:DatatypeProperty ;
-                rdfs:subPropertyOf owl:topDataProperty ;
-                rdf:type owl:FunctionalProperty ;
-                rdfs:domain :DeudaAnual ;
-                rdfs:range xsd:float ;
-                rdfs:comment "Amount of debt due to emissions at the end of the fiscal year."@en ,
-                             "Importe de la deuda por emisiones al finalizar el año fiscal."@es ;
-                rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-                rdfs:label "deuda emisiones"@es ,
-                           "issuance debt"@en .
-
-
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaInteresFijo
-:deudaInteresFijo rdf:type owl:DatatypeProperty ,
-                           owl:FunctionalProperty ;
-                  rdfs:domain :DeudaAnual ;
-                  rdfs:range xsd:float ;
-                  rdfs:comment "Amount of debt for financial instruments at fixed interest at the end of the fiscal year."@en ,
-                               "Importe de la deuda por instrumentos financieros a interés fijo al finalizar el año fiscal."@es ;
-                  rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-                  rdfs:label "deuda interés fijo"@es ,
-                             "fixed interest debt"@en .
-
-
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaInteresVariable
-:deudaInteresVariable rdf:type owl:DatatypeProperty ,
-                               owl:FunctionalProperty ;
-                      rdfs:comment "Amount of debt for financial instruments at variable interest at the end of the fiscal year."@en ,
-                                   "Importe de la deuda por instrumentos financieros a interés variable al finalizar el año fiscal."@en ;
-                      rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-                      rdfs:label "deuda interés variable"@es ,
-                                 "variable interest debt"@en .
-
-
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaPrestamos
-:deudaPrestamos rdf:type owl:DatatypeProperty ,
-                         owl:FunctionalProperty ;
-                rdfs:domain :DeudaAnual ;
-                rdfs:range xsd:float ;
-                rdfs:comment "Importe de la deuda por préstamos al finalizar el año fiscal."@es ,
-                             "Amount of loan debt at the end of the fiscal year." ;
-                rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-                rdfs:label "deuda préstamos"@es ,
-                           "loan debt"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración
@@ -315,31 +304,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                   rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
                   rdfs:label "endeudamiento protocolo déficit excesivo"@es ,
                              "excessive deficit protocol debt"@en .
-
-
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaAmortizacion
-:fechaAmortizacion rdf:type owl:DatatypeProperty ;
-                   rdfs:subPropertyOf owl:topDataProperty ;
-                   rdf:type owl:FunctionalProperty ;
-                   rdfs:domain :Amortizacion ;
-                   rdfs:range xsd:date ;
-                   rdfs:comment "Date in which the total or part of the debt that has been contracted through the financial instrument is amortized."@en ,
-                                "Fecha en la que se amortiza el total o parte de la deuda que se ha contraido a través del instrumento financiero."@es ;
-                   rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-                   rdfs:label "fecha amortización"@es ,
-                              "repayment date"@en .
-
-
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision
-:fechaEmision rdf:type owl:DatatypeProperty ,
-                       owl:FunctionalProperty ;
-              rdfs:domain :Emision ;
-              rdfs:range xsd:date ;
-              rdfs:comment "Date on which the securities are issued."@en ,
-                           "Fecha en la que se realiza la emisión de los títulos."@es ;
-              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-              rdfs:label "fecha emisión"@es ,
-                         "issuance date"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion
@@ -382,25 +346,10 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe
 :importe rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
-         rdfs:domain :InstrumentoFinanciero ;
          rdfs:range xsd:float ;
-         rdfs:comment "Importe total de un instrumento financiero"@es ,
-                      "Total amount of a financial instrument"@en ;
          rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
          rdfs:label "amount"@en ,
                     "importe"@es .
-
-
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAmortizacion
-:importeAmortizacion rdf:type owl:DatatypeProperty ,
-                              owl:FunctionalProperty ;
-                     rdfs:domain :Amortizacion ;
-                     rdfs:range xsd:float ;
-                     rdfs:comment "Amount of the debt that is paid on a certain date."@en ,
-                                  "Importe de la deuda que se paga en determinada fecha."@es ;
-                     rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-                     rdfs:label "importe amortización"@es ,
-                                "repayment amount"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAnual
@@ -419,7 +368,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo
 :margenMaximo rdf:type owl:DatatypeProperty ,
                        owl:FunctionalProperty ;
-              rdfs:domain :InstrumentoFinanciero ;
+              rdfs:domain :InstrumentoFinanciacion ;
               rdfs:range xsd:float ;
               rdfs:comment "Diferencial máximo aplicable a un interés de tipo variable."@es ,
                            "Maximum differential applicable to a variable interest rate." ;
@@ -503,7 +452,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#referencia
 :referencia rdf:type owl:DatatypeProperty ,
                      owl:FunctionalProperty ;
-            rdfs:domain :InstrumentoFinanciero ;
+            rdfs:domain :InstrumentoFinanciacion ;
             rdfs:range xsd:string ;
             rdfs:comment "Reference interest rate that may vary over time."@en ,
                          "Tipo de interés de referencia que puede variar en el tiempo."@es ;
@@ -515,7 +464,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tasaFija
 :tasaFija rdf:type owl:DatatypeProperty ,
                    owl:FunctionalProperty ;
-          rdfs:domain :InstrumentoFinanciero ;
+          rdfs:domain :InstrumentoFinanciacion ;
           rdfs:range xsd:float ;
           rdfs:comment "Fixed interest rate of a financial instrument"@en ,
                        "Porcentaje de interés fijo de un instrumento de financiación"@es ;
@@ -532,16 +481,6 @@ xsd:gYear rdf:type rdfs:Datatype .
              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
              rdfs:label "interest type"@en ,
                         "tipo de interés"@es .
-
-
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#totalAmortizaciones
-:totalAmortizaciones rdf:type owl:DatatypeProperty ,
-                              owl:FunctionalProperty ;
-                     rdfs:comment "Importe total de amortizaciones realizadas en el año fiscal."@es ,
-                                  "Total amount of repayment made in the fiscal year."@en ;
-                     rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-                     rdfs:label "total amortizaciones"@es ,
-                                "total repayment"@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#notation
@@ -565,6 +504,15 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                  "tiene identificador"@es .
 
 
+###  http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> rdf:type owl:DatatypeProperty ;
+                                 rdfs:comment "A name for some thing."@en ,
+                                              "El nombre de algo."@es ;
+                                 rdfs:isDefinedBy "http://xmlns.com/foaf/0.1/" ;
+                                 rdfs:label "name"@en ,
+                                            "nombre"@es .
+
+
 #################################################################
 #    Classes
 #################################################################
@@ -578,6 +526,24 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:label "Repayment"@en .
 
 
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo
+:CapitalVivo rdf:type owl:Class ;
+             rdfs:comment "Amount of the financial instrument pending amortization on a given date."@en ,
+                          "Es el importe del instrumento financiero pendiente de amortizar en una fecha determinada."@es ;
+             rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
+             rdfs:label "Capital Vivo"@es ,
+                        "Principal"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera
+:CargaFinanciera rdf:type owl:Class ;
+                 rdfs:comment "Fiinancial expenses and. financial liabilities held during the fiscal year"@en ,
+                              "Son los gastos financieros y. los pasivos financieros que se tienen durante el año fiscal."@es ;
+                 rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
+                 rdfs:label "Carga financiera"@es ,
+                            "Financial burden"@en .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual
 :DeudaAnual rdf:type owl:Class ;
             rdfs:comment "La deuda elaborada según la metodología del Protocolo de Deficit Excesivo (PDE), conforme a las definiciones del Sistema Europeo de Cuentas SEC 2010, es la deuda homogénea y comparable con el resto de la Administración Pública"@es ,
@@ -589,7 +555,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision
 :Emision rdf:type owl:Class ;
-         rdfs:subClassOf :InstrumentoFinanciero ;
+         rdfs:subClassOf :InstrumentoFinanciacion ;
          rdfs:comment "Operación por la que se crea y pone en circulación un título-valor."@es ,
                       "Operation by which a security is created and put into circulation."@en ;
          rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
@@ -597,22 +563,22 @@ xsd:gYear rdf:type rdfs:Datatype .
                     "Issuance"@en .
 
 
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero
-:InstrumentoFinanciero rdf:type owl:Class ;
-                       rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                         owl:onProperty :amortizacion ;
-                                         owl:someValuesFrom :Amortizacion
-                                       ] ;
-                       rdfs:comment "Contract that generates, at the same time, a financial asset for one of the parties and a financial liability for the other. In a city council it refers to  loans, credits, bonds, financial leasing operations, etc."@en ,
-                                    "Contrato que genera, al mismo tiempo, un activo financiero para una de las partes y un pasivo financiero para la otra. En un ayuntamiento se refiere a un préstamos, créditos, emisiones, operaciones de arrendamiento financiero, etc."@es ;
-                       rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-                       rdfs:label "Financial instrument"@en ,
-                                  "Instrumento financiero"@es .
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion
+:InstrumentoFinanciacion rdf:type owl:Class ;
+                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                           owl:onProperty :amortizacion ;
+                                           owl:someValuesFrom :Amortizacion
+                                         ] ;
+                         rdfs:comment "Contract that generates, at the same time, a financial asset for one of the parties and a financial liability for the other. In a city council it refers to  loans, credits, bonds, financial leasing operations, etc."@en ,
+                                      "Contrato que genera, al mismo tiempo, un activo financiero para una de las partes y un pasivo financiero para la otra. En un ayuntamiento se refiere a un préstamos, créditos, emisiones, operaciones de arrendamiento financiero, etc."@es ;
+                         rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
+                         rdfs:label "Financing instrument"@en ,
+                                    "Instrumento financiación"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo
 :Prestamo rdf:type owl:Class ;
-          rdfs:subClassOf :InstrumentoFinanciero ,
+          rdfs:subClassOf :InstrumentoFinanciacion ,
                           [ rdf:type owl:Restriction ;
                             owl:onProperty :entidadPrestamista ;
                             owl:someValuesFrom <http://www.w3.org/ns/org#Organization>
@@ -673,18 +639,19 @@ xsd:gYear rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/tipo-entidad-prestamista
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/tipo-entidad-prestamista> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista
+<http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista> rdf:type owl:NamedIndividual ,
+                                                                                                                   <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/deuda-financiera/tipo-prestamo
-<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/deuda-financiera/tipo-prestamo> rdf:type owl:NamedIndividual ,
-                                                                                                <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
+###  http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo
+<http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo> rdf:type owl:NamedIndividual ,
+                                                                                                        <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  https://w3id.org/transmodel/kos/organisations/organisation-type
-<https://w3id.org/transmodel/kos/organisations/organisation-type> rdf:type owl:NamedIndividual .
+###  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto
+<http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto> rdf:type owl:NamedIndividual ,
+                                                                                                           <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 
 
-###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
+###  Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
