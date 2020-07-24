@@ -309,6 +309,11 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
+        <rdfs:comment xml:lang="en">It relates the financial burden to the concepts of financial liabilities or financial expenses of the economic expense classification of the budget.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Relaciona la carga financiera con los conceptos de pasivos financieros o gastos financieros de la clasificación económica de gasto del presupuesto.</rdfs:comment>
+        <rdfs:isDefinedBy xml:lang="en">http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="es">clasificación económica gasto</rdfs:label>
+        <rdfs:label xml:lang="en">economic expense classification</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -761,10 +766,10 @@
 
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">
-        <rdfs:comment xml:lang="es">Amortización</rdfs:comment>
         <rdfs:comment xml:lang="en">Date and amount of repayment of the debt included in the contract signed between the parties</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="es">Amortización</rdfs:label>
         <rdfs:label xml:lang="en">Repayment</rdfs:label>
     </owl:Class>
     

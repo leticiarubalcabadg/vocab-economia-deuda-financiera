@@ -160,7 +160,7 @@ This section provides details for each class and property defined by Vocabulario
          <dt>is in domain of</dt>
          <dd>
             <a href="#http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">clasificacion economica gasto</a>
+               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">economic expense classification</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -399,13 +399,11 @@ This section provides details for each class and property defined by Vocabulario
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto"
-            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">
-            <span>clasificacion economica gasto</span>
-         </a>
+         <a href="#http://www.w3.org/ns/org#classification" title="http://www.w3.org/ns/org#classification">classification</a>
       </li>
       <li>
-         <a href="#http://www.w3.org/ns/org#classification" title="http://www.w3.org/ns/org#classification">classification</a>
+         <a href="#http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto"
+            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">economic expense classification</a>
       </li>
       <li>
          <a href="#cargaFinanciera"
@@ -435,35 +433,6 @@ This section provides details for each class and property defined by Vocabulario
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion">repayment</a>
       </li>
    </ul>
-   <div class="entity" id="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">
-      <h3>clasificacion economica gasto<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto</p>
-      <div class="description">
-         <p>
-            <strong>has characteristics:</strong> functional</p>
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#CargaFinanciera"
-                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera">Financial burden</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">and</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
-               <sup class="type-op" title="object property">op</sup> 
-               <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto"
-                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">clasificacion economica gasto</a>)</dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="http://www.w3.org/ns/org#classification">
       <h3>classification<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -492,6 +461,42 @@ This section provides details for each class and property defined by Vocabulario
                <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">
+      <h3>economic expense classification<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto</p>
+      <div class="comment">
+         <span class="markdown">It relates the financial burden to the concepts of financial liabilities or financial expenses of the economic expense classification of the budget.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>has characteristics:</strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CargaFinanciera"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera">Financial burden</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">and</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
+               <sup class="type-op" title="object property">op</sup> 
+               <span class="logic">value</span> 
+               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto"
+                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">clasificacion economica gasto</a>)</dd>
          </dl>
       </div>
    </div>

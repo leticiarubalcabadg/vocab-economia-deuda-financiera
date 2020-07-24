@@ -194,7 +194,12 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                                                                                           ]
                                                                                                                         ) ;
                                                                                                      rdf:type owl:Class
-                                                                                                   ] .
+                                                                                                   ] ;
+                                                                                        rdfs:comment "It relates the financial burden to the concepts of financial liabilities or financial expenses of the economic expense classification of the budget."@en ,
+                                                                                                     "Relaciona la carga financiera con los conceptos de pasivos financieros o gastos financieros de la clasificación económica de gasto del presupuesto."@es ;
+                                                                                        rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"@en ;
+                                                                                        rdfs:label "clasificación económica gasto"@es ,
+                                                                                                   "economic expense classification"@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#inScheme
@@ -519,11 +524,11 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion
 :Amortizacion rdf:type owl:Class ;
-              rdfs:comment "Amortización"@es ,
-                           "Date and amount of repayment of the debt included in the contract signed between the parties"@en ,
+              rdfs:comment "Date and amount of repayment of the debt included in the contract signed between the parties"@en ,
                            "Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes"@es ;
               rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-              rdfs:label "Repayment"@en .
+              rdfs:label "Amortización"@es ,
+                         "Repayment"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo
