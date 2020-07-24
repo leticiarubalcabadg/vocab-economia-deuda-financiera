@@ -15,8 +15,12 @@ This ontology has the following classes and properties.</span>
          title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
    </li>
    <li>
-      <a href="#InstrumentoFinanciero"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciero">Financial instrument</a>
+      <a href="#CargaFinanciera"
+         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera">Financial burden</a>
+   </li>
+   <li>
+      <a href="#InstrumentoFinanciacion"
+         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">Financing instrument</a>
    </li>
    <li>
       <a href="#Emision"
@@ -30,24 +34,30 @@ This ontology has the following classes and properties.</span>
       <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
    </li>
    <li>
+      <a href="#CapitalVivo"
+         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo">Principal</a>
+   </li>
+   <li>
       <a href="#Amortizacion"
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">Repayment</a>
    </li>
 </ul><h4>Object Properties</h4><ul class="hlist">
    <li>
+      <a href="#http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto"
+         title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">
+         <span>clasificacion economica gasto</span>
+      </a>
+   </li>
+   <li>
       <a href="#http://www.w3.org/ns/org#classification" title="http://www.w3.org/ns/org#classification">classification</a>
    </li>
    <li>
-      <a href="#presupuestoGasto"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#presupuestoGasto">expense budget</a>
+      <a href="#cargaFinanciera"
+         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera">financial burden</a>
    </li>
    <li>
-      <a href="#instrumentoFinanciero"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciero">financial instrument</a>
-   </li>
-   <li>
-      <a href="#presupuestoIngreso"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#presupuestoIngreso">income budget</a>
+      <a href="#instrumentoFinanciacion"
+         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion">financing instrument</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
@@ -55,6 +65,10 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#entidadPrestamista"
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">lender entity</a>
+   </li>
+   <li>
+      <a href="#capitalVivo"
+         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">live capital</a>
    </li>
    <li>
       <a href="#tipoPrestamo"
@@ -82,6 +96,12 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#moneda">currency</a>
    </li>
    <li>
+      <a href="#http://purl.org/dc/terms/date" title="http://purl.org/dc/terms/date">date</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/description" title="http://purl.org/dc/terms/description">description</a>
+   </li>
+   <li>
       <a href="#duración"
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración">duration</a>
    </li>
@@ -92,10 +112,6 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#anioFiscal"
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal">fiscal year</a>
-   </li>
-   <li>
-      <a href="#deudaInteresFijo"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaInteresFijo">fixed interest debt</a>
    </li>
    <li>
       <a href="#tasaFija"
@@ -117,20 +133,8 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN">ISIN code</a>
    </li>
    <li>
-      <a href="#fechaEmision"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision">issuance date</a>
-   </li>
-   <li>
-      <a href="#deudaEmisiones"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaEmisiones">issuance debt</a>
-   </li>
-   <li>
       <a href="#precioEmision"
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioEmision">issuance price</a>
-   </li>
-   <li>
-      <a href="#deudaPrestamos"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaPrestamos">loan debt</a>
    </li>
    <li>
       <a href="#fechaVencimiento"
@@ -143,6 +147,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#mesDiaPago"
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#mesDiaPago">month day payment</a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/0.1/name" title="http://xmlns.com/foaf/0.1/name">name</a>
    </li>
    <li>
       <a href="#http://www.w3.org/2004/02/skos/core#notation" title="http://www.w3.org/2004/02/skos/core#notation">
@@ -158,14 +165,6 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioReembolso">redemption price</a>
    </li>
    <li>
-      <a href="#importeAmortizacion"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAmortizacion">repayment amount</a>
-   </li>
-   <li>
-      <a href="#fechaAmortizacion"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaAmortizacion">repayment date</a>
-   </li>
-   <li>
       <a href="#fechaInicio"
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaInicio">start date</a>
    </li>
@@ -174,27 +173,25 @@ This ontology has the following classes and properties.</span>
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#plazo">term</a>
    </li>
    <li>
-      <a href="#totalAmortizaciones"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#totalAmortizaciones">total repayment</a>
-   </li>
-   <li>
-      <a href="#deudaInteresVariable"
-         title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaInteresVariable">variable interest debt</a>
-   </li>
-   <li>
       <a href="#referencia"
          title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#referencia">variable reference</a>
    </li>
 </ul><h4>Named Individuals</h4><ul class="hlist">
    <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/tipo-entidad-prestamista"
-         title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/tipo-entidad-prestamista">
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">
+         <span>clasificacion economica gasto</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista">
          <span>tipo entidad prestamista</span>
       </a>
    </li>
    <li>
-      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/deuda-financiera/tipo-prestamo"
-         title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/deuda-financiera/tipo-prestamo">
+      <a href="#http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo"
+         title="http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo">
          <span>tipo prestamo</span>
       </a>
    </li>
