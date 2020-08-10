@@ -27,9 +27,9 @@
         <dc:identifier xml:lang="es">http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</dc:identifier>
         <dc:title xml:lang="es">Vocabulario para la representación de la información de la Deuda Pública Financiera de los ayuntamientos</dc:title>
         <dc:title xml:lang="en">Vocabulary for the representation of the Financial  Public Debt of a municipality</dc:title>
+        <terms:created>2020-05-20</terms:created>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
         <terms:hasFormat xml:lang="es">http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera.owl</terms:hasFormat>
-        <terms:issued xml:lang="es">2020-05-20</terms:issued>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0</terms:license>
         <vann:preferredNamespacePrefix>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</vann:preferredNamespaceUri>
@@ -71,6 +71,12 @@
     <!-- http://purl.org/dc/elements/1.1/title -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
