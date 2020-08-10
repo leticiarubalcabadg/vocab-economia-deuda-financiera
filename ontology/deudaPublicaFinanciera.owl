@@ -27,7 +27,7 @@
         <dc:identifier xml:lang="es">http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</dc:identifier>
         <dc:title xml:lang="es">Vocabulario para la representación de la información de la Deuda Pública Financiera de los ayuntamientos</dc:title>
         <dc:title xml:lang="en">Vocabulary for the representation of the Financial  Public Debt of a municipality</dc:title>
-        <terms:created>2020-05-20</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-20</terms:created>
         <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
         <terms:hasFormat xml:lang="es">http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera.owl</terms:hasFormat>
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0</terms:license>
