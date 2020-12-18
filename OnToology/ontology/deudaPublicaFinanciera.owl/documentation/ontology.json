@@ -76,6 +76,9 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/creator",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -183,16 +186,16 @@
     "@language" : "en",
     "@value" : "Vocabulary for the representation of the Financial  Public Debt of a municipality"
   } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-05-20"
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"
   } ],
   "http://purl.org/dc/terms/hasFormat" : [ {
     "@language" : "es",
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera.owl"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@language" : "es",
-    "@value" : "2020-05-20"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@value" : "https://creativecommons.org/licenses/by/4.0"
@@ -515,6 +518,32 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Loan with deferred or partial dispositions of capital."
+  }, {
+    "@language" : "es",
+    "@value" : "Préstamo con disposiciones diferidas o parciales de capital."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "deferred or partial dispositions of capital"
+  }, {
+    "@language" : "es",
+    "@value" : "diferidas o parciales de capital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración",

@@ -26,9 +26,9 @@
         <dc:identifier xml:lang="es">http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</dc:identifier>
         <dc:title xml:lang="es">Vocabulario para la representación de la información de la Deuda Pública Financiera de los ayuntamientos</dc:title>
         <dc:title xml:lang="en">Vocabulary for the representation of the Financial  Public Debt of a municipality</dc:title>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-20</terms:created>
         <terms:creator>Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
         <terms:hasFormat xml:lang="es">http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera.owl</terms:hasFormat>
-        <terms:issued xml:lang="es">2020-05-20</terms:issued>
         <terms:license>https://creativecommons.org/licenses/by/4.0</terms:license>
         <vann:preferredNamespacePrefix>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</vann:preferredNamespaceUri>
@@ -75,6 +75,13 @@
 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
 
 
@@ -435,6 +442,21 @@
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">amount per security</rdfs:label>
         <rdfs:label xml:lang="es">cuantía por título</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital -->
+
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Loan with deferred or partial dispositions of capital.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Préstamo con disposiciones diferidas o parciales de capital.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">deferred or partial dispositions of capital</rdfs:label>
+        <rdfs:label xml:lang="es">diferidas o parciales de capital</rdfs:label>
     </owl:DatatypeProperty>
     
 
