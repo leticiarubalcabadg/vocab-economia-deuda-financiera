@@ -411,6 +411,20 @@
     
 
 
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">Loan with deferred or partial dispositions of capital.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Préstamo con disposiciones diferidas o parciales de capital.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">deferred or partial dispositions of capital</rdfs:label>
+        <rdfs:label xml:lang="es">diferidas o parciales de capital</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración">
