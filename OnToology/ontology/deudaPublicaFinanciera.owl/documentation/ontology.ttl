@@ -22,9 +22,9 @@
                                                                           <http://purl.org/dc/elements/1.1/identifier> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"@es ;
                                                                           <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de la información de la Deuda Pública Financiera de los ayuntamientos"@es ,
                                                                                                                   "Vocabulary for the representation of the Financial  Public Debt of a municipality"@en ;
+                                                                          <http://purl.org/dc/terms/created> "2020-05-20"^^xsd:date ;
                                                                           <http://purl.org/dc/terms/creator> "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)" ;
                                                                           <http://purl.org/dc/terms/hasFormat> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera.owl"@es ;
-                                                                          <http://purl.org/dc/terms/issued> "2020-05-20"@es ;
                                                                           <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0" ;
                                                                           <http://purl.org/vocab/vann/preferredNamespacePrefix> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#" ;
                                                                           <http://purl.org/vocab/vann/preferredNamespaceUri> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
@@ -49,6 +49,10 @@
 
 ###  http://purl.org/dc/elements/1.1/title
 <http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
 
 
 ###  http://purl.org/dc/terms/creator
@@ -285,6 +289,17 @@ xsd:gYear rdf:type rdfs:Datatype .
                   rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
                   rdfs:label "amount per security"@en ,
                              "cuantía por título"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital
+:diferidasOParcialesCapital rdf:type owl:DatatypeProperty ;
+                            rdfs:domain :Prestamo ;
+                            rdfs:range xsd:boolean ;
+                            rdfs:comment "Loan with deferred or partial dispositions of capital."@en ,
+                                         "Préstamo con disposiciones diferidas o parciales de capital."@es ;
+                            rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
+                            rdfs:label "deferred or partial dispositions of capital"@en ,
+                                       "diferidas o parciales de capital"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración

@@ -6,6 +6,9 @@
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
     "example" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#example"
     },
@@ -211,6 +214,10 @@
     "classification" : {
       "@id" : "http://www.w3.org/ns/org#classification",
       "@type" : "@id"
+    },
+    "diferidasOParcialesCapital" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     }
   }
 }
