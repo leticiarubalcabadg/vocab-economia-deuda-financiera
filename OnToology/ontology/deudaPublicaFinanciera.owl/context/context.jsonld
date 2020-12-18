@@ -6,6 +6,9 @@
     "versionInfo" : {
       "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
     },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
     "example" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#example"
     },
@@ -45,15 +48,16 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAnual",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
+    "margen" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
     },
     "endeudamientoPDE" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
-    },
-    "Amortizacion" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion"
     },
     "Concept" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
@@ -66,6 +70,9 @@
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tasaFija",
       "@type" : "http://www.w3.org/2001/XMLSchema#float"
     },
+    "PlanAmortizacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"
+    },
     "notation" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#notation"
     },
@@ -74,6 +81,9 @@
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "gastoOPasivo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo"
     },
     "name" : {
       "@id" : "http://xmlns.com/foaf/0.1/name"
@@ -158,14 +168,6 @@
     "CapitalVivo" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo"
     },
-    "clasificacionEconomicaGasto" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto",
-      "@type" : "@id"
-    },
-    "margenMaximo" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo",
-      "@type" : "http://www.w3.org/2001/XMLSchema#float"
-    },
     "fechaInicio" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaInicio",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
@@ -211,6 +213,10 @@
     "classification" : {
       "@id" : "http://www.w3.org/ns/org#classification",
       "@type" : "@id"
+    },
+    "diferidasOParcialesCapital" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
     }
   }
 }

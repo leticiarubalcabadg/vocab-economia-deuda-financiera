@@ -12,15 +12,6 @@
   "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/ns/org#Organization"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
@@ -37,31 +28,31 @@
   } ]
 }, {
   "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
-      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+      "@value" : "gasto financiero"
     }, {
-      "@id" : "_:genid7"
+      "@value" : "pasivo financiero"
     } ]
   } ]
 }, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
-  } ]
-}, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/ns/org#Organization"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/contributor",
@@ -74,6 +65,9 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/terms/creator",
@@ -183,16 +177,16 @@
     "@language" : "en",
     "@value" : "Vocabulary for the representation of the Financial  Public Debt of a municipality"
   } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2020-05-20"
+  } ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"
   } ],
   "http://purl.org/dc/terms/hasFormat" : [ {
     "@language" : "es",
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera.owl"
-  } ],
-  "http://purl.org/dc/terms/issued" : [ {
-    "@language" : "es",
-    "@value" : "2020-05-20"
   } ],
   "http://purl.org/dc/terms/license" : [ {
     "@value" : "https://creativecommons.org/licenses/by/4.0"
@@ -212,26 +206,6 @@
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "Esta es la versión inicial de la ontología de Deuda pública que ha sido implementada en el contexto del proyecto \"Plataforma de gobierno abierto, colaborativa e interoperable\" en la que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y La Coruña."
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Date and amount of repayment of the debt included in the contract signed between the parties"
-  }, {
-    "@language" : "es",
-    "@value" : "Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "Amortización"
-  }, {
-    "@language" : "en",
-    "@value" : "Repayment"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo",
@@ -337,7 +311,27 @@
     "@value" : "Instrumento financiación"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid9"
+    "@id" : "_:genid8"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date and amount of repayment of the debt included in the contract signed between the parties"
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Plan amortización"
+  }, {
+    "@language" : "en",
+    "@value" : "Repayment plan"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo",
@@ -362,9 +356,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"
   }, {
-    "@id" : "_:genid10"
+    "@id" : "_:genid9"
   }, {
-    "@id" : "_:genid11"
+    "@id" : "_:genid10"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion",
@@ -390,7 +384,7 @@
     "@value" : "repayment"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal",
@@ -475,7 +469,7 @@
     "@value" : "The ISIN code (International Securities Identification Number) is developed in the international standard ISO 6166. It is a code that uniquely identifies a financial instrument at an international level."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
@@ -515,6 +509,32 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Loan with deferred or partial dispositions of capital."
+  }, {
+    "@language" : "es",
+    "@value" : "Préstamo con disposiciones diferidas o parciales de capital."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "deferred or partial dispositions of capital"
+  }, {
+    "@language" : "es",
+    "@value" : "diferidas o parciales de capital"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración",
@@ -675,6 +695,32 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#date"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La carga financiera de un instrumento financiero puede corresponder a un pasivo financiero o a un gasto financiero."
+  }, {
+    "@language" : "en",
+    "@value" : "The financial burden of a financial instrument may correspond to a financial liability or a financial expense."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "expense or liability"
+  }, {
+    "@language" : "es",
+    "@value" : "gasto o pasivo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid5"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
@@ -742,13 +788,13 @@
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo",
+  "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Diferencial máximo aplicable a un interés de tipo variable."
+    "@value" : "Diferencial aplicable a un interés de tipo variable."
   }, {
-    "@value" : "Maximum differential applicable to a variable interest rate."
+    "@value" : "Differential applicable to a variable interest rate."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"
@@ -758,10 +804,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "margen máximo"
+    "@value" : "margen"
   }, {
     "@language" : "en",
-    "@value" : "maximum margin"
+    "@value" : "margin"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -1019,33 +1065,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid1"
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "It relates the financial burden to the concepts of financial liabilities or financial expenses of the economic expense classification of the budget."
-  }, {
-    "@language" : "es",
-    "@value" : "Relaciona la carga financiera con los conceptos de pasivos financieros o gastos financieros de la clasificación económica de gasto del presupuesto."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@language" : "en",
-    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "clasificación económica gasto"
-  }, {
-    "@language" : "en",
-    "@value" : "economic expense classification"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista",
