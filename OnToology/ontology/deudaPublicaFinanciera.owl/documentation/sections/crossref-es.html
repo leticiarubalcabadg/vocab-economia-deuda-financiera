@@ -4,10 +4,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
    <h3 id="classes-headline" class="list">Clases</h3>
    <ul class="hlist">
       <li>
-         <a href="#Amortizacion"
-            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">Amortización</a>
-      </li>
-      <li>
          <a href="#CapitalVivo"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo">Capital Vivo</a>
       </li>
@@ -38,33 +34,14 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">organización</a>
       </li>
       <li>
+         <a href="#PlanAmortizacion"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion">Plan amortización</a>
+      </li>
+      <li>
          <a href="#Prestamo"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo">Préstamo</a>
       </li>
    </ul>
-   <div class="entity" id="Amortizacion">
-      <h3>Amortización<sup class="type-c" title="clase">c</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion</p>
-      <div class="comment">
-         <span class="markdown">Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Definida por</dt>
-         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
-      </dl>
-      <dl class="description">
-         <dt>en rango de</dt>
-         <dd>
-            <a href="#amortizacion"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion">amortización</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="CapitalVivo">
       <h3>Capital Vivo<sup class="type-c" title="clase">c</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
@@ -105,9 +82,9 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <dl class="description">
          <dt>en dominio de</dt>
          <dd>
-            <a href="#http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto"
-               title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">clasificación económica gasto</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            <a href="#gastoOPasivo"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo">gasto o pasivo</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>
          </dd>
          <dt>en rango de</dt>
          <dd>
@@ -242,6 +219,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dd>
             <a href="#cuantiaPorTitulo"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cuantiaPorTitulo">cuantía por título</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#codISIN"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN">código ISIN</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#duración"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración">duración</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#importeAnual"
@@ -291,10 +270,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">capital vivo</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#cargaFinanciera"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera">carga financiera</a>
-            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#codISIN"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN">código ISIN</a>
-            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#margenMaximo"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo">margen máximo</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#margen"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen">margen</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#referencia"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#referencia">referencia variable</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#tasaFija"
@@ -350,6 +327,29 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dd>
             <a href="#entidadPrestamista"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">entidad prestamista</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PlanAmortizacion">
+      <h3>Plan amortización<sup class="type-c" title="clase">c</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#classes">Índice de clases</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion</p>
+      <div class="comment">
+         <span class="markdown">Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <dl class="description">
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#amortizacion"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion">amortización</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
          </dd>
       </dl>
@@ -413,10 +413,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera">carga financiera</a>
       </li>
       <li>
-         <a href="#http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto"
-            title="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">clasificación económica gasto</a>
-      </li>
-      <li>
          <a href="#entidadPrestamista"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">entidad prestamista</a>
       </li>
@@ -459,8 +455,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             </dd>
             <dt>rango</dt>
             <dd>
-               <a href="#Amortizacion"
-                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion">Amortización</a>
+               <a href="#PlanAmortizacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion">Plan amortización</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
          </dl>
@@ -521,42 +517,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera">Carga financiera</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto">
-      <h3>clasificación económica gasto<sup class="type-op" title="Propiedad entre objetos">op</sup>
-         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto</p>
-      <div class="comment">
-         <span class="markdown">Relaciona la carga financiera con los conceptos de pasivos financieros o gastos financieros de la clasificación económica de gasto del presupuesto.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Definida por</dt>
-         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
-      </dl>
-      <div class="description">
-         <p>
-            <strong>tiene características:</strong> funcional</p>
-         <dl>
-            <dt>dominio</dt>
-            <dd>
-               <a href="#CargaFinanciera"
-                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera">Carga financiera</a>
-               <sup class="type-c" title="clase">c</sup>
-            </dd>
-            <dt>rango</dt>
-            <dd>
-               <a href="#http://www.w3.org/2004/02/skos/core#Concept" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a>
-               <sup class="type-c" title="clase">c</sup> 
-               <span class="logic">and</span> (<a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
-               <sup class="type-op" title="Propiedad entre objetos">op</sup> 
-               <span class="logic">value</span> 
-               <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto"
-                  title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">clasificacion economica gasto</a>)</dd>
          </dl>
       </div>
    </div>
@@ -761,6 +721,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaVencimiento">fecha vencimiento préstamo</a>
       </li>
       <li>
+         <a href="#gastoOPasivo"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo">gasto o pasivo</a>
+      </li>
+      <li>
          <a href="#importe"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe">importe</a>
       </li>
@@ -769,8 +733,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAnual">importe anual</a>
       </li>
       <li>
-         <a href="#margenMaximo"
-            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo">margen máximo</a>
+         <a href="#margen"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen">margen</a>
       </li>
       <li>
          <a href="#mesDiaPago"
@@ -900,8 +864,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <dl>
             <dt>dominio</dt>
             <dd>
-               <a href="#InstrumentoFinanciacion"
-                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">Instrumento financiación</a>
+               <a href="#Emision"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision">Emisión</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
             <dt>rango</dt>
@@ -1163,6 +1127,33 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
+   <div class="entity" id="gastoOPasivo">
+      <h3>gasto o pasivo<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo</p>
+      <div class="comment">
+         <span class="markdown">La carga financiera de un instrumento financiero puede corresponder a un pasivo financiero o a un gasto financiero.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#CargaFinanciera"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera">Carga financiera</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>{ "gasto financiero" , "pasivo financiero" }</dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="importe">
       <h3>importe<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
@@ -1226,15 +1217,15 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
-   <div class="entity" id="margenMaximo">
-      <h3>margen máximo<sup class="type-dp" title="Propiedad de datos">dp</sup>
+   <div class="entity" id="margen">
+      <h3>margen<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen</p>
       <div class="comment">
-         <span class="markdown">Diferencial máximo aplicable a un interés de tipo variable.</span>
+         <span class="markdown">Diferencial aplicable a un interés de tipo variable.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>

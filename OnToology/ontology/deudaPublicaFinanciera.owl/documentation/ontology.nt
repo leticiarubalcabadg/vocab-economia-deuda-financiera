@@ -106,7 +106,7 @@
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona el instrumento financiero con su calendario de amortizaciones."@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates the financial instrument to its repayment schedule."@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
@@ -173,28 +173,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo> <http://www.w3.org/2000/01/rdf-schema#label> "loan type"@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo> <http://www.w3.org/2000/01/rdf-schema#label> "tipo préstamo"@es .
 # 
-# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
-_:genid7 <http://www.w3.org/2002/07/owl#hasValue> <http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "It relates the financial burden to the concepts of financial liabilities or financial expenses of the economic expense classification of the budget."@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona la carga financiera con los conceptos de pasivos financieros o gastos financieros de la clasificación económica de gasto del presupuesto."@es .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"@en .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#label> "clasificación económica gasto"@es .
-<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#clasificacionEconomicaGasto> <http://www.w3.org/2000/01/rdf-schema#label> "economic expense classification"@en .
-# 
 # http://www.w3.org/2004/02/skos/core#inScheme
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
@@ -258,7 +236,7 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN> <http://www.w3.org/2000/01/rdf-schema#comment> "El código ISIN (International Securities Identification Number) está desarrollado en el estándar internacional ISO 6166 Es un código que identifica unívocamente un instrumento financiero a nivel internacional."@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN> <http://www.w3.org/2000/01/rdf-schema#comment> "The ISIN code (International Securities Identification Number) is developed in the international standard ISO 6166. It is a code that uniquely identifies a financial instrument at an international level."@en .
@@ -343,6 +321,24 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaVencimiento> <http://www.w3.org/2000/01/rdf-schema#label> "fecha vencimiento préstamo"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaVencimiento> <http://www.w3.org/2000/01/rdf-schema#label> "loan maturity date"@en .
 # 
+# http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid5 <http://www.w3.org/2002/07/owl#oneOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "gasto financiero" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "pasivo financiero" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo> <http://www.w3.org/2000/01/rdf-schema#comment> "La carga financiera de un instrumento financiero puede corresponder a un pasivo financiero o a un gasto financiero."@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo> <http://www.w3.org/2000/01/rdf-schema#comment> "The financial burden of a financial instrument may correspond to a financial liability or a financial expense."@en .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo> <http://www.w3.org/2000/01/rdf-schema#label> "expense or liability"@en .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo> <http://www.w3.org/2000/01/rdf-schema#label> "gasto o pasivo"@es .
+# 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
@@ -363,16 +359,16 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAnual> <http://www.w3.org/2000/01/rdf-schema#label> "annual amount"@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAnual> <http://www.w3.org/2000/01/rdf-schema#label> "importe anual"@es .
 # 
-# http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo> <http://www.w3.org/2000/01/rdf-schema#comment> "Diferencial máximo aplicable a un interés de tipo variable."@es .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo> <http://www.w3.org/2000/01/rdf-schema#comment> "Maximum differential applicable to a variable interest rate." .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo> <http://www.w3.org/2000/01/rdf-schema#label> "margen máximo"@es .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margenMaximo> <http://www.w3.org/2000/01/rdf-schema#label> "maximum margin"@en .
+# http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen> <http://www.w3.org/2000/01/rdf-schema#comment> "Diferencial aplicable a un interés de tipo variable."@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen> <http://www.w3.org/2000/01/rdf-schema#comment> "Differential applicable to a variable interest rate." .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen> <http://www.w3.org/2000/01/rdf-schema#label> "margen"@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen> <http://www.w3.org/2000/01/rdf-schema#label> "margin"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#mesDiaPago
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#mesDiaPago> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -507,14 +503,6 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # #################################################################
 # 
 # 
-# http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Date and amount of repayment of the debt included in the contract signed between the parties"@en .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes"@es .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/2000/01/rdf-schema#label> "Amortización"@es .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> <http://www.w3.org/2000/01/rdf-schema#label> "Repayment"@en .
-# 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo> <http://www.w3.org/2000/01/rdf-schema#comment> "Amount of the financial instrument pending amortization on a given date."@en .
@@ -550,27 +538,35 @@ _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion> .
-_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Amortizacion> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion> .
+_:genid8 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Contract that generates, at the same time, a financial asset for one of the parties and a financial liability for the other. In a city council it refers to  loans, credits, bonds, financial leasing operations, etc."@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Contrato que genera, al mismo tiempo, un activo financiero para una de las partes y un pasivo financiero para la otra. En un ayuntamiento se refiere a un préstamos, créditos, emisiones, operaciones de arrendamiento financiero, etc."@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#label> "Financing instrument"@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#label> "Instrumento financiación"@es .
 # 
+# http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Date and amount of repayment of the debt included in the contract signed between the parties"@en .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes"@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion> <http://www.w3.org/2000/01/rdf-schema#label> "Plan amortización"@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion> <http://www.w3.org/2000/01/rdf-schema#label> "Repayment plan"@en .
+# 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista> .
+_:genid9 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/org#Organization> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista> .
-_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/ns/org#Organization> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo> .
-_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo> .
+_:genid10 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo> <http://www.w3.org/2000/01/rdf-schema#comment> "Obligación que contrae una Entidad (Ayuntamiento) con una Entidad (Financiera) para financiarse y con unos plazos de devolución"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo> <http://www.w3.org/2000/01/rdf-schema#comment> "Obligation that an Entity (City Council) contracts with an (Financial) Entity to finance itself and with repayment terms"@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
