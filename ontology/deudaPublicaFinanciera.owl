@@ -180,20 +180,6 @@
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion">
-        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
-        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"/>
-        <rdfs:comment xml:lang="es">Relaciona el instrumento financiero con su calendario de amortizaciones.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relates the financial instrument to its repayment schedule.</rdfs:comment>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="es">amortización</rdfs:label>
-        <rdfs:label xml:lang="en">repayment</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">
@@ -244,6 +230,20 @@
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">financing instrument</rdfs:label>
         <rdfs:label xml:lang="es">instrumento financiación</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"/>
+        <rdfs:comment xml:lang="es">Relaciona el instrumento financiero con su calendario de amortizaciones.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relates the financial instrument to its repayment schedule.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="es">plan amortización</rdfs:label>
+        <rdfs:label xml:lang="en">repayment schedule</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -786,7 +786,7 @@
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion"/>
+                <owl:onProperty rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion"/>
                 <owl:someValuesFrom rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -912,14 +912,6 @@
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo -->
 
     <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo">
-        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto -->
-
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
 </rdf:RDF>
