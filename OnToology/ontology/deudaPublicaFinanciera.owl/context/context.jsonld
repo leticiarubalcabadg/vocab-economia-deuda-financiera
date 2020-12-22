@@ -26,10 +26,6 @@
     "Organization" : {
       "@id" : "http://xmlns.com/foaf/0.1/Organization"
     },
-    "amortizacion" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion",
-      "@type" : "@id"
-    },
     "issued" : {
       "@id" : "http://purl.org/dc/terms/issued"
     },
@@ -91,6 +87,10 @@
     "fechaVencimiento" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaVencimiento",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "planAmortizacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion",
+      "@type" : "@id"
     },
     "codISIN" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN",

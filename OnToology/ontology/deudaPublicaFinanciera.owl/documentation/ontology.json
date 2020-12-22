@@ -40,7 +40,7 @@
   "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion"
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"
@@ -359,32 +359,6 @@
     "@id" : "_:genid9"
   }, {
     "@id" : "_:genid10"
-  } ]
-}, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Relaciona el instrumento financiero con su calendario de amortizaciones."
-  }, {
-    "@language" : "en",
-    "@value" : "Relates the financial instrument to its repayment schedule."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "amortización"
-  }, {
-    "@language" : "en",
-    "@value" : "repayment"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal",
@@ -891,6 +865,32 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relaciona el instrumento financiero con su calendario de amortizaciones."
+  }, {
+    "@language" : "en",
+    "@value" : "Relates the financial instrument to its repayment schedule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "plan amortización"
+  }, {
+    "@language" : "en",
+    "@value" : "repayment schedule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#plazo",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1071,9 +1071,6 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo",
-  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
-}, {
-  "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/2004/02/skos/core#ConceptScheme" ]
 }, {
   "@id" : "http://www.w3.org/2001/XMLSchema#date",

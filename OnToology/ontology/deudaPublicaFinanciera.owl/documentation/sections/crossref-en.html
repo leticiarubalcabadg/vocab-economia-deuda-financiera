@@ -127,9 +127,7 @@ This section provides details for each class and property defined by Vocabulario
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto"
-               title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">clasificacion economica gasto</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista"
+            <a href="#http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista"
                title="http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista">tipo entidad prestamista</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo"
                title="http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo">tipo prestamo</a>
@@ -206,8 +204,8 @@ This section provides details for each class and property defined by Vocabulario
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">live capital</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#margen"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen">margin</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#amortizacion"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion">repayment</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#planAmortizacion"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion">repayment schedule</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#referencia"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#referencia">variable reference</a>
             <sup class="type-dp" title="data property">dp</sup>
@@ -391,8 +389,8 @@ This section provides details for each class and property defined by Vocabulario
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
-            <a href="#amortizacion"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion">repayment</a>
+            <a href="#planAmortizacion"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion">repayment schedule</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -427,8 +425,8 @@ This section provides details for each class and property defined by Vocabulario
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo">loan type</a>
       </li>
       <li>
-         <a href="#amortizacion"
-            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion">repayment</a>
+         <a href="#planAmortizacion"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion">repayment schedule</a>
       </li>
    </ul>
    <div class="entity" id="http://www.w3.org/ns/org#classification">
@@ -644,13 +642,13 @@ This section provides details for each class and property defined by Vocabulario
          </dl>
       </div>
    </div>
-   <div class="entity" id="amortizacion">
-      <h3>repayment<sup class="type-op" title="object property">op</sup>
+   <div class="entity" id="planAmortizacion">
+      <h3>repayment schedule<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#amortizacion</p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion</p>
       <div class="comment">
          <span class="markdown">Relates the financial instrument to its repayment schedule.</span>
       </div>
@@ -1602,12 +1600,6 @@ This section provides details for each class and property defined by Vocabulario
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
-         <a href="#http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto"
-            title="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">
-            <span>clasificacion economica gasto</span>
-         </a>
-      </li>
-      <li>
          <a href="#http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista"
             title="http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista">
             <span>tipo entidad prestamista</span>
@@ -1620,22 +1612,6 @@ This section provides details for each class and property defined by Vocabulario
          </a>
       </li>
    </ul>
-   <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto">
-      <h3>clasificacion economica gasto<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/clasificacion-economica-gasto</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://www.w3.org/2004/02/skos/core#ConceptScheme"
-               title="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista">
       <h3>tipo entidad prestamista<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
