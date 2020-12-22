@@ -9,8 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:vann="http://purl.org/vocab/vann/"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:esdeufin="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#">
+     xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera">
         <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera/1.0.0"/>
         <dc:contributor xml:lang="es">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dc:contributor>
@@ -22,15 +21,15 @@
         <dc:contributor xml:lang="es">Servicio de Informática - Ayuntamiento de Santiago de Compostela</dc:contributor>
         <dc:contributor xml:lang="es">Servicio de Innovación y Desarrollo Tecnológico - Ayuntamiento de A Coruña</dc:contributor>
         <dc:contributor xml:lang="es">Víctor Morlán Plo - Ayuntamiento de Zaragoza</dc:contributor>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
-        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)</dc:creator>
+        <dc:creator>Edna Ruckhaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
+        <dc:creator>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, Localidata)</dc:creator>
         <dc:identifier xml:lang="es">http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</dc:identifier>
         <dc:title xml:lang="es">Vocabulario para la representación de la información de la Deuda Pública Financiera de los ayuntamientos</dc:title>
         <dc:title xml:lang="en">Vocabulary for the representation of the Financial  Public Debt of a municipality</dc:title>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-05-20</terms:created>
-        <terms:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
+        <terms:creator>Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</terms:creator>
         <terms:hasFormat xml:lang="es">http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera.owl</terms:hasFormat>
-        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://creativecommons.org/licenses/by/4.0</terms:license>
+        <terms:license>https://creativecommons.org/licenses/by/4.0</terms:license>
         <vann:preferredNamespacePrefix>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera#</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="es">Esta versión ha sido generada dentro del contexto del proyecto &quot;Plataforma de gobierno abierto, colaborativa e interoperable&quot; en el que participan los ayuntamientos de Madrid, Zaragoza, Santiago de Compostela y A Coruña. En esta versión se tienen clases y propiedades de acuerdo a los requisitos y glosario de conceptos validados en la reunión del 16/04/2020.</rdfs:comment>
@@ -47,10 +46,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/elements/1.1/contributor -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
     
@@ -58,11 +59,13 @@
 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
     
 
 
     <!-- http://purl.org/dc/elements/1.1/identifier -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
     
@@ -70,11 +73,13 @@
 
     <!-- http://purl.org/dc/elements/1.1/title -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
     
 
 
     <!-- http://purl.org/dc/terms/created -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
     
@@ -82,11 +87,13 @@
 
     <!-- http://purl.org/dc/terms/creator -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
     
 
 
     <!-- http://purl.org/dc/terms/hasFormat -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat"/>
     
@@ -94,11 +101,13 @@
 
     <!-- http://purl.org/dc/terms/issued -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
     
 
 
     <!-- http://purl.org/dc/terms/license -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
     
@@ -106,11 +115,13 @@
 
     <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
 
+
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
     
 
 
     <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
 
     <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
     
@@ -118,17 +129,20 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#example -->
 
+
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
     
 
 
     <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
     
@@ -142,10 +156,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://www.w3.org/2001/XMLSchema#date -->
+
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
     
@@ -153,17 +169,20 @@
 
     <!-- http://www.w3.org/2001/XMLSchema#duration -->
 
+
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#duration"/>
     
 
 
     <!-- http://www.w3.org/2001/XMLSchema#gMonthDay -->
 
+
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
     
 
 
     <!-- http://www.w3.org/2001/XMLSchema#gYear -->
+
 
     <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYear"/>
     
@@ -177,10 +196,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo -->
+
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
@@ -194,6 +215,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera -->
+
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
@@ -209,6 +231,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista -->
 
+
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
         <rdfs:range rdf:resource="http://www.w3.org/ns/org#Organization"/>
@@ -223,6 +246,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion -->
 
+
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual"/>
         <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
@@ -235,6 +259,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion -->
+
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
@@ -249,6 +274,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo -->
+
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -275,6 +301,7 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
+
     <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
@@ -286,6 +313,7 @@
 
 
     <!-- http://www.w3.org/ns/org#classification -->
+
 
     <owl:ObjectProperty rdf:about="http://www.w3.org/ns/org#classification">
         <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
@@ -313,10 +341,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://purl.org/dc/terms/date -->
+
 
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/date">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
@@ -332,6 +362,7 @@
 
     <!-- http://purl.org/dc/terms/description -->
 
+
     <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
         <rdfs:comment xml:lang="en">An account of the resource.</rdfs:comment>
         <rdfs:comment xml:lang="es">Una descripción del recurso.</rdfs:comment>
@@ -343,6 +374,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal -->
+
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -357,6 +389,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN -->
+
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -373,6 +406,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cuantiaPorTitulo -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cuantiaPorTitulo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
@@ -388,6 +422,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
@@ -401,6 +436,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración -->
+
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -417,6 +453,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual"/>
@@ -431,6 +468,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion -->
+
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
@@ -448,6 +486,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaInicio -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaInicio">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
@@ -463,6 +502,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaVencimiento -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaVencimiento">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
@@ -477,6 +517,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo -->
+
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo">
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera"/>
@@ -508,6 +549,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
@@ -520,13 +562,14 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAnual -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAnual">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment>Annual gross coupon amount.</rdfs:comment>
         <rdfs:comment xml:lang="es">Importe de cupón bruto anual.</rdfs:comment>
+        <rdfs:comment>Annual gross coupon amount.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">annual amount</rdfs:label>
         <rdfs:label xml:lang="es">importe anual</rdfs:label>
@@ -535,6 +578,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen -->
+
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -551,6 +595,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#mesDiaPago -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#mesDiaPago">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
@@ -565,6 +610,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#moneda -->
+
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#moneda">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -581,6 +627,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#numeroTitulos -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#numeroTitulos">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
@@ -595,6 +642,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#plazo -->
+
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#plazo">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -611,6 +659,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioEmision -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioEmision">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
@@ -625,6 +674,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioReembolso -->
+
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioReembolso">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -641,6 +691,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#referencia -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#referencia">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
@@ -655,6 +706,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tasaFija -->
+
 
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tasaFija">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
@@ -671,6 +723,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres -->
 
+
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:comment xml:lang="en">Interest rate (fixed or variable) of a financial instrument</rdfs:comment>
@@ -684,6 +737,7 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#notation -->
 
+
     <owl:DatatypeProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
@@ -691,6 +745,7 @@
 
 
     <!-- http://www.w3.org/ns/org#identifier -->
+
 
     <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/org#identifier">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2004/02/skos/core#notation"/>
@@ -711,6 +766,7 @@
 
     <!-- http://xmlns.com/foaf/0.1/name -->
 
+
     <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
         <rdfs:comment xml:lang="en">A name for some thing.</rdfs:comment>
         <rdfs:comment xml:lang="es">El nombre de algo.</rdfs:comment>
@@ -729,10 +785,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo -->
+
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo">
         <rdfs:comment xml:lang="en">Amount of the financial instrument pending amortization on a given date.</rdfs:comment>
@@ -746,6 +804,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera -->
 
+
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera">
         <rdfs:comment xml:lang="en">Fiinancial expenses and. financial liabilities held during the fiscal year</rdfs:comment>
         <rdfs:comment xml:lang="es">Son los gastos financieros y. los pasivos financieros que se tienen durante el año fiscal.</rdfs:comment>
@@ -757,6 +816,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual -->
+
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual">
         <rdfs:comment xml:lang="es">La deuda elaborada según la metodología del Protocolo de Deficit Excesivo (PDE), conforme a las definiciones del Sistema Europeo de Cuentas SEC 2010, es la deuda homogénea y comparable con el resto de la Administración Pública</rdfs:comment>
@@ -770,6 +830,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision -->
 
+
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision">
         <rdfs:subClassOf rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
         <rdfs:comment xml:lang="es">Operación por la que se crea y pone en circulación un título-valor.</rdfs:comment>
@@ -782,6 +843,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion -->
+
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">
         <rdfs:subClassOf>
@@ -801,6 +863,7 @@
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion -->
 
+
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion">
         <rdfs:comment xml:lang="en">Date and amount of repayment of the debt included in the contract signed between the parties</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes</rdfs:comment>
@@ -812,6 +875,7 @@
 
 
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo -->
+
 
     <owl:Class rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo">
         <rdfs:subClassOf rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
@@ -838,6 +902,7 @@
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
+
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
         <owl:disjointWith rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
@@ -848,6 +913,7 @@
 
 
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
 
     <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme">
         <rdfs:isDefinedBy rdf:resource="http://www.w3.org/2004/02/skos/core"/>
@@ -860,6 +926,7 @@
 
 
     <!-- http://www.w3.org/ns/org#Organization -->
+
 
     <owl:Class rdf:about="http://www.w3.org/ns/org#Organization">
         <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
@@ -880,11 +947,13 @@
 
     <!-- http://xmlns.com/foaf/0.1/Agent -->
 
+
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
     
 
 
     <!-- http://xmlns.com/foaf/0.1/Organization -->
+
 
     <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
     
@@ -898,10 +967,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+
     
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista -->
+
 
     <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
@@ -911,6 +982,7 @@
 
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo -->
 
+
     <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo">
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
     </owl:NamedIndividual>
@@ -918,5 +990,6 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
 

@@ -1,0 +1,222 @@
+{
+  "@context" : {
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "example" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#example"
+    },
+    "fechaFormalizacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "precioReembolso" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioReembolso",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "duración" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración",
+      "@type" : "http://www.w3.org/2001/XMLSchema#duration"
+    },
+    "plazo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#plazo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#duration"
+    },
+    "importeAnual" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importeAnual",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "margen" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "endeudamientoPDE" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "cuantiaPorTitulo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cuantiaPorTitulo",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "tasaFija" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tasaFija",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "PlanAmortizacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"
+    },
+    "notation" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "Agent" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "gastoOPasivo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo"
+    },
+    "name" : {
+      "@id" : "http://xmlns.com/foaf/0.1/name"
+    },
+    "fechaVencimiento" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaVencimiento",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "planAmortizacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion",
+      "@type" : "@id"
+    },
+    "codISIN" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "capitalVivo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo",
+      "@type" : "@id"
+    },
+    "moneda" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#moneda",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "identifier" : {
+      "@id" : "http://www.w3.org/ns/org#identifier"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "InstrumentoFinanciacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "tipoPrestamo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo",
+      "@type" : "@id"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "instrumentoFinanciacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion",
+      "@type" : "@id"
+    },
+    "precioEmision" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioEmision",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "DeudaAnual" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "referencia" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#referencia",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "numeroTitulos" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#numeroTitulos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "CargaFinanciera" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/terms/date",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "Prestamo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"
+    },
+    "tipoInteres" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres"
+    },
+    "cargaFinanciera" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera",
+      "@type" : "@id"
+    },
+    "CapitalVivo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo"
+    },
+    "fechaInicio" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaInicio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "entidadPrestamista" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista",
+      "@type" : "@id"
+    },
+    "mesDiaPago" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#mesDiaPago",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gMonthDay"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "importe" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe",
+      "@type" : "http://www.w3.org/2001/XMLSchema#float"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "anioFiscal" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "Emision" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"
+    },
+    "classification" : {
+      "@id" : "http://www.w3.org/ns/org#classification",
+      "@type" : "@id"
+    },
+    "diferidasOParcialesCapital" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#diferidasOParcialesCapital",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    }
+  }
+}
