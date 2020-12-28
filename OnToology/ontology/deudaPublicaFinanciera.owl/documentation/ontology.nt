@@ -1,6 +1,8 @@
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera/1.0.0> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera> <http://purl.org/dc/elements/1.1/contributor> "Carmen Hervás Bautista - Ayuntamiento de Madrid"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera> <http://purl.org/dc/elements/1.1/contributor> "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera> <http://purl.org/dc/elements/1.1/contributor> "Manuel Alejandro Pose Pose - Ayuntamiento de A Coruña"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera> <http://purl.org/dc/elements/1.1/contributor> "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera> <http://purl.org/dc/elements/1.1/contributor> "María Jesús Gallego San Miguel - Ayuntamiento de Madrid"@es .
@@ -508,8 +510,8 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo> <http://www.w3.org/2000/01/rdf-schema#comment> "Amount of the financial instrument pending amortization on a given date."@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo> <http://www.w3.org/2000/01/rdf-schema#comment> "Es el importe del instrumento financiero pendiente de amortizar en una fecha determinada."@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo> <http://www.w3.org/2000/01/rdf-schema#label> "Capital Vivo"@es .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo> <http://www.w3.org/2000/01/rdf-schema#label> "Principal"@en .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo> <http://www.w3.org/2000/01/rdf-schema#label> "Capital vivo"@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo> <http://www.w3.org/2000/01/rdf-schema#label> "Living capital"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
