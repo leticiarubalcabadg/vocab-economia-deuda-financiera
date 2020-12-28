@@ -135,7 +135,13 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/contributor" : [ {
     "@language" : "es",
+    "@value" : "Carmen Hervás Bautista - Ayuntamiento de Madrid"
+  }, {
+    "@language" : "es",
     "@value" : "Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid"
+  }, {
+    "@language" : "es",
+    "@value" : "Manuel Alejandro Pose Pose - Ayuntamiento de A Coruña"
   }, {
     "@language" : "es",
     "@value" : "María Carmen Ruiz Moreno - Ayuntamiento de Madrid"
@@ -222,10 +228,10 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "Capital Vivo"
+    "@value" : "Capital vivo"
   }, {
     "@language" : "en",
-    "@value" : "Principal"
+    "@value" : "Living capital"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera",

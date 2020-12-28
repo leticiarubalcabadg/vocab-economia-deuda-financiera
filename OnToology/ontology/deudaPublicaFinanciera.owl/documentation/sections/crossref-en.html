@@ -1,6 +1,6 @@
-<h2 id="crossreference" class="list">Cross reference for the Vocabulary Terms for the representation of the information of the Financial Public Debt: Classes, object properties and data properties <span class = "backlink"> return to <a href="#toc"> index </a> </span> </h2>
-This section introduces more details about each class and property defined by the Vocabulary for the representation of information on Public Financial Debt, taking into account that public debt is one of the main indicators of public accounts and helps to understand the economic situation of a city council.
-<div id="classes">
+<h2 id="crossreference" class="list">Cross reference for Vocabulario para la representación de la información de la Deuda Pública Financiera tomando en cuenta que la deuda pública es uno de los indicadores esenciales de las cuentas públicas para entender el estado de la situación económica de un ayuntamiento. classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Vocabulario para la representación de la información de la Deuda Pública Financiera tomando en cuenta que la deuda pública es uno de los indicadores esenciales de las cuentas públicas para entender el estado de la situación económica de un ayuntamiento..
+<div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
@@ -27,15 +27,15 @@ This section introduces more details about each class and property defined by th
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision">Issuance</a>
       </li>
       <li>
+         <a href="#CapitalVivo"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo">Living capital</a>
+      </li>
+      <li>
          <a href="#Prestamo"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo">Loan</a>
       </li>
       <li>
          <a href="#http://www.w3.org/ns/org#Organization" title="http://www.w3.org/ns/org#Organization">Organization</a>
-      </li>
-      <li>
-         <a href="#CapitalVivo"
-            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo">Principal</a>
       </li>
       <li>
          <a href="#PlanAmortizacion"
@@ -261,6 +261,29 @@ This section introduces more details about each class and property defined by th
          </dd>
       </dl>
    </div>
+   <div class="entity" id="CapitalVivo">
+      <h3>Living capital<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo</p>
+      <div class="comment">
+         <span class="markdown">Amount of the financial instrument pending amortization on a given date.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#capitalVivo"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">live capital</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="Prestamo">
       <h3>Loan<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -349,29 +372,6 @@ This section introduces more details about each class and property defined by th
          </dd>
       </dl>
    </div>
-   <div class="entity" id="CapitalVivo">
-      <h3>Principal<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo</p>
-      <div class="comment">
-         <span class="markdown">Amount of the financial instrument pending amortization on a given date.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
-      </dl>
-      <dl class="description">
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#capitalVivo"
-               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">live capital</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="PlanAmortizacion">
       <h3>Repayment plan<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -395,7 +395,7 @@ This section introduces more details about each class and property defined by th
          </dd>
       </dl>
    </div>
-</div><div id="objectproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
    <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
@@ -600,7 +600,7 @@ This section introduces more details about each class and property defined by th
             <dt>has range</dt>
             <dd>
                <a href="#CapitalVivo"
-                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo">Principal</a>
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo">Living capital</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -622,7 +622,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -673,7 +674,7 @@ This section introduces more details about each class and property defined by th
          </dl>
       </div>
    </div>
-</div><div id="dataproperties">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
@@ -795,7 +796,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has range</dt>
             <dd>
@@ -822,7 +824,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -855,7 +858,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -894,7 +898,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -927,7 +932,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -1006,7 +1012,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1039,7 +1046,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1099,7 +1107,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has range</dt>
             <dd>
@@ -1126,7 +1135,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1159,7 +1169,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has super-properties</dt>
             <dd>
@@ -1244,7 +1255,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1277,7 +1289,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1310,7 +1323,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1343,7 +1357,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1376,7 +1391,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1447,7 +1463,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1480,7 +1497,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1513,7 +1531,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1546,7 +1565,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1579,7 +1599,8 @@ This section introduces more details about each class and property defined by th
       </dl>
       <div class="description">
          <p>
-            <strong>has characteristics:</strong> functional</p>
+            <strong>has characteristics:
+                </strong> functional</p>
          <dl>
             <dt>has domain</dt>
             <dd>
@@ -1596,7 +1617,7 @@ This section introduces more details about each class and property defined by th
          </dl>
       </div>
    </div>
-</div><div id="namedindividuals">
+</div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
