@@ -12,7 +12,9 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera">
         <owl:versionIRI rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera/1.0.0"/>
+        <dc:contributor xml:lang="es">Carmen Hervás Bautista - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">Honorio Enrique Crespo Díaz-Alejo - Ayuntamiento de Madrid</dc:contributor>
+        <dc:contributor xml:lang="es">Manuel Alejandro Pose Pose - Ayuntamiento de A Coruña</dc:contributor>
         <dc:contributor xml:lang="es">María Carmen Ruiz Moreno - Ayuntamiento de Madrid</dc:contributor>
         <dc:contributor xml:lang="es">María Jesús Fernández Ruiz - Ayuntamiento de Zaragoza</dc:contributor>
         <dc:contributor xml:lang="es">María Jesús Gallego San Miguel - Ayuntamiento de Madrid</dc:contributor>
@@ -796,8 +798,8 @@
         <rdfs:comment xml:lang="en">Amount of the financial instrument pending amortization on a given date.</rdfs:comment>
         <rdfs:comment xml:lang="es">Es el importe del instrumento financiero pendiente de amortizar en una fecha determinada.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="es">Capital Vivo</rdfs:label>
-        <rdfs:label xml:lang="en">Principal</rdfs:label>
+        <rdfs:label xml:lang="es">Capital vivo</rdfs:label>
+        <rdfs:label xml:lang="en">Living capital</rdfs:label>
     </owl:Class>
     
 
