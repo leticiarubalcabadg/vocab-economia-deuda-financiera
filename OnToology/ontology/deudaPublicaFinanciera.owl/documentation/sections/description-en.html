@@ -50,15 +50,15 @@ In the following example we ahow an instance of a bilateral loan where the lende
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/amortizacion/es1234567893-c1&gt;
         a esdeufin:PlanAmortizacion;
         dct:date "2016-12-14"^^xsd:date ;
-        esdeufin:importe "39000000.00^^xsd:float.
+        esdeufin:importe "39000000.00"^^xsd:float.
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/amortizacion/es1234567893-c2&gt;
         a esdeufin:PlanAmortizacion;
         dct:date "2019-12-14"^^xsd:date ;
-        esdeufin:importe "39000000.00^^xsd:float.
+        esdeufin:importe "39000000.00"^^xsd:float.
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/amortizacion/es1234567893-c3&gt;
         a esdeufin:PlanAmortizacion;
         dct:date "2022-12-14"^^xsd:date ;
-        esdeufin:importe "24000000.00^^xsd:float.
+        esdeufin:importe "24000000.00"^^xsd:float.
   </pre>
 <span class="markdown">
 For this loan we give an example of two financial expenses from the year 2017 that correspond to interest payments.
@@ -69,12 +69,14 @@ For this loan we give an example of two financial expenses from the year 2017 th
         esdeufin:cargaFinanciera &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/carga-financiera/2017-12-21-es1234567893&gt; ;
         esdeufin:capitalVivo &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/capital-vivo/2020-06-30-es1234567893&gt; .
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/carga-financiera/2017-06-21-es1234567893&gt;
+        a esdeufin:CargaFinanciera;
         esdeufin:anioFiscal "2017"^xsd:gYear ;
         esdeufin:gastoOPasivoFinanciero "gasto financiero"^^xsd:string ;
         dct:description "AMORT.VTO.21/06/17 PTM L/P MDEC-I.C.O.(20,77MM)'06 (2017)"^^xsd:string ;
         dct:date "2017-06-21"^^xsd:date ;
         esdeufin:importe "692332.00"^^xsd:float.
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/carga-financiera/2017-12-21-es1234567893&gt;
+        a esdeufin:CargaFinanciera;
         esdeufin:anioFiscal "2017"^xsd:gYear ;
         esdeufin:gastoOPasivoFinanciero "gasto financiero"^^xsd:string ;
         dct:description "AMORT.VTO.21/12/17 PTM L/P MDEC-I.C.O.(20,77MM)'06 (2017)"^^xsd:string ;
@@ -86,6 +88,7 @@ Additionally we have that the linving capital of this loan the 30/6/2020 is 24.0
 </span>
 <pre>
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/capital-vivo/2020-06-30-es1234567893&gt; 
+        a esdeufin:CapitalVivo;
         dct:date "2020-06-30"^^xsd:date ;
         esdeufin:capitalVivo "24000000.00"^^xsd:float.       
 </pre>
@@ -96,7 +99,7 @@ The lender entity has the identifier "Q2876002C" and its name is ''Instituto de 
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/entidad-prestamista/q2876002c&gt;
         a org:Organization;
         org:identifier "Q2876002C"^^xsd:string ;
-        org:name "Instituto de Crédito Oficial (ICO)^^xsd:string ;
+        org:name "Instituto de Crédito Oficial (ICO)"^^xsd:string ;
         org:classification &lt;http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica/tipo-entidad-prestamista/suscripcion-publica&gt;.
 </pre>
 <span class="markdown">
@@ -121,7 +124,7 @@ Following we present an example of an issuance where the ISIN code is "ES0201001
     &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/amortizacion/es0201001148-c1&gt;
         a esdeufin:Amortizacion;
         dct:date "2036-06-16"^^xsd:date ;
-        esdeufin:importe "300000000.00^^xsd:float.
+        esdeufin:importe "300000000.00"^^xsd:float.
     </pre>
     
 
