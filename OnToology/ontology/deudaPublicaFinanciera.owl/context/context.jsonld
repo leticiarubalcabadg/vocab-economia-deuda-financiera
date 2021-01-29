@@ -168,6 +168,9 @@
     "CapitalVivo" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo"
     },
+    "fechaEmision" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision"
+    },
     "fechaInicio" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaInicio",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"

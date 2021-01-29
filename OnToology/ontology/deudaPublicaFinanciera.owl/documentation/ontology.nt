@@ -289,6 +289,15 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE> <http://www.w3.org/2000/01/rdf-schema#label> "endeudamiento protocolo déficit excesivo"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#endeudamientoPDE> <http://www.w3.org/2000/01/rdf-schema#label> "excessive deficit protocol debt"@en .
 # 
+# http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision> <http://www.w3.org/2000/01/rdf-schema#comment> "Date on which the securities are issued."@en .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision> <http://www.w3.org/2000/01/rdf-schema#comment> "Fecha en la que se realiza la emisión de los títulos."@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision> <http://www.w3.org/2000/01/rdf-schema#label> "fecha emisión"@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision> <http://www.w3.org/2000/01/rdf-schema#label> "issuance date"@en .
+# 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
