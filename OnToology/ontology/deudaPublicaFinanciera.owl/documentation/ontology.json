@@ -594,6 +594,29 @@
     "@id" : "http://www.w3.org/ns/org#Organization"
   } ]
 }, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Date on which the securities are issued."
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha en la que se realiza la emisión de los títulos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "fecha de emisión"
+  }, {
+    "@language" : "en",
+    "@value" : "issuance date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+  } ]
+}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {

@@ -309,6 +309,16 @@ xsd:gYear rdf:type rdfs:Datatype .
                              "excessive deficit protocol debt"@en .
 
 
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision
+:fechaEmision rdf:type owl:DatatypeProperty ;
+              rdfs:subPropertyOf owl:topDataProperty ;
+              rdfs:comment "Date on which the securities are issued."@en ,
+                           "Fecha en la que se realiza la emisión de los títulos."@es ;
+              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
+              rdfs:label "fecha de emisión"@es ,
+                         "issuance date"@en .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion
 :fechaFormalizacion rdf:type owl:DatatypeProperty ;
                     rdfs:subPropertyOf owl:topDataProperty ;
