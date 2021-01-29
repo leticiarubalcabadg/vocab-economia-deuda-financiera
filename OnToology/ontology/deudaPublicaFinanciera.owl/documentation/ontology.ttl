@@ -315,7 +315,7 @@ xsd:gYear rdf:type rdfs:Datatype .
               rdfs:comment "Date on which the securities are issued."@en ,
                            "Fecha en la que se realiza la emisión de los títulos."@es ;
               rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
-              rdfs:label "fecha emisión"@es ,
+              rdfs:label "fecha de emisión"@es ,
                          "issuance date"@en .
 
 

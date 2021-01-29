@@ -477,7 +477,7 @@
         <rdfs:comment xml:lang="en">Date on which the securities are issued.</rdfs:comment>
         <rdfs:comment xml:lang="es">Fecha en la que se realiza la emisión de los títulos.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="es">fecha emisión</rdfs:label>
+        <rdfs:label xml:lang="es">fecha de emisión</rdfs:label>
         <rdfs:label xml:lang="en">issuance date</rdfs:label>
     </owl:DatatypeProperty>
     
