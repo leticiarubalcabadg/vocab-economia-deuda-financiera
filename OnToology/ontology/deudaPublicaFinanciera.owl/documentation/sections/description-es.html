@@ -4,7 +4,7 @@
 </center>
     <br>
   <span class="markdown">
-En este vocabulario se tiene una clase que representa la deuda publica financiera anual [esdeufin:DeudaAnual](#DeudaAnual). Las propiedades se refieren al año fiscal y al total de la deuda por protocolo de déficit excesivo (PDE). De esta manera se puede representar la deuda de varios años fiscales y así conocer la evolución de la deuda de un ayuntamiento.
+En este vocabulario se tiene una clase que representa la deuda publica financiera anual [esdeufin:DeudaAnual](#DeudaAnual). Las propiedades se refieren a la fecha de la Deuda, generalmente al cierre del ejercicio y al total de la deuda por protocolo de déficit excesivo (PDE). De esta manera se puede representar la deuda de varios años y así conocer la evolución de la deuda de un ayuntamiento.
       
 La deuda de un año fiscal se relaciona con uno o más [esdeufin:InstrumentoFinanciacion](#InstrumentoFinanciacion) a través de la propiedad [esdeufin:instrumentoFinanciacion](#instrumentoFinanciacion). Un instrumento de financiación tiene propiedades tales como el identificador, el tipo de interés, la tasa si el interés es fijo y la referencia y el margen  si el interés es variable. Un instrumento de financiación puede ser un [esdeufin:Prestamo](#Prestamo) o una [esdeufin:Emision](#Emision). Un préstamo es otorgado  por una o más entidades prestamistas ([esdeufin:entidadPrestamista](#entidadPrestamista)), que se representa utilizando la clase [org:Organization](https://www.w3.org/TR/vocab-org/#org:Organization) de la ontología [Organization](https://www.w3.org/TR/vocab-org/). El préstamo puede ser de un cierto [esdeufin:tipoPrestamo](#tipoPrestamo) tal como bilateral, sindicado, préstamo por algún fondo o una ayuda reintegrable. El tipo de préstamo se representa mediante una taxonomía SKOS de [tipo-prestamo](http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-financiera/tipo-prestamo). La entidad prestamista puede ser de un cierto tipo tal como entidad financiera, diputación, etc. Para ello se ha reusado la propiedad [org:classification](http://www.w3.org/ns/org#Organization) de la ontología de organizaciones, la cual tiene como rango una taxonomia SKOS [tipo-entidad-prestamista](http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-financiera/tipo-entidad-prestamista). Un instrumento de financiación se relaciona a través de la propiedad [espresup:planAmortizacion](#planAmortizacion) con su calendario de amortizaciones que indica la fecha e importe de cada amortización. Un instrumento de financiación tiene un [esdeufin:CapitalVivo](#capitalVivo) que indica a una fecha determinada el importe por amortizar. Por último, cada instrumento de financiación puede tener una carga financiera en un año fiscal,[esdeufin:CargaFinanciera](#CargaFinanciera), que puede ser un gasto financiero o un pasivo financiero. 
 </span>
@@ -18,7 +18,7 @@ La deuda de un año fiscal se relaciona con uno o más [esdeufin:InstrumentoFina
 <pre>
 &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/deuda/2019&gt; 
         a esdeufin:DeudaAnual;
-        esdeufin:anioFiscal "2019"^^xsd:gYear ;
+        dct:date "2019-12-31"^^xsd:date ;
         esdeufin:endeudamientoPDE "2232568750.00"^^xsd:float ;
         esdeufin:instrumentoFinanciacion &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/prestamo/es1234567893&gt;;
         esdeufin:instrumentoFinanciacion &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/emision/es0201001148&gt;.
@@ -108,6 +108,7 @@ A continuación se presenta un ejemplo de una emisión en donde el código ISIN 
         a esdeufin:Emision, esdeufin:InstrumentoFinanciacion;
         esdeufin:codISIN "ES0201001148"^^xsd:string ;
         esdeufin:importe "300000000.00"^^xsd:float ;
+        esdeufin:fechaEmision "2006-06-16"^^xsd:date;
         esdeufin:tipoInteres "fijo"^^xsd:string ;
         esdeufin:tasaFija "4.55"^^xsd:float ;
         esdeufin:numeroTitulos "3000"^^xsd:integer ;

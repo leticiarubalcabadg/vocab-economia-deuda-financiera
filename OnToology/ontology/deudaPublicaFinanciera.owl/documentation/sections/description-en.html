@@ -4,7 +4,7 @@
 </center>
     <br>
   <span class="markdown">
-In this vocabulary there is a class that represents the annual public financial debt  [esdeufin:DeudaAnual](#DeudaAnual). The properties refer to the fiscal year and the total debt following the excessive deficit protocol (PDE). In this way, the debt of several fiscal years can be represented and thus the evolution of the debt of a city council may be known.
+In this vocabulary there is a class that represents the annual public financial debt  [esdeufin:DeudaAnual](#DeudaAnual). The properties refer to the date of the debt, generally at the end of the fiscal year and to the total debt following the excessive deficit protocol (PDE). In this way, the debt of several fiscal years can be represented and thus the evolution of the debt of a city council may be known.
 The debt of a fiscal year is related to one or more financing instruments     
  [esdeufin:InstrumentoFinanciacion](#InstrumentoFinanciacion) through the property ''financing instrument'' [esdeufin:instrumentoFinanciacion](#instrumentoFinanciacion). A financing instrument has properties such as the identifier, the interest type, the interest rate if the interest is fixed and the reference and margin if the interest is variable. A financing instrument may be a loan [esdeufin:Prestamo](#Prestamo) or an issuance [esdeufin:Emision](#Emision). A loan may be granted by one or more lender entities ([esdeufin:entidadPrestamista](#entidadPrestamista)), that are represented through the class 
 [org:Organization](https://www.w3.org/TR/vocab-org/#org:Organization) from the ontology   [Organization](https://www.w3.org/TR/vocab-org/). The loan may be of a certain type 
@@ -20,7 +20,7 @@ The debt of a fiscal year is related to one or more financing instruments
 <pre>
 &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/deuda/2019&gt; 
         a esdeufin:DeudaAnual;
-        esdeufin:anioFiscal "2019"^^xsd:gYear ;
+        dct:date "2019-12-31"^^xsd:gYear ;
         esdeufin:endeudamientoPDE "2232568750.00"^^xsd:float ;
         esdeufin:instrumentoFinanciacion &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/prestamo/es1234567893&gt;;
         esdeufin:instrumentoFinanciacion &lt;http://vocab.ciudadesabiertas.es/recurso/economia/deuda-financiera/emision/es0201001148&gt;.
@@ -110,6 +110,7 @@ Following we present an example of an issuance where the ISIN code is "ES0201001
         a esdeufin:Emision, esdeufin:InstrumentoFinanciacion;
         esdeufin:codISIN "ES0201001148"^^xsd:string ;
         esdeufin:importe "300000000.00"^^xsd:float ;
+        esdeufin:fechaEmision "2006-06-16"^^xsd:date;
         esdeufin:tipoInteres "fijo"^^xsd:string ;
         esdeufin:tasaFija "4.55"^^xsd:float ;
         esdeufin:numeroTitulos "3000"^^xsd:integer ;
