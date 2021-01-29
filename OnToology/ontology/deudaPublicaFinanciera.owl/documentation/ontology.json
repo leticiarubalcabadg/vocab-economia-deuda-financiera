@@ -608,7 +608,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "fecha emisión"
+    "@value" : "fecha de emisión"
   }, {
     "@language" : "en",
     "@value" : "issuance date"
