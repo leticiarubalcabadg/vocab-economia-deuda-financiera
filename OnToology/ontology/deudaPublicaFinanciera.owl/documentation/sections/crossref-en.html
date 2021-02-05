@@ -402,12 +402,28 @@ This section provides details for each class and property defined by Vocabulario
          <a href="#http://www.w3.org/ns/org#classification" title="http://www.w3.org/ns/org#classification">classification</a>
       </li>
       <li>
+         <a href="#deudaAnualInstrumentoFinanciacion"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion">deuda anual con instrumento de financiación</a>
+      </li>
+      <li>
          <a href="#cargaFinanciera"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera">financial burden</a>
       </li>
       <li>
          <a href="#instrumentoFinanciacion"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion">financing instrument</a>
+      </li>
+      <li>
+         <a href="#instrumentoFinanciacionCargaFinanciera"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera">financing instrument with financial burden</a>
+      </li>
+      <li>
+         <a href="#instrumentoFinanciacionCapitalVivo"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo">financing instrument with live capital</a>
+      </li>
+      <li>
+         <a href="#instrumentoFinanciacionPlanAmortizacion"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion">financing instrument with repayment schedule</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
@@ -460,6 +476,24 @@ This section provides details for each class and property defined by Vocabulario
          </dl>
       </div>
    </div>
+   <div class="entity" id="deudaAnualInstrumentoFinanciacion">
+      <h3>deuda anual con instrumento de financiación<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion</p>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#instrumentoFinanciacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion">financing instrument</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="cargaFinanciera">
       <h3>financial burden<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -487,6 +521,12 @@ This section provides details for each class and property defined by Vocabulario
                <a href="#CargaFinanciera"
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera">Financial burden</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#instrumentoFinanciacionCargaFinanciera"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera">financing instrument with financial burden</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -518,6 +558,66 @@ This section provides details for each class and property defined by Vocabulario
                <a href="#InstrumentoFinanciacion"
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">Financing instrument</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#deudaAnualInstrumentoFinanciacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion">deuda anual con instrumento de financiación</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="instrumentoFinanciacionCargaFinanciera">
+      <h3>financing instrument with financial burden<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera</p>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#cargaFinanciera"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera">financial burden</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="instrumentoFinanciacionCapitalVivo">
+      <h3>financing instrument with live capital<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo</p>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#capitalVivo"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">live capital</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="instrumentoFinanciacionPlanAmortizacion">
+      <h3>financing instrument with repayment schedule<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion</p>
+      <div class="description">
+         <dl>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#planAmortizacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion">repayment schedule</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -603,6 +703,12 @@ This section provides details for each class and property defined by Vocabulario
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo">Living capital</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#instrumentoFinanciacionCapitalVivo"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo">financing instrument with live capital</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -670,6 +776,12 @@ This section provides details for each class and property defined by Vocabulario
                <a href="#PlanAmortizacion"
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion">Repayment plan</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#instrumentoFinanciacionPlanAmortizacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion">financing instrument with repayment schedule</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
