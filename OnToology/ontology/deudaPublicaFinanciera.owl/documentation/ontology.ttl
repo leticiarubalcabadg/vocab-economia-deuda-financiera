@@ -119,6 +119,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo
 :capitalVivo rdf:type owl:ObjectProperty ;
+             owl:inverseOf :instrumentoFinanciacionCapitalVivo ;
              rdfs:domain :InstrumentoFinanciacion ;
              rdfs:range :CapitalVivo ;
              rdfs:comment "Relaciona el instrumento de financiación con el importe pendiente de amortizar en una fecha determinada."@es ,
@@ -129,6 +130,7 @@ xsd:gYear rdf:type rdfs:Datatype .
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera
 :cargaFinanciera rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :instrumentoFinanciacionCargaFinanciera ;
                  rdfs:domain :InstrumentoFinanciacion ;
                  rdfs:range :CargaFinanciera ;
                  rdfs:comment "Fiinancial expenses and. financial liabilities held during the fiscal year for a certain financing instrument."@en ,
@@ -136,6 +138,13 @@ xsd:gYear rdf:type rdfs:Datatype .
                  rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
                  rdfs:label "carga financiera"@es ,
                             "financial burden"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion
+:deudaAnualInstrumentoFinanciacion rdf:type owl:ObjectProperty ;
+                                   owl:inverseOf :instrumentoFinanciacion ;
+                                   rdfs:label "deuda anual con instrumento de financiación"@es ,
+                                              "annual debt with financing instrument" .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista
@@ -157,6 +166,25 @@ xsd:gYear rdf:type rdfs:Datatype .
                          rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
                          rdfs:label "financing instrument"@en ,
                                     "instrumento financiación"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo
+:instrumentoFinanciacionCapitalVivo rdf:type owl:ObjectProperty ;
+                                    rdfs:label "financing instrument with live capital"@en ,
+                                               "instrumento de financiación con capital vivo"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera
+:instrumentoFinanciacionCargaFinanciera rdf:type owl:ObjectProperty ;
+                                        rdfs:label "financing instrument with financial burden"@en ,
+                                                   "instrumento de financiación con carga financiera"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion
+:instrumentoFinanciacionPlanAmortizacion rdf:type owl:ObjectProperty ;
+                                         owl:inverseOf :planAmortizacion ;
+                                         rdfs:label "financing instrument with repayment schedule"@en ,
+                                                    "instrumento de financiación con plan de amortización"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion

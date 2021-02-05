@@ -107,6 +107,7 @@
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona el instrumento de financiación con el importe pendiente de amortizar en una fecha determinada."@es .
@@ -116,6 +117,7 @@
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera> <http://www.w3.org/2000/01/rdf-schema#comment> "Fiinancial expenses and. financial liabilities held during the fiscal year for a certain financing instrument."@en .
@@ -123,6 +125,12 @@
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera> <http://www.w3.org/2000/01/rdf-schema#label> "carga financiera"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera> <http://www.w3.org/2000/01/rdf-schema#label> "financial burden"@en .
+# 
+# http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#label> "deuda anual con instrumento de financiación"@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#label> "annual debt with financing instrument" .
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -142,6 +150,22 @@
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#label> "financing instrument"@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#label> "instrumento financiación"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo> <http://www.w3.org/2000/01/rdf-schema#label> "financing instrument with live capital"@en .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo> <http://www.w3.org/2000/01/rdf-schema#label> "instrumento de financiación con capital vivo"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera> <http://www.w3.org/2000/01/rdf-schema#label> "financing instrument with financial burden"@en .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera> <http://www.w3.org/2000/01/rdf-schema#label> "instrumento de financiación con carga financiera"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion> .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion> <http://www.w3.org/2000/01/rdf-schema#label> "financing instrument with repayment schedule"@en .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion> <http://www.w3.org/2000/01/rdf-schema#label> "instrumento de financiación con plan de amortización"@es .
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
