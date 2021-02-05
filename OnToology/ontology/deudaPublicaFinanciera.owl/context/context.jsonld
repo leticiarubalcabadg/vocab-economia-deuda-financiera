@@ -32,6 +32,10 @@
     "topDataProperty" : {
       "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
     },
+    "instrumentoFinanciacionCapitalVivo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo",
+      "@type" : "@id"
+    },
     "duración" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#duración",
       "@type" : "http://www.w3.org/2001/XMLSchema#duration"
@@ -69,8 +73,16 @@
     "PlanAmortizacion" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"
     },
+    "instrumentoFinanciacionCargaFinanciera" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera",
+      "@type" : "@id"
+    },
     "notation" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#notation"
+    },
+    "deudaAnualInstrumentoFinanciacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion",
+      "@type" : "@id"
     },
     "Agent" : {
       "@id" : "http://xmlns.com/foaf/0.1/Agent"
@@ -188,6 +200,10 @@
     },
     "contributor" : {
       "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "instrumentoFinanciacionPlanAmortizacion" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion",
+      "@type" : "@id"
     },
     "importe" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe",

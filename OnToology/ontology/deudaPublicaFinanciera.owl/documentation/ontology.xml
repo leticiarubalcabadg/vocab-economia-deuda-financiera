@@ -206,6 +206,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">
+        <owl:inverseOf rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
         <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo"/>
         <rdfs:comment xml:lang="es">Relaciona el instrumento de financiación con el importe pendiente de amortizar en una fecha determinada.</rdfs:comment>
@@ -220,6 +221,7 @@
 
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera">
+        <owl:inverseOf rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
         <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera"/>
         <rdfs:comment xml:lang="en">Fiinancial expenses and. financial liabilities held during the fiscal year for a certain financing instrument.</rdfs:comment>
@@ -227,6 +229,17 @@
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">carga financiera</rdfs:label>
         <rdfs:label xml:lang="en">financial burden</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion -->
+
+
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion">
+        <owl:inverseOf rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion"/>
+        <rdfs:label xml:lang="es">deuda anual con instrumento de financiación</rdfs:label>
+        <rdfs:label>annual debt with financing instrument</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -256,6 +269,37 @@
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">financing instrument</rdfs:label>
         <rdfs:label xml:lang="es">instrumento financiación</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo -->
+
+
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo">
+        <rdfs:label xml:lang="en">financing instrument with live capital</rdfs:label>
+        <rdfs:label xml:lang="es">instrumento de financiación con capital vivo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera -->
+
+
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera">
+        <rdfs:label xml:lang="en">financing instrument with financial burden</rdfs:label>
+        <rdfs:label xml:lang="es">instrumento de financiación con carga financiera</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion -->
+
+
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion">
+        <owl:inverseOf rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion"/>
+        <rdfs:label xml:lang="en">financing instrument with repayment schedule</rdfs:label>
+        <rdfs:label xml:lang="es">instrumento de financiación con plan de amortización</rdfs:label>
     </owl:ObjectProperty>
     
 
