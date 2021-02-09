@@ -1,5 +1,9 @@
 {
   "@context" : {
+    "esEmision" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision",
+      "@type" : "@id"
+    },
     "scopeNote" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
     },
@@ -15,6 +19,9 @@
     "fechaFormalizacion" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion",
       "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "tipoInstrumento" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento"
     },
     "license" : {
       "@id" : "http://purl.org/dc/terms/license"
@@ -159,6 +166,10 @@
     "numeroTitulos" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#numeroTitulos",
       "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "esPrestamo" : {
+      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo",
+      "@type" : "@id"
     },
     "CargaFinanciera" : {
       "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera"

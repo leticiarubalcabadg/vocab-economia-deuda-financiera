@@ -200,13 +200,19 @@ This section provides details for each class and property defined by Vocabulario
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera">financial burden</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#tasaFija"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tasaFija">fixed interest rate</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#capitalVivo"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#esPrestamo"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo">is a loan</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#esEmision"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision">is an issuance</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#capitalVivo"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">live capital</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#margen"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen">margin</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#planAmortizacion"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion">repayment schedule</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#referencia"
+            <sup class="type-op" title="object property">op</sup>, <a href="#tipoInstrumento"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento">type of instrument</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#referencia"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#referencia">variable reference</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
@@ -258,6 +264,12 @@ This section provides details for each class and property defined by Vocabulario
             <sup class="type-dp" title="data property">dp</sup>, <a href="#precioReembolso"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioReembolso">redemption price</a>
             <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#esEmision"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision">is an issuance</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -324,6 +336,12 @@ This section provides details for each class and property defined by Vocabulario
             <sup class="type-dp" title="data property">dp</sup>, <a href="#plazo"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#plazo">term</a>
             <sup class="type-dp" title="data property">dp</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#esPrestamo"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo">is a loan</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -424,6 +442,14 @@ This section provides details for each class and property defined by Vocabulario
       <li>
          <a href="#instrumentoFinanciacionPlanAmortizacion"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion">financing instrument with repayment schedule</a>
+      </li>
+      <li>
+         <a href="#esPrestamo"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo">is a loan</a>
+      </li>
+      <li>
+         <a href="#esEmision"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision">is an issuance</a>
       </li>
       <li>
          <a href="#http://www.w3.org/2004/02/skos/core#inScheme" title="http://www.w3.org/2004/02/skos/core#inScheme">is in scheme</a>
@@ -618,6 +644,60 @@ This section provides details for each class and property defined by Vocabulario
                <a href="#planAmortizacion"
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion">repayment schedule</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="esPrestamo">
+      <h3>is a loan<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InstrumentoFinanciacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">Financing instrument</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Prestamo"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo">Loan</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="esEmision">
+      <h3>is an issuance<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision</p>
+      <div class="description">
+         <p>
+            <strong>has characteristics:
+                </strong> functional</p>
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InstrumentoFinanciacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">Financing instrument</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Emision"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision">Issuance</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -893,6 +973,10 @@ This section provides details for each class and property defined by Vocabulario
       <li>
          <a href="#plazo"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#plazo">term</a>
+      </li>
+      <li>
+         <a href="#tipoInstrumento"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento">type of instrument</a>
       </li>
       <li>
          <a href="#referencia"
@@ -1721,6 +1805,26 @@ This section provides details for each class and property defined by Vocabulario
                   target="_blank"
                   title="http://www.w3.org/2001/XMLSchema#duration">duration</a>
             </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="tipoInstrumento">
+      <h3>type of instrument<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#InstrumentoFinanciacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">Financing instrument</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>{ "Emision" , "Prestamo" }</dd>
          </dl>
       </div>
    </div>
