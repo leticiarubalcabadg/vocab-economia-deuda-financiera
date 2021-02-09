@@ -235,6 +235,30 @@
     
 
 
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
+        <rdfs:label xml:lang="es">es la emisión</rdfs:label>
+        <rdfs:label xml:lang="en">is an issuance</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
+        <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
+        <rdfs:label xml:lang="es">es el préstamo</rdfs:label>
+        <rdfs:label xml:lang="en">is a loan</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion -->
 
     <owl:ObjectProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion">
@@ -720,6 +744,33 @@
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">fixed interest rate</rdfs:label>
         <rdfs:label xml:lang="es">tasa fija</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento">
+        <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Emision</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Prestamo</rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:label xml:lang="es">tipo de instrumento</rdfs:label>
+        <rdfs:label xml:lang="en">type of instrument</rdfs:label>
     </owl:DatatypeProperty>
     
 
