@@ -158,6 +158,24 @@ xsd:gYear rdf:type rdfs:Datatype .
                                "lender entity"@en .
 
 
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision
+:esEmision rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :InstrumentoFinanciacion ;
+           rdfs:range :Emision ;
+           rdfs:label "es la emisión"@es ,
+                      "is an issuance"@en .
+
+
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo
+:esPrestamo rdf:type owl:ObjectProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :InstrumentoFinanciacion ;
+            rdfs:range :Prestamo ;
+            rdfs:label "es el préstamo"@es ,
+                       "is a loan"@en .
+
+
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion
 :instrumentoFinanciacion rdf:type owl:ObjectProperty ;
                          rdfs:domain :DeudaAnual ;
@@ -531,6 +549,22 @@ xsd:gYear rdf:type rdfs:Datatype .
           rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/deuda-publica-financiera" ;
           rdfs:label "fixed interest rate"@en ,
                      "tasa fija"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento
+:tipoInstrumento rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :InstrumentoFinanciacion ;
+                 rdfs:range [ rdf:type rdfs:Datatype ;
+                              owl:oneOf [ rdf:type rdf:List ;
+                                          rdf:first "Emision" ;
+                                          rdf:rest [ rdf:type rdf:List ;
+                                                     rdf:first "Prestamo" ;
+                                                     rdf:rest rdf:nil
+                                                   ]
+                                        ]
+                            ] ;
+                 rdfs:label "tipo de instrumento"@es ,
+                            "type of instrument"@en .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres
