@@ -241,7 +241,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
         <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"/>
-        <rdfs:label xml:lang="es">es la emisión</rdfs:label>
+        <rdfs:label xml:lang="es">es emisión</rdfs:label>
         <rdfs:label xml:lang="en">is an issuance</rdfs:label>
     </owl:ObjectProperty>
     
@@ -253,7 +253,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"/>
         <rdfs:range rdf:resource="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo"/>
-        <rdfs:label xml:lang="es">es el préstamo</rdfs:label>
+        <rdfs:label xml:lang="es">es préstamo</rdfs:label>
         <rdfs:label xml:lang="en">is a loan</rdfs:label>
     </owl:ObjectProperty>
     
