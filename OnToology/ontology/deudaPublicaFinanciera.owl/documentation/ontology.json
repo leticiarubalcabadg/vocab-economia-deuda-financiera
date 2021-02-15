@@ -629,7 +629,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "es la emisión"
+    "@value" : "es emisión"
   }, {
     "@language" : "en",
     "@value" : "is an issuance"
@@ -645,7 +645,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "es",
-    "@value" : "es el préstamo"
+    "@value" : "es préstamo"
   }, {
     "@language" : "en",
     "@value" : "is a loan"

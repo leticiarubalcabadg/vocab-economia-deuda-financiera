@@ -163,7 +163,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                     owl:FunctionalProperty ;
            rdfs:domain :InstrumentoFinanciacion ;
            rdfs:range :Emision ;
-           rdfs:label "es la emisión"@es ,
+           rdfs:label "es emisión"@es ,
                       "is an issuance"@en .
 
 
@@ -172,7 +172,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                      owl:FunctionalProperty ;
             rdfs:domain :InstrumentoFinanciacion ;
             rdfs:range :Prestamo ;
-            rdfs:label "es el préstamo"@es ,
+            rdfs:label "es préstamo"@es ,
                        "is a loan"@en .
 
 

@@ -147,7 +147,7 @@
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision> <http://www.w3.org/2000/01/rdf-schema#label> "es la emisión"@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision> <http://www.w3.org/2000/01/rdf-schema#label> "es emisión"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision> <http://www.w3.org/2000/01/rdf-schema#label> "is an issuance"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo
@@ -155,7 +155,7 @@
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo> <http://www.w3.org/2000/01/rdf-schema#label> "es el préstamo"@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo> <http://www.w3.org/2000/01/rdf-schema#label> "es préstamo"@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo> <http://www.w3.org/2000/01/rdf-schema#label> "is a loan"@en .
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion
