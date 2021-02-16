@@ -242,8 +242,8 @@
         <rdfs:comment xml:lang="es">Relaciona el instrumento de financiación con  la deuda anual calculada a determinada fecha (generalmente la fecha final del ejercicio). Es la propiedad inversa de la propiedad &quot;instrumentoFinanciacion&quot;.</rdfs:comment>
         <rdfs:comment xml:lang="en">Relates the financing instrument to the annual debt calculated on a certain date (generally the last date of the fiscal year). It is the inverse property of the &quot;instrumentoFinanciacion&quot; property.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="en">annual debt with financing instrument</rdfs:label>
         <rdfs:label xml:lang="es">deuda anual con instrumento de financiación</rdfs:label>
-        <rdfs:label>annual debt with financing instrument</rdfs:label>
     </owl:ObjectProperty>
     
 

@@ -523,10 +523,11 @@
     "@value" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "annual debt with financing instrument"
+  }, {
     "@language" : "es",
     "@value" : "deuda anual con instrumento de financiación"
-  }, {
-    "@value" : "annual debt with financing instrument"
   } ],
   "http://www.w3.org/2002/07/owl#inverseOf" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion"

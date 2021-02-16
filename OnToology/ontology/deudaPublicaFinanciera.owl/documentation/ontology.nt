@@ -133,8 +133,8 @@
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relaciona el instrumento de financiación con  la deuda anual calculada a determinada fecha (generalmente la fecha final del ejercicio). Es la propiedad inversa de la propiedad \"instrumentoFinanciacion\"."@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates the financing instrument to the annual debt calculated on a certain date (generally the last date of the fiscal year). It is the inverse property of the \"instrumentoFinanciacion\" property."@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#label> "annual debt with financing instrument"@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#label> "deuda anual con instrumento de financiación"@es .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion> <http://www.w3.org/2000/01/rdf-schema#label> "annual debt with financing instrument" .
 # 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
