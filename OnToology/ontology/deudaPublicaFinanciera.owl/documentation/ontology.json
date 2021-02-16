@@ -1214,7 +1214,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Denota el tipo de instrumento de financiación. Puede tomar los valores \"Prestamo\" o \"Emision\"."
+    "@value" : "Denota el tipo de instrumento de financiación. Puede tomar los valores (excluyentes) \"Prestamo\" o \"Emision\"."
   }, {
     "@language" : "en",
     "@value" : "Denotes the type of financing instrument. It can take the values \"Prestamo\" (Loan) or \"Emision\" (Issuance)."

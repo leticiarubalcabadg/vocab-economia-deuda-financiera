@@ -541,7 +541,7 @@ _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Prestamo" .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento> <http://www.w3.org/2000/01/rdf-schema#comment> "Denota el tipo de instrumento de financiación. Puede tomar los valores \"Prestamo\" o \"Emision\"."@es .
+<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento> <http://www.w3.org/2000/01/rdf-schema#comment> "Denota el tipo de instrumento de financiación. Puede tomar los valores (excluyentes) \"Prestamo\" o \"Emision\"."@es .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento> <http://www.w3.org/2000/01/rdf-schema#comment> "Denotes the type of financing instrument. It can take the values \"Prestamo\" (Loan) or \"Emision\" (Issuance)."@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de instrumento"@es .

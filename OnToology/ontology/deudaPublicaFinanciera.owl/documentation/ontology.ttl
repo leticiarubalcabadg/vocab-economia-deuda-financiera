@@ -583,7 +583,7 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                    ]
                                         ]
                             ] ;
-                 rdfs:comment "Denota el tipo de instrumento de financiación. Puede tomar los valores \"Prestamo\" o \"Emision\"."@es ,
+                 rdfs:comment "Denota el tipo de instrumento de financiación. Puede tomar los valores (excluyentes) \"Prestamo\" o \"Emision\"."@es ,
                               "Denotes the type of financing instrument. It can take the values \"Prestamo\" (Loan) or \"Emision\" (Issuance)."@en ;
                  rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" ;
                  rdfs:label "tipo de instrumento"@es ,
