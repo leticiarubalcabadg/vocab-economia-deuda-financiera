@@ -281,7 +281,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo</p>
       <div class="comment">
-         <span class="markdown">Amount of the financial instrument pending amortization on a given date.</span>
+         <span class="markdown">Amount of the financing instrument pending amortization on a given date.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -509,6 +509,13 @@ This section provides details for each class and property defined by Vocabulario
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion</p>
+      <div class="comment">
+         <span class="markdown">Relates the financing instrument to the annual debt calculated on a certain date (generally the last date of the fiscal year). It is the inverse property of the "instrumentoFinanciacion" property.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -528,7 +535,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera</p>
       <div class="comment">
-         <span class="markdown">Fiinancial expenses and. financial liabilities held during the fiscal year for a certain financing instrument.</span>
+         <span class="markdown">Fiinancial expenses and financial liabilities held during the fiscal year for a certain financing instrument. It is the inverse property of "instrumentoFinanciacionCargaFinanciera".</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -565,7 +572,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion</p>
       <div class="comment">
-         <span class="markdown">Relaciona la deuda anual con los instrumentos financieros activos durante el año fiscal correspondiente.</span>
+         <span class="markdown">Relates the annual debt calculated at a certain date (generally the last date of the fiscal year) with the financing instruments. It is the inverse property of the "deudaAnualInstrumentoFinanciacion" property.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -601,6 +608,13 @@ This section provides details for each class and property defined by Vocabulario
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera</p>
+      <div class="comment">
+         <span class="markdown">It is the financing instrument that corresponds to a certain financial expense or financial liability. It is the inverse property of the property "cargaFinanciera".</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -619,6 +633,13 @@ This section provides details for each class and property defined by Vocabulario
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo</p>
+      <div class="comment">
+         <span class="markdown">It relates the amount pending amortization on a given date with its corresponding financing instrument. It is the inverse property of the "capitalVivo" property.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -637,6 +658,13 @@ This section provides details for each class and property defined by Vocabulario
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion</p>
+      <div class="comment">
+         <span class="markdown">It relates a certain repayment with the corresponding financing instrument. It is the inverse property of the property "planAmortizacion".</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>is inverse of</dt>
@@ -655,6 +683,13 @@ This section provides details for each class and property defined by Vocabulario
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo</p>
+      <div class="comment">
+         <span class="markdown">If the type of instrument is "Prestamo" (Loan), it relates the financing instrument with the data in the Prestamo class.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -682,6 +717,13 @@ This section provides details for each class and property defined by Vocabulario
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision</p>
+      <div class="comment">
+         <span class="markdown">If the type of instrument is "Emision" (Issuance), it relates the financing instrument with the data in the Emision class.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
       <div class="description">
          <p>
             <strong>has characteristics:
@@ -767,8 +809,12 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo</p>
       <div class="comment">
-         <span class="markdown">Relates the financial instrument with the pending amortization on a given date.</span>
+         <span class="markdown">Relates the financing instrument with the pending amortization on a given date. It is the inverse property of "instrumentoFinanciacionCapitalVivo".</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -837,7 +883,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion</p>
       <div class="comment">
-         <span class="markdown">Relates the financial instrument to its repayment schedule.</span>
+         <span class="markdown">Relates the financing instrument to its repayment schedule. It is the inverse property of the "instrumentoFinanciacionPlanAmortizacion" property.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1432,7 +1478,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres</p>
       <div class="comment">
-         <span class="markdown">Interest rate (fixed or variable) of a financial instrument</span>
+         <span class="markdown">Interest rate (fixed or variable) of a financing instrument</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1815,6 +1861,13 @@ This section provides details for each class and property defined by Vocabulario
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento</p>
+      <div class="comment">
+         <span class="markdown">Denotes the type of financing instrument. It can take the values "Prestamo" (Loan) or "Emision" (Issuance).</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
