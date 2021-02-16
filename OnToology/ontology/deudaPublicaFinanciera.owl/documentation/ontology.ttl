@@ -147,8 +147,8 @@ xsd:gYear rdf:type rdfs:Datatype .
                                    rdfs:comment "Relaciona el instrumento de financiación con  la deuda anual calculada a determinada fecha (generalmente la fecha final del ejercicio). Es la propiedad inversa de la propiedad \"instrumentoFinanciacion\"."@es ,
                                                 "Relates the financing instrument to the annual debt calculated on a certain date (generally the last date of the fiscal year). It is the inverse property of the \"instrumentoFinanciacion\" property."@en ;
                                    rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" ;
-                                   rdfs:label "deuda anual con instrumento de financiación"@es ,
-                                              "annual debt with financing instrument" .
+                                   rdfs:label "annual debt with financing instrument"@en ,
+                                              "deuda anual con instrumento de financiación"@es .
 
 
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista
