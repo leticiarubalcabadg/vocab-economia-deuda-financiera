@@ -789,7 +789,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
-        <rdfs:comment xml:lang="es">Denota el tipo de instrumento de financiación. Puede tomar los valores &quot;Prestamo&quot; o &quot;Emision&quot;.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Denota el tipo de instrumento de financiación. Puede tomar los valores (excluyentes) &quot;Prestamo&quot; o &quot;Emision&quot;.</rdfs:comment>
         <rdfs:comment xml:lang="en">Denotes the type of financing instrument. It can take the values &quot;Prestamo&quot; (Loan) or &quot;Emision&quot; (Issuance).</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="es">tipo de instrumento</rdfs:label>
