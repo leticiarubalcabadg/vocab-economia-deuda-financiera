@@ -820,6 +820,13 @@
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Representa una cantidad de dinero. Se define para las siguientes clases:\n- Clase \"Capital vivo\" representa el improte del instrumento de financiación pendiente por amortizar. \n- Clase \"Plan amortización\" representa para una fecha dada el importe de amortización de la deuda que se recoge en el contrato firmado entre las partes. \n- Clase \"Instrumento de financiación\" representa el importe que se financiará con el instrumento.\n- Clase \"Carga financiera\" representa el importe del gasto financiero o el pasivo financiero."
+  }, {
+    "@language" : "en",
+    "@value" : "Represents an amount of money. It is defined for the following classes:\n- Class \"Live capital\" represents the amount of the financing instrument pending amortization.\n- Class \"Repayment plan\" represents for a given date the amount of repayment of the debt that is included in the contract signed between the parties.\n- Class \"Financing instrument\" represents the amount that will be financed with the instrument.\n- Class \"Financial burden\" represents the amount of financial expense or financial liability."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera"
   } ],

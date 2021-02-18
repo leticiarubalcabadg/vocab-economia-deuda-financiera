@@ -445,6 +445,16 @@ xsd:gYear rdf:type rdfs:Datatype .
 :importe rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
          rdfs:range xsd:float ;
+         rdfs:comment """Representa una cantidad de dinero. Se define para las siguientes clases:
+- Clase \"Capital vivo\" representa el improte del instrumento de financiación pendiente por amortizar. 
+- Clase \"Plan amortización\" representa para una fecha dada el importe de amortización de la deuda que se recoge en el contrato firmado entre las partes. 
+- Clase \"Instrumento de financiación\" representa el importe que se financiará con el instrumento.
+- Clase \"Carga financiera\" representa el importe del gasto financiero o el pasivo financiero."""@es ,
+                      """Represents an amount of money. It is defined for the following classes:
+- Class \"Live capital\" represents the amount of the financing instrument pending amortization.
+- Class \"Repayment plan\" represents for a given date the amount of repayment of the debt that is included in the contract signed between the parties.
+- Class \"Financing instrument\" represents the amount that will be financed with the instrument.
+- Class \"Financial burden\" represents the amount of financial expense or financial liability."""@en ;
          rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" ;
          rdfs:label "amount"@en ,
                     "importe"@es .
