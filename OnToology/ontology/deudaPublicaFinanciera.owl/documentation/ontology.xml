@@ -659,6 +659,16 @@
     <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="es">Representa una cantidad de dinero. Se define para las siguientes clases:
+- Clase &quot;Capital vivo&quot; representa el improte del instrumento de financiación pendiente por amortizar. 
+- Clase &quot;Plan amortización&quot; representa para una fecha dada el importe de amortización de la deuda que se recoge en el contrato firmado entre las partes. 
+- Clase &quot;Instrumento de financiación&quot; representa el importe que se financiará con el instrumento.
+- Clase &quot;Carga financiera&quot; representa el importe del gasto financiero o el pasivo financiero.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Represents an amount of money. It is defined for the following classes:
+- Class &quot;Live capital&quot; represents the amount of the financing instrument pending amortization.
+- Class &quot;Repayment plan&quot; represents for a given date the amount of repayment of the debt that is included in the contract signed between the parties.
+- Class &quot;Financing instrument&quot; represents the amount that will be financed with the instrument.
+- Class &quot;Financial burden&quot; represents the amount of financial expense or financial liability.</rdfs:comment>
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">amount</rdfs:label>
         <rdfs:label xml:lang="es">importe</rdfs:label>
