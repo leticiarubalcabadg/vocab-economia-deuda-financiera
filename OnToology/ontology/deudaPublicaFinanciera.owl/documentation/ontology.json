@@ -9,25 +9,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"
-  } ]
-}, {
-  "@id" : "_:genid12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://www.w3.org/ns/org#Organization"
-  } ]
-}, {
-  "@id" : "_:genid13",
+  "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo"
@@ -49,20 +31,28 @@
   "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
-      "@value" : "gasto financiero"
-    }, {
-      "@value" : "pasivo financiero"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
       "@value" : "Emision"
     }, {
       "@value" : "Prestamo"
     } ]
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/ns/org#Organization"
   } ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/contributor",
@@ -232,6 +222,12 @@
   }, {
     "@language" : "es",
     "@value" : "Es el importe del instrumento de financiación, pendiente de amortizar en una fecha determinada."
+  }, {
+    "@language" : "en",
+    "@value" : "For this class, the property dcterms:date is reused, which represents the date on which the live capital of a financing instrument is calculated."
+  }, {
+    "@language" : "es",
+    "@value" : "Para esta clase se reutiliza la propiedad dcterms:date que representa la fecha en la que se calcula el capital vivo de un instrumento de financiación."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera"
@@ -250,6 +246,12 @@
     "@language" : "en",
     "@value" : "Fiinancial expenses and. financial liabilities held during the fiscal year"
   }, {
+    "@language" : "en",
+    "@value" : "For this class the properties dcterms:date, dcterms:description are reused. The dcterms:date property represents the date the finance expense or financial liability was incurred, and dcterms:description represents its description."
+  }, {
+    "@language" : "es",
+    "@value" : "Para esta clase se reutilizan las propiedades dcterms:date, dcterms:description. La propiedad dcterms:date representa la fecha en que se efectuó la carga financiera o el pasivo financiero y dcterms:description representa su descripción."
+  }, {
     "@language" : "es",
     "@value" : "Son los gastos financieros y. los pasivos financieros que se tienen durante el año fiscal."
   } ],
@@ -267,8 +269,14 @@
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "For this class, the dcterms:date property is reused. It corresponds to the date on which the annual debt was calculated."
+  }, {
     "@language" : "es",
     "@value" : "La deuda elaborada según la metodología del Protocolo de Deficit Excesivo (PDE), conforme a las definiciones del Sistema Europeo de Cuentas SEC 2010, es la deuda homogénea y comparable con el resto de la Administración Pública"
+  }, {
+    "@language" : "es",
+    "@value" : "Para esta clase se reutiliza la propiedad dcterms:date. Corresponde a la fecha en la que fue calculada la deuda anual."
   }, {
     "@language" : "en",
     "@value" : "The debt prepared according to the methodology of the Excessive Deficit Protocol (PDE), according to the definitions of the European System of Accounts SEC 2010, is the homogeneous debt and comparable with the rest of the Public Administration"
@@ -327,7 +335,7 @@
     "@value" : "Instrumento financiación"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "_:genid11"
+    "@id" : "_:genid8"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion",
@@ -338,6 +346,12 @@
   }, {
     "@language" : "es",
     "@value" : "Fecha e importe de amortización de la deuda que se recoge en el contrato firmado entre las partes"
+  }, {
+    "@language" : "en",
+    "@value" : "For this class, the dcterms: date property was reused, which corresponds to the amortization date that is included in the contract signed by both parties."
+  }, {
+    "@language" : "es",
+    "@value" : "Para esta clase se reutilizó la propiedad dcterms:date que corrrsponde a la fecha de amortización que se recoge en el contrato firmado por ambas partes."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera"
@@ -372,9 +386,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion"
   }, {
-    "@id" : "_:genid12"
+    "@id" : "_:genid9"
   }, {
-    "@id" : "_:genid13"
+    "@id" : "_:genid10"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal",
@@ -514,10 +528,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Relaciona el instrumento de financiación con  la deuda anual calculada a determinada fecha (generalmente la fecha final del ejercicio). Es la propiedad inversa de la propiedad \"instrumentoFinanciacion\"."
+    "@value" : "Relaciona el instrumento de financiación con  la deuda anual calculada a determinada fecha. Es la propiedad inversa de la propiedad \"instrumentoFinanciacion\"."
   }, {
     "@language" : "en",
-    "@value" : "Relates the financing instrument to the annual debt calculated on a certain date (generally the last date of the fiscal year). It is the inverse property of the \"instrumentoFinanciacion\" property."
+    "@value" : "Relates the financing instrument to the annual debt calculated on a certain date. It is the inverse property of the \"instrumentoFinanciacion\" property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
     "@value" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera"
@@ -796,10 +810,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "La carga financiera de un instrumento financiero puede corresponder a un pasivo financiero o a un gasto financiero."
+    "@value" : "La carga financiera de un instrumento financiero puede corresponder a un pasivo financiero o a un gasto financiero. Puede tomar los valores \"gasto financiero\" o \"pasivo financiero\"."
   }, {
     "@language" : "en",
-    "@value" : "The financial burden of a financial instrument may correspond to a financial liability or a financial expense."
+    "@value" : "The financial burden of a financial instrument may correspond to a financial liability or a financial expense. It can take the values \"gasto financiero\" ior \"pasivo financiero\"."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera"
@@ -813,16 +827,13 @@
   }, {
     "@language" : "es",
     "@value" : "gasto o pasivo"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Representa una cantidad de dinero. Se define para las siguientes clases:\n- Clase \"Capital vivo\" representa el improte del instrumento de financiación pendiente por amortizar. \n- Clase \"Plan amortización\" representa para una fecha dada el importe de amortización de la deuda que se recoge en el contrato firmado entre las partes. \n- Clase \"Instrumento de financiación\" representa el importe que se financiará con el instrumento.\n- Clase \"Carga financiera\" representa el importe del gasto financiero o el pasivo financiero."
+    "@value" : "Representa una cantidad de dinero. Se define para las siguientes clases:\n- Clase \"Capital vivo\" representa el importe del instrumento de financiación pendiente por amortizar. \n- Clase \"Plan amortización\" representa para una fecha dada el importe de amortización de la deuda que se recoge en el contrato firmado entre las partes. \n- Clase \"Instrumento de financiación\" representa el importe que se financiará con el instrumento.\n- Clase \"Carga financiera\" representa el importe del gasto financiero o el pasivo financiero."
   }, {
     "@language" : "en",
     "@value" : "Represents an amount of money. It is defined for the following classes:\n- Class \"Live capital\" represents the amount of the financing instrument pending amortization.\n- Class \"Repayment plan\" represents for a given date the amount of repayment of the debt that is included in the contract signed between the parties.\n- Class \"Financing instrument\" represents the amount that will be financed with the instrument.\n- Class \"Financial burden\" represents the amount of financial expense or financial liability."
@@ -1117,10 +1128,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Precio de emisión del título."
+    "@value" : "Precio de emisión del título. Es un porcentaje del valor nominal, es decir de la cuantía por título."
   }, {
     "@language" : "en",
-    "@value" : "Security issuance price."
+    "@value" : "Security issuance price. It is a percentage of the nominal value, that is, of the amount per security."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"
@@ -1143,10 +1154,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Issuance redemption price."
+    "@value" : "Issuance redemption price. It is a percentage of the nominal value, that is, of the amount per security."
   }, {
     "@language" : "es",
-    "@value" : "Precio de reembolso de la emisión"
+    "@value" : "Precio de reembolso de la emisión. Es un porcentaje del valor nominal, es decir de la cuantía por título."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision"
@@ -1221,7 +1232,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "es",
-    "@value" : "Denota el tipo de instrumento de financiación. Puede tomar los valores (excluyentes) \"Prestamo\" o \"Emision\"."
+    "@value" : "Denota el tipo de instrumento de financiación. Puede tomar los valores  \"Prestamo\" o \"Emision\"."
   }, {
     "@language" : "en",
     "@value" : "Denotes the type of financing instrument. It can take the values \"Prestamo\" (Loan) or \"Emision\" (Issuance)."
@@ -1240,7 +1251,7 @@
     "@value" : "type of instrument"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid8"
+    "@id" : "_:genid5"
   } ]
 }, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres",

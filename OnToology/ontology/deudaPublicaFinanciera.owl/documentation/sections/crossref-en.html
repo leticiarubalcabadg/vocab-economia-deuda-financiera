@@ -50,7 +50,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#DeudaAnual</p>
       <div class="comment">
-         <span class="markdown">The debt prepared according to the methodology of the Excessive Deficit Protocol (PDE), according to the definitions of the European System of Accounts SEC 2010, is the homogeneous debt and comparable with the rest of the Public Administration</span>
+         <span class="markdown">For this class, the dcterms:date property is reused. It corresponds to the date on which the annual debt was calculated.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -479,7 +479,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion</p>
       <div class="comment">
-         <span class="markdown">Relates the financing instrument to the annual debt calculated on a certain date (generally the last date of the fiscal year). It is the inverse property of the "instrumentoFinanciacion" property.</span>
+         <span class="markdown">Relates the financing instrument to the annual debt calculated on a certain date. It is the inverse property of the "instrumentoFinanciacion" property.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1325,7 +1325,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo</p>
       <div class="comment">
-         <span class="markdown">The financial burden of a financial instrument may correspond to a financial liability or a financial expense.</span>
+         <span class="markdown">The financial burden of a financial instrument may correspond to a financial liability or a financial expense. It can take the values "gasto financiero" ior "pasivo financiero".</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1339,8 +1339,6 @@ This section provides details for each class and property defined by Vocabulario
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera">Financial burden</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
-            <dt>has range</dt>
-            <dd>{ "gasto financiero" , "pasivo financiero" }</dd>
          </dl>
       </div>
    </div>
@@ -1559,7 +1557,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioEmision</p>
       <div class="comment">
-         <span class="markdown">Security issuance price.</span>
+         <span class="markdown">Security issuance price. It is a percentage of the nominal value, that is, of the amount per security.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
@@ -1767,7 +1765,7 @@ This section provides details for each class and property defined by Vocabulario
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioReembolso</p>
       <div class="comment">
-         <span class="markdown">Issuance redemption price.</span>
+         <span class="markdown">Issuance redemption price. It is a percentage of the nominal value, that is, of the amount per security.</span>
       </div>
       <dl class="definedBy">
          <dt>Is defined by</dt>
