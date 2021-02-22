@@ -1,4 +1,4 @@
-<h2 id="crossreference" class="list">T&eacute;rminos de Vocabulario para la representación de la información de la Deuda Pública Financiera :Clases, propiedades de objeto y propiedades de datos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
+<h2 id="crossreference" class="list">T&eacute;rminos de Vocabulario para la representación de la información de la Deuda Pública Financiera tomando en cuenta que la deuda pública es uno de los indicadores esenciales de las cuentas públicas para entender el estado de la situación económica de un ayuntamiento. para clases, propiedades y propiedades de datos <span class="backlink"> volver a <a href="#toc">&iacute;ndice</a></span></h2>
 Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad definida por Vocabulario para la representación de la información de la Deuda Pública Financiera tomando en cuenta que la deuda pública es uno de los indicadores esenciales de las cuentas públicas para entender el estado de la situación económica de un ayuntamiento..
 <div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
    <h3 id="classes-headline" class="list">Clases</h3>
@@ -50,7 +50,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo</p>
       <div class="comment">
-         <span class="markdown">Es el importe del instrumento financiero pendiente de amortizar en una fecha determinada.</span>
+         <span class="markdown">Es el importe del instrumento de financiación, pendiente de amortizar en una fecha determinada.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -73,7 +73,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera</p>
       <div class="comment">
-         <span class="markdown">Son los gastos financieros y. los pasivos financieros que se tienen durante el año fiscal.</span>
+         <span class="markdown">Para esta clase se reutilizan las propiedades dcterms:date, dcterms:description. La propiedad dcterms:date representa la fecha en que se efectuó la carga financiera o el pasivo financiero y dcterms:description representa su descripción.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -233,6 +233,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioReembolso">precio reembolso</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>
          </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#esEmision"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision">es emisión</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="InstrumentoFinanciacion">
@@ -266,6 +272,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">capital vivo</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#cargaFinanciera"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera">carga financiera</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#esEmision"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision">es emisión</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#esPrestamo"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo">es préstamo</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#margen"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#margen">margen</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#planAmortizacion"
@@ -274,6 +284,8 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#referencia">referencia variable</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#tasaFija"
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tasaFija">tasa fija</a>
+            <sup class="type-dp" title="Propiedad de datos">dp</sup>, <a href="#tipoInstrumento"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento">tipo de instrumento</a>
             <sup class="type-dp" title="Propiedad de datos">dp</sup>
          </dd>
          <dt>en rango de</dt>
@@ -393,6 +405,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoPrestamo">tipo préstamo</a>
             <sup class="type-op" title="Propiedad entre objetos">op</sup>
          </dd>
+         <dt>en rango de</dt>
+         <dd>
+            <a href="#esPrestamo"
+               title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo">es préstamo</a>
+            <sup class="type-op" title="Propiedad entre objetos">op</sup>
+         </dd>
       </dl>
    </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
@@ -407,8 +425,32 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera">carga financiera</a>
       </li>
       <li>
+         <a href="#deudaAnualInstrumentoFinanciacion"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion">deuda anual con instrumento de financiación</a>
+      </li>
+      <li>
          <a href="#entidadPrestamista"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#entidadPrestamista">entidad prestamista</a>
+      </li>
+      <li>
+         <a href="#esEmision"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision">es emisión</a>
+      </li>
+      <li>
+         <a href="#esPrestamo"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo">es préstamo</a>
+      </li>
+      <li>
+         <a href="#instrumentoFinanciacionCapitalVivo"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo">instrumento de financiación con capital vivo</a>
+      </li>
+      <li>
+         <a href="#instrumentoFinanciacionCargaFinanciera"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera">instrumento de financiación con carga financiera</a>
+      </li>
+      <li>
+         <a href="#instrumentoFinanciacionPlanAmortizacion"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion">instrumento de financiación con plan de amortización</a>
       </li>
       <li>
          <a href="#instrumentoFinanciacion"
@@ -437,8 +479,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo</p>
       <div class="comment">
-         <span class="markdown">Relaciona el instrumento de financiación con el importe pendiente de amortizar en una fecha determinada.</span>
+         <span class="markdown">Relaciona el instrumento de financiación con el importe pendiente de amortizar en una fecha determinada. Es la propiedad inversa de "instrumentoFinanciacionCapitalVivo".</span>
       </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>dominio</dt>
@@ -453,6 +499,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CapitalVivo">Capital vivo</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#instrumentoFinanciacionCapitalVivo"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo">instrumento de financiación con capital vivo</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
          </dl>
       </div>
    </div>
@@ -464,7 +516,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera</p>
       <div class="comment">
-         <span class="markdown">Son los gastos financieros y. los pasivos financieros que se tienen durante el año fiscal para un determinado instrumento de financiación.</span>
+         <span class="markdown">Son los gastos financieros y los pasivos financieros que se tienen durante el año fiscal para un determinado instrumento de financiación. Es la propiedad inversa de "instrumentoFinanciacionCargaFinanciera".</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -483,6 +535,37 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                <a href="#CargaFinanciera"
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera">Carga financiera</a>
                <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#instrumentoFinanciacionCargaFinanciera"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera">instrumento de financiación con carga financiera</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="deudaAnualInstrumentoFinanciacion">
+      <h3>deuda anual con instrumento de financiación<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion</p>
+      <div class="comment">
+         <span class="markdown">Relaciona el instrumento de financiación con  la deuda anual calculada a determinada fecha. Es la propiedad inversa de la propiedad "instrumentoFinanciacion".</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#instrumentoFinanciacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion">instrumento financiación</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
       </div>
@@ -517,6 +600,149 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
+   <div class="entity" id="esEmision">
+      <h3>es emisión<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esEmision</p>
+      <div class="comment">
+         <span class="markdown">Si el tipo de instrumento es "Emision" relaciona al instrumento de financiación con los datos en la clase Emision.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#InstrumentoFinanciacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">Instrumento financiación</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Emision"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Emision">Emisión</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="esPrestamo">
+      <h3>es préstamo<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#esPrestamo</p>
+      <div class="comment">
+         <span class="markdown">Si el tipo de instrumento es "Prestamo" relaciona al instrumento de financiación con los datos en la clase Prestamo.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <p>
+            <strong>tiene características:
+                </strong> funcional</p>
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#InstrumentoFinanciacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">Instrumento financiación</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>
+               <a href="#Prestamo"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#Prestamo">Préstamo</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="instrumentoFinanciacionCapitalVivo">
+      <h3>instrumento de financiación con capital vivo<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCapitalVivo</p>
+      <div class="comment">
+         <span class="markdown">Relaciona el el importe pendiente de amortizar en una fecha determinada con su correspondiente instrumento de financiación. Es la propiedad inversa de la propiedad "capitalVivo".</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#capitalVivo"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo">capital vivo</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="instrumentoFinanciacionCargaFinanciera">
+      <h3>instrumento de financiación con carga financiera<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionCargaFinanciera</p>
+      <div class="comment">
+         <span class="markdown">Es el instrumento de financiación que corresponde a determinado gasto financiero o pasivo financiero. Es la inversa de la propiedad "cargaFinanciera".</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#cargaFinanciera"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#cargaFinanciera">carga financiera</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="instrumentoFinanciacionPlanAmortizacion">
+      <h3>instrumento de financiación con plan de amortización<sup class="type-op" title="Propiedad entre objetos">op</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion</p>
+      <div class="comment">
+         <span class="markdown">Relaciona una amortización con el instrumento de financiación correspondiente. Es la propiedad inversa de la propiedad "planAmortizacion".</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#planAmortizacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion">plan amortización</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="instrumentoFinanciacion">
       <h3>instrumento financiación<sup class="type-op" title="Propiedad entre objetos">op</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a>
@@ -525,7 +751,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacion</p>
       <div class="comment">
-         <span class="markdown">Relaciona la deuda anual con los instrumentos financieros activos durante el año fiscal correspondiente.</span>
+         <span class="markdown">Relaciona la deuda anual calculada a una determinada fecha (generalmente la fecha final del ejercicio) con los instrumentos de financiación. Es la propiedad inversa de "deudaAnualInstrumentoFinanciacion".</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -544,6 +770,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                <a href="#InstrumentoFinanciacion"
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">Instrumento financiación</a>
                <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#deudaAnualInstrumentoFinanciacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#deudaAnualInstrumentoFinanciacion">deuda anual con instrumento de financiación</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
       </div>
@@ -614,7 +846,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#planAmortizacion</p>
       <div class="comment">
-         <span class="markdown">Relaciona el instrumento financiero con su calendario de amortizaciones.</span>
+         <span class="markdown">Relaciona el instrumento de financiación con su calendario de amortizaciones. Es la propiedad inversa de "instrumentoFinanciacionPlanAmortizacion".</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -633,6 +865,12 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                <a href="#PlanAmortizacion"
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#PlanAmortizacion">Plan amortización</a>
                <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>inversa de</dt>
+            <dd>
+               <a href="#instrumentoFinanciacionPlanAmortizacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#instrumentoFinanciacionPlanAmortizacion">instrumento de financiación con plan de amortización</a>
+               <sup class="type-op" title="Propiedad entre objetos">op</sup>
             </dd>
          </dl>
       </div>
@@ -708,6 +946,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          <a href="#http://purl.org/dc/terms/date" title="http://purl.org/dc/terms/date">fecha</a>
       </li>
       <li>
+         <a href="#fechaEmision"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision">fecha de emisión</a>
+      </li>
+      <li>
          <a href="#fechaFormalizacion"
             title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaFormalizacion">fecha de formalización</a>
       </li>
@@ -777,6 +1019,10 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </li>
       <li>
          <a href="#http://www.w3.org/ns/org#identifier" title="http://www.w3.org/ns/org#identifier">tiene identificador</a>
+      </li>
+      <li>
+         <a href="#tipoInstrumento"
+            title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento">tipo de instrumento</a>
       </li>
       <li>
          <a href="#tipoInteres"
@@ -1027,6 +1273,31 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
+   <div class="entity" id="fechaEmision">
+      <h3>fecha de emisión<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#fechaEmision</p>
+      <div class="comment">
+         <span class="markdown">Fecha en la que se realiza la emisión de los títulos.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>tiene superpropiedades</dt>
+            <dd>
+               <a href="http://www.w3.org/2002/07/owl#topDataProperty"
+                  target="_blank"
+                  title="http://www.w3.org/2002/07/owl#topDataProperty">top data property</a>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="fechaFormalizacion">
       <h3>fecha de formalización<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
@@ -1143,7 +1414,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#gastoOPasivo</p>
       <div class="comment">
-         <span class="markdown">La carga financiera de un instrumento financiero puede corresponder a un pasivo financiero o a un gasto financiero.</span>
+         <span class="markdown">La carga financiera de un instrumento financiero puede corresponder a un pasivo financiero o a un gasto financiero. Puede tomar los valores "gasto financiero" o "pasivo financiero".</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -1157,8 +1428,6 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
                   title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#CargaFinanciera">Carga financiera</a>
                <sup class="type-c" title="clase">c</sup>
             </dd>
-            <dt>rango</dt>
-            <dd>{ "gasto financiero" , "pasivo financiero" }</dd>
          </dl>
       </div>
    </div>
@@ -1169,6 +1438,13 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#importe</p>
+      <div class="comment">
+         <span class="markdown">Representa una cantidad de dinero. Se define para las siguientes clases:
+- Clase "Capital vivo" representa el importe del instrumento de financiación pendiente por amortizar. 
+- Clase "Plan amortización" representa para una fecha dada el importe de amortización de la deuda que se recoge en el contrato firmado entre las partes. 
+- Clase "Instrumento de financiación" representa el importe que se financiará con el instrumento.
+- Clase "Carga financiera" representa el importe del gasto financiero o el pasivo financiero.</span>
+      </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
          <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
@@ -1443,7 +1719,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioEmision</p>
       <div class="comment">
-         <span class="markdown">Precio de emisión del título.</span>
+         <span class="markdown">Precio de emisión del título. Es un porcentaje del valor nominal, es decir de la cuantía por título.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -1477,7 +1753,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#precioReembolso</p>
       <div class="comment">
-         <span class="markdown">Precio de reembolso de la emisión</span>
+         <span class="markdown">Precio de reembolso de la emisión. Es un porcentaje del valor nominal, es decir de la cuantía por título.</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
@@ -1602,6 +1878,33 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
          </dl>
       </div>
    </div>
+   <div class="entity" id="tipoInstrumento">
+      <h3>tipo de instrumento<sup class="type-dp" title="Propiedad de datos">dp</sup>
+         <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInstrumento</p>
+      <div class="comment">
+         <span class="markdown">Denota el tipo de instrumento de financiación. Puede tomar los valores  "Prestamo" o "Emision".</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Definida por</dt>
+         <dd>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</dd>
+      </dl>
+      <div class="description">
+         <dl>
+            <dt>dominio</dt>
+            <dd>
+               <a href="#InstrumentoFinanciacion"
+                  title="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#InstrumentoFinanciacion">Instrumento financiación</a>
+               <sup class="type-c" title="clase">c</sup>
+            </dd>
+            <dt>rango</dt>
+            <dd>{ "Emision" , "Prestamo" }</dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="tipoInteres">
       <h3>tipo de interés<sup class="type-dp" title="Propiedad de datos">dp</sup>
          <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#dataproperties">Índice de propiedades de datos</a>
@@ -1610,7 +1913,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
       <p>
          <strong>IRI:</strong> http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres</p>
       <div class="comment">
-         <span class="markdown">Tipo de tasa interés (fijo o variable) de un instrumento financiero</span>
+         <span class="markdown">Tipo de tasa interés (fijo o variable) de un instrumento de financiación</span>
       </div>
       <dl class="definedBy">
          <dt>Definida por</dt>
