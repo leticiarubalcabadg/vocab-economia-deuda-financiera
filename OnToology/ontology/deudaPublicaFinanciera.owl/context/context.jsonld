@@ -228,7 +228,7 @@
       "@type" : "@id"
     },
     "anioFiscal" : {
-      "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal",
+      "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal",
       "@type" : "http://www.w3.org/2001/XMLSchema#gYear"
     },
     "description" : {
