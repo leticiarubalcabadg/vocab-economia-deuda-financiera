@@ -465,21 +465,6 @@
     
 
 
-    <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal -->
-
-
-    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
-        <rdfs:comment xml:lang="es">Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Fiscal year. Period of 12 months between the 1st of January and the 31st of December.</rdfs:comment>
-        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="es">año fiscal</rdfs:label>
-        <rdfs:label xml:lang="en">fiscal year</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN -->
 
 
@@ -861,6 +846,21 @@
         <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera</rdfs:isDefinedBy>
         <rdfs:label xml:lang="en">interest type</rdfs:label>
         <rdfs:label xml:lang="es">tipo de interés</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal -->
+
+
+    <owl:DatatypeProperty rdf:about="http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+        <rdfs:comment xml:lang="es">Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Fiscal year. Period of 12 months between the 1st of January and the 31st of December.</rdfs:comment>
+        <rdfs:isDefinedBy>http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto</rdfs:isDefinedBy>
+        <rdfs:label xml:lang="es">año fiscal</rdfs:label>
+        <rdfs:label xml:lang="en">fiscal year</rdfs:label>
     </owl:DatatypeProperty>
     
 

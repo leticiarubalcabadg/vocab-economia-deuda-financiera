@@ -391,29 +391,6 @@
     "@id" : "_:genid10"
   } ]
 }, {
-  "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "es",
-    "@value" : "Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre."
-  }, {
-    "@language" : "en",
-    "@value" : "Fiscal year. Period of 12 months between the 1st of January and the 31st of December."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
-    "@value" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "año fiscal"
-  }, {
-    "@language" : "en",
-    "@value" : "fiscal year"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
-  } ]
-}, {
   "@id" : "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#capitalVivo",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1298,6 +1275,29 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre."
+  }, {
+    "@language" : "en",
+    "@value" : "Fiscal year. Period of 12 months between the 1st of January and the 31st of December."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "año fiscal"
+  }, {
+    "@language" : "en",
+    "@value" : "fiscal year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#gYear"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista",

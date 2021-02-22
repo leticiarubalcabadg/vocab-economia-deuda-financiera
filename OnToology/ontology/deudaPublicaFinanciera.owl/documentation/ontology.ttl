@@ -305,17 +305,6 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                   "description"@en .
 
 
-###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal
-:anioFiscal rdf:type owl:DatatypeProperty ,
-                     owl:FunctionalProperty ;
-            rdfs:range xsd:gYear ;
-            rdfs:comment "Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre."@es ,
-                         "Fiscal year. Period of 12 months between the 1st of January and the 31st of December."@en ;
-            rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" ;
-            rdfs:label "año fiscal"@es ,
-                       "fiscal year"@en .
-
-
 ###  http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN
 :codISIN rdf:type owl:DatatypeProperty ,
                   owl:FunctionalProperty ;
@@ -599,6 +588,17 @@ xsd:gYear rdf:type rdfs:Datatype .
              rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" ;
              rdfs:label "interest type"@en ,
                         "tipo de interés"@es .
+
+
+###  http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> rdf:type owl:DatatypeProperty ,
+                                                                                owl:FunctionalProperty ;
+                                                                       rdfs:range xsd:gYear ;
+                                                                       rdfs:comment "Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre."@es ,
+                                                                                    "Fiscal year. Period of 12 months between the 1st of January and the 31st of December."@en ;
+                                                                       rdfs:isDefinedBy "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" ;
+                                                                       rdfs:label "año fiscal"@es ,
+                                                                                  "fiscal year"@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#notation

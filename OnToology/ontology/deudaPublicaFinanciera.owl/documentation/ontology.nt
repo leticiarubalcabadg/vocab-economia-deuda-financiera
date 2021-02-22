@@ -285,16 +285,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "descripción"@es .
 <http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "description"@en .
 # 
-# http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#comment> "Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre."@es .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#comment> "Fiscal year. Period of 12 months between the 1st of January and the 31st of December."@en .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#label> "año fiscal"@es .
-<http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#label> "fiscal year"@en .
-# 
 # http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#codISIN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
@@ -548,6 +538,16 @@ _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera" .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres> <http://www.w3.org/2000/01/rdf-schema#label> "interest type"@en .
 <http://vocab.ciudadesabiertas.es/def/economia/deuda-publica-financiera#tipoInteres> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de interés"@es .
+# 
+# http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#gYear> .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#comment> "Ejercicio fiscal. Período de 12 meses entre el 1 de enero y 31 de diciembre."@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#comment> "Fiscal year. Period of 12 months between the 1st of January and the 31st of December."@en .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto" .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#label> "año fiscal"@es .
+<http://vocab.ciudadesabiertas.es/def/hacienda/presupuesto#anioFiscal> <http://www.w3.org/2000/01/rdf-schema#label> "fiscal year"@en .
 # 
 # http://www.w3.org/2004/02/skos/core#notation
 <http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
