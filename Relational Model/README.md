@@ -296,7 +296,7 @@ Tesauro que recoge los tipos de entidades que pueden conceder préstamos a los a
 &nbsp;
 http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo   
 
-&nbsp;
+
 Tesauro que recoge los tipos de préstamo que puede tener un ayuntamiento como instrumento de financiación. Existen tres tipos principales que a su vez se dividen en subtipos.
 &nbsp;
 
