@@ -44,9 +44,10 @@ Este documento contiene la información detallada del modelo de datos asociado a
 
 - *[Documentación](http://ciudadesabiertas.es/vocab-economia-deuda-financiera/OnToology/ontology/deudaPublicaFinanciera.owl/documentation/index-es.html)*
 - *[Repositorio](https://github.com/CiudadesAbiertas/vocab-economia-deuda-financiera)*
-<!--   - *[Webinar](https://www.youtube.com/watch?v=RcP9dplKb3A&list=PLuvmjKgQP8bXSFG289dUU4I6hOQZhjxUW)*  -->
 - *[Requisitos](https://github.com/CiudadesAbiertas/vocab-economia-deuda-financiera/blob/master/requirements/Requisitos%20y%20Glosario%20Deuda%20Publica.xlsx)*
 - *[Issues](https://github.com/CiudadesAbiertas/vocab-economia-deuda-financiera/issues)*
+<!--   - *[Webinar](https://www.youtube.com/watch?v=RcP9dplKb3A&list=PLuvmjKgQP8bXSFG289dUU4I6hOQZhjxUW)*  -->
+
 
 &nbsp;
 
@@ -56,7 +57,7 @@ Este documento contiene la información detallada del modelo de datos asociado a
 El diagrama muestra las clases y propiedades del vocabulario que representa la Deuda Pública Financiera como indicador esencial de las cuentas públicas de un ayuntamiento.
 
 &nbsp;
-![Diagrama conceptual]http://ciudadesabiertas.es/vocab-economia-deuda-financiera/OnToology/ontology/deudaPublicaFinanciera.owl/documentation/resources/images/modeloConceptual.png)
+![Diagrama conceptual](http://ciudadesabiertas.es/vocab-economia-deuda-financiera/OnToology/ontology/deudaPublicaFinanciera.owl/documentation/resources/images/modeloConceptual.png)
 &nbsp;
 
 
@@ -64,7 +65,7 @@ El diagrama muestra las clases y propiedades del vocabulario que representa la D
 ## DIAGRAMA ENTIDAD RELACIÓN DE LAS TABLAS <a name="id40"></a>
 
 &nbsp;
-![Diagrama conceptual]http://ciudadesabiertas.es/vocab-economia-deuda-financiera/OnToology/ontology/deudaPublicaFinanciera.owl/documentation/resources/images/modeloConceptual.png)
+![Diagrama conceptual](http://ciudadesabiertas.es/vocab-economia-deuda-financiera/OnToology/ontology/deudaPublicaFinanciera.owl/documentation/resources/images/modeloConceptual.png)
 &nbsp;
 
 
