@@ -65,7 +65,7 @@ El diagrama muestra las clases y propiedades del vocabulario que representa la D
 ## DIAGRAMA ENTIDAD RELACIÓN DE LAS TABLAS <a name="id40"></a>
 
 &nbsp;
-![Diagrama Entidad Relación](/Relational Model/DIAGRAMA ENTIDAD RELACIÓN DE LAS TABLAS.png)
+![Diagrama Entidad Relación](Relational Model/DIAGRAMA ENTIDAD RELACIÓN DE LAS TABLAS.png)
 &nbsp;
 
 
