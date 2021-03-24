@@ -271,7 +271,8 @@ Nota: misma tabla que se está utilizando en Deuda Publica Comercial
 
 ### TIPO-ENTIDAD-PRESTAMISTA <a name="id15"></a>
 &nbsp;
-http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista
+http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-entidad-prestamista  
+
 &nbsp;
 Tesauro que recoge los tipos de entidades que pueden conceder préstamos a los ayuntamientos.
 &nbsp;
@@ -293,7 +294,8 @@ Tesauro que recoge los tipos de entidades que pueden conceder préstamos a los a
 &nbsp;
 ### TIPO-PRESTAMO <a name="id16"></a>
 &nbsp;
-http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo
+http://vocab.linkeddata.es/datosabiertos/kos/economia/deuda-publica-financiera/tipo-prestamo   
+
 &nbsp;
 Tesauro que recoge los tipos de préstamo que puede tener un ayuntamiento como instrumento de financiación. Existen tres tipos principales que a su vez se dividen en subtipos.
 &nbsp;
