@@ -10,6 +10,9 @@ Se han desarrollado dos vocabularios: (1) Deuda Pública Financiera que se encue
 ## Desarrollo del vocabulario
 El material generado en las diferentes actividades ejecutadas durante el desarrollo del vocabulario, casos de uso, historias de usuario, glosario de términos, etc., se encuentra disponible en la [Wiki del Vocabulario](https://github.com/CiudadesAbiertas/vocab-economia-deuda-financiera/wiki).
 
+También se ha propuesto un modelo relacional tipo, que está  documentado *[aquí](relational_model/README.md)*, que ha sido utilizado para la generación de  una API REST relacionada con este vocabulario, en el contexto del  proyecto Ciudades Abiertas. Este modelo relacional no está  completamente normalizado, para facilitar algunos procesos de  Extracción, Transformación y Carga (ETLs, por sus siglas en inglés),  habituales en muchos portales de datos abiertos, y no es normativo,  por lo que cualquier organización que adopte este vocabulario para la  publicación de sus datos abiertos puede proponer variaciones siempre  que se respete la forma de exportación a RDF de los datos  correspondientes.
+
+
 ## Mantenimiento
 Para gestionar aquellas incidencias o mejoras sugeridas con respecto al vocabulario te recomendamos seguir las guías proporcionadas en [Gestión de Issues](https://github.com/CiudadesAbiertas/vocab-economia-deuda-financiera//wiki/Gesti%C3%B3n-de-issues)
 
